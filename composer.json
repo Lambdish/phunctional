@@ -1,0 +1,37 @@
+{
+  "name": "akamon/phunctional",
+  "description": "λ PHP functional library",
+  "type": "library",
+  "keywords": ["functional", "generator"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jorge Avila ",
+      "email": "avilacardenosa@gmail.com"
+    },
+    {
+      "name": "Rafa Gómez",
+      "email": "rgomezcasas@gmail.com"
+    },
+    {
+      "name": "Jordi Llonch",
+      "email": "llonch.jordi@gmail.com"
+    },
+    {
+      "name": "Eloi Poch",
+      "email": "eloi.poch@gmail.com"
+    }
+  ],
+  "minimum-stability": "beta",
+  "require": {
+    "php": ">=5.6.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^5.0"
+  },
+  "autoload": {
+    "files": [
+      "src/_bootstrap.php"
+    ]
+  }
+}
