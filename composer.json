@@ -2,11 +2,17 @@
   "name": "akamon/phunctional",
   "description": "λ PHP functional library",
   "type": "library",
-  "keywords": ["functional", "generator"],
+  "keywords": [
+    "php",
+    "functional",
+    "library",
+    "generator",
+    "lambda"
+  ],
   "license": "MIT",
   "authors": [
     {
-      "name": "Jorge Avila ",
+      "name": "Jorge Ávila",
       "email": "avilacardenosa@gmail.com"
     },
     {
