@@ -39,7 +39,7 @@ map(
 ```
 
 ### Functions documentation
-You can find the functions documentation [here](#) (To be done).
+You can find the functions documentation [here](docs/docs.md).
 
 ### License
 The Phunctional library is licensed under the [MIT license](http://opensource.org/licenses/MIT).
