@@ -6,11 +6,10 @@ use Generator;
 use Traversable;
 
 /**
- * Returns a sequence of the items in $coll for which $pred returns true.
+ * Returns an array with the items in $coll for which $fn returns true.
  *
- * Equals to `array_filter` but with a consistent parameters order.
- * Function $fn should accept the value of the item as the first argument
- * and optionally the key of the item as the second argument.
+ * Similar to `array_filter` but with a consistent parameters order, requiring always a function and allowing access
+ * to the keys of the collection.
  *
  * @since 0.1
  *
