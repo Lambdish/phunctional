@@ -11,9 +11,9 @@ namespace Akamon\Phunctional;
  *
  * @return callable
  */
-function complement(callable $fn)
+function not(callable $fn)
 {
     return function (...$args) use ($fn) {
-        return !call_user_func_array($fn, $args);
+        return !$fn(...$args);
     };
 }

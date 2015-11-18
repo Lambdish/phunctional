@@ -1,4 +1,4 @@
-# complement
+# not
 
 ## Description
 Returns the opposite of the `$fn` call
@@ -16,9 +16,9 @@ Return true if the value is not an array:
 ```php
 <?php
 
-use function Akamon\Phunctional\complement;
+use function Akamon\Phunctional\not;
 
-$notAnArray = complement('is_array');
+$notAnArray = not('is_array');
 
 $notAnArray(123456);            
 // => true
