@@ -2,6 +2,7 @@
 
 namespace Akamon\Phunctional;
 
+use Generator;
 use Traversable;
 
 /**
@@ -9,7 +10,7 @@ use Traversable;
  *
  * @since 0.1
  *
- * @param array|Traversable $coll collection of multidimensional values to be flatten
+ * @param array|Traversable|Generator $coll collection of multidimensional values to be flatten
  *
  * @return array
  */
