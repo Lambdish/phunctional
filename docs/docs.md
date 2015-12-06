@@ -3,6 +3,7 @@
 ## Basic functional methods
 
  * [any](functions/any.md): Check if any value of the collection satisfies the function  
+ * [call](functions/call.md): Call a function with the desired arguments (a clean way to call closures stored in class attributes) 
  * [filter](functions/filter.md): Discriminate the items of a collection for which function is false 
  * [flatten](functions/flatten.md): Returns a flat collection from a multidimensional collection 
  * [get](functions/get.md): Returns the value of an item in a collection or a default value in the case it does not exists 
