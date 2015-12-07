@@ -5,7 +5,6 @@
 Returns the accumulated value of iteratively reduce the collection using a function that receives the accumulated
 value and returns a new one in each iteration
 
-
 ## Parameters
 
 <dl>
