@@ -1,4 +1,4 @@
-# filter
+# some
 
 ## Description
 Check if some value of the collection satisfies the function
