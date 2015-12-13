@@ -10,5 +10,6 @@
  * [map](functions/map.md): Apply a function over all the items of a collection and returns an array with the results
  * [not](functions/not.md): Return the opposite of the function call 
  * [reduce](functions/reduce.md): Returns an accumulated value of iteratively reduce the collection using a function
+ * [rest](functions/rest.md): Returns the all the elements of a collection except the first preserving the keys
  * [reverse](functions/reverse.md): Returns a reversed collection preserving its keys
  * [some](functions/some.md): Check if any value of the collection satisfies the function  
