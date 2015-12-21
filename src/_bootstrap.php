@@ -1,6 +1,7 @@
 <?php
 
 require __DIR__ . '/any.php';
+require __DIR__ . '/apply.php';
 require __DIR__ . '/call.php';
 require __DIR__ . '/filter.php';
 require __DIR__ . '/first.php';
