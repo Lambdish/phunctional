@@ -5,6 +5,7 @@
  * [any](functions/any.md): Check if any value of the collection satisfies the function  
  * [apply](functions/apply.md): Apply a function over all the items of a collection  
  * [call](functions/call.md): Call a function with the desired arguments (a clean way to call closures stored in class attributes) 
+ * [compose](functions/compose.md): Combine multiple function calls in one function 
  * [filter](functions/filter.md): Discriminate the items of a collection for which function is false 
  * [first](functions/first.md): Returns the first element of a collection
  * [flatten](functions/flatten.md): Returns a flat collection from a multidimensional collection 
