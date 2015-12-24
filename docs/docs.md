@@ -13,6 +13,7 @@
  * [get](functions/get.md): Returns the value of an item in a collection or a default value in the case it does not exists 
  * [map](functions/map.md): Apply a function over all the items of a collection and returns an array with the results
  * [not](functions/not.md): Return the opposite of the function call 
+ * [partial](functions/partial.md): Fix a number of arguments to a function producing another one with an smaller arity
  * [pipe](functions/reduce.md): Takes a set of functions and returns a new one that is the composition of all of them
  * [reduce](functions/reduce.md): Returns an accumulated value of iteratively reduce the collection using a function
  * [repeat](functions/repeat.md): Returns an array with the values of a function executed a certain amount of times
