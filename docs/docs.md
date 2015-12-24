@@ -2,6 +2,7 @@
 
 ## Basic functional methods
 
+ * [all](functions/all.md): Check if all the values of the collection satisfies the function  
  * [any](functions/any.md): Check if any value of the collection satisfies the function  
  * [apply](functions/apply.md): Apply a function over all the items of a collection  
  * [call](functions/call.md): Call a function with the desired arguments (a clean way to call closures stored in class attributes) 
