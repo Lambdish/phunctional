@@ -13,6 +13,7 @@
  * [not](functions/not.md): Return the opposite of the function call 
  * [pipe](functions/reduce.md): Takes a set of functions and returns a new one that is the composition of all of them
  * [reduce](functions/reduce.md): Returns an accumulated value of iteratively reduce the collection using a function
+ * [repeat](functions/repeat.md): Returns an array with the values of a function executed a certain amount of times
  * [rest](functions/rest.md): Returns the all the elements of a collection except the first preserving the keys
  * [reverse](functions/reverse.md): Returns a reversed collection preserving its keys
  * [some](functions/some.md): Check if any value of the collection satisfies the function  
