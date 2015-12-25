@@ -16,6 +16,7 @@
  * [partial](functions/partial.md): Fix a number of arguments to a function producing another one with an smaller arity
  * [pipe](functions/reduce.md): Takes a set of functions and returns a new one that is the composition of all of them
  * [reduce](functions/reduce.md): Returns an accumulated value of iteratively reduce the collection using a function
+ * [reindex](functions/reindex.md): Returns a new collection with the keys reindexed by a function.
  * [repeat](functions/repeat.md): Returns an array with the values of a function executed a certain amount of times
  * [rest](functions/rest.md): Returns the all the elements of a collection except the first preserving the keys
  * [reverse](functions/reverse.md): Returns a reversed collection preserving its keys
