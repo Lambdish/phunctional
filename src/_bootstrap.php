@@ -14,6 +14,7 @@ require __DIR__ . '/not.php';
 require __DIR__ . '/partial.php';
 require __DIR__ . '/pipe.php';
 require __DIR__ . '/reduce.php';
+require __DIR__ . '/reindex.php';
 require __DIR__ . '/repeat.php';
 require __DIR__ . '/rest.php';
 require __DIR__ . '/reverse.php';
