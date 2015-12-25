@@ -11,6 +11,7 @@
  * [first](functions/first.md): Returns the first element of a collection
  * [flatten](functions/flatten.md): Returns a flat collection from a multidimensional collection 
  * [get](functions/get.md): Returns the value of an item in a collection or a default value in the case it does not exists 
+ * [instance_of](functions/instance_of.md): Returns a checker that validated if an element is an instance of a class 
  * [map](functions/map.md): Apply a function over all the items of a collection and returns an array with the results
  * [not](functions/not.md): Return the opposite of the function call 
  * [partial](functions/partial.md): Fix a number of arguments to a function producing another one with an smaller arity
