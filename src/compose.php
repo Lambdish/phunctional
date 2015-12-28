@@ -14,13 +14,5 @@ namespace Akamon\Phunctional;
  */
 function compose(...$fns)
 {
-    $compose = function ($composition, $fn) {
-        return function (...$args) use ($composition, $fn) {
-            return null === $composition ?
-                $fn(...$args) :
-                $fn($composition(...$args));
-        };
-    };
-
-    return reduce($compose, reverse($fns));
+    return pipe(...reverse($fns));
 }
