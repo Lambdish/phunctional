@@ -21,4 +21,5 @@
  * [repeat](functions/repeat.md): Returns an array with the values of a function executed a certain amount of times
  * [rest](functions/rest.md): Returns the all the elements of a collection except the first preserving the keys
  * [reverse](functions/reverse.md): Returns a reversed collection preserving its keys
+ * [search](functions/search.md): Search a value over a collection. Return the first occurrence if found, null if not
  * [some](functions/some.md): Check if any value of the collection satisfies the function  
