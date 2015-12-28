@@ -3,6 +3,7 @@
 require __DIR__ . '/all.php';
 require __DIR__ . '/any.php';
 require __DIR__ . '/apply.php';
+require __DIR__ . '/assoc.php';
 require __DIR__ . '/call.php';
 require __DIR__ . '/compose.php';
 require __DIR__ . '/filter.php';
