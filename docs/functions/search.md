@@ -39,7 +39,7 @@ $bats = [
     ],
 ];
 
-return all(
+return search(
     function (array $bat) {
         return 'Jorge' === $bat['owner'];
     }, 
