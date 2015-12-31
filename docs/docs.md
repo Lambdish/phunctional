@@ -10,6 +10,7 @@
  * [complement](functions/complement.md): Returns another function that takes the same arguments and has the opposite truth value.
  * [compose](functions/compose.md): Combine multiple function calls in one function
  * [dissoc](functions/dissoc.md): Dissociate a value of a key in a collection
+ * [do_if](functions/do_if.md): Returns a callable that will call the given function if the result of applying the callable arguments to the predicates is true for all of them
  * [filter](functions/filter.md): Discriminate the items of a collection for which function is false
  * [first](functions/first.md): Returns the first element of a collection
  * [flatten](functions/flatten.md): Returns a flat collection from a multidimensional collection
