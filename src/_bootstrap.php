@@ -12,6 +12,7 @@ require __DIR__ . '/filter.php';
 require __DIR__ . '/first.php';
 require __DIR__ . '/flatten.php';
 require __DIR__ . '/get.php';
+require __DIR__ . '/get_in.php';
 require __DIR__ . '/instance_of.php';
 require __DIR__ . '/map.php';
 require __DIR__ . '/memoize.php';
