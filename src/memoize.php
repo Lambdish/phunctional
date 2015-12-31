@@ -10,15 +10,11 @@ namespace Akamon\Phunctional;
  *
  * @return mixed
  */
-function memoize(callable $func, ...$args)
+function memoize(callable $fn, ...$args)
 {
     static $cache = [];
 
-    $key = md5(get_class($func) . serialize($args));
+    $key = md5(get_class($fn) . serialize($args));
 
-    if (false === array_key_exists($key, (array) $cache)) {
-        $cache[$key] = call_user_func_array($func, $args);
-    }
-
-    return $cache[$key];
+    return $cache[$key] = array_key_exists($key, $cache) ? $cache[$key] : call_user_func_array($fn, $args);
 }
