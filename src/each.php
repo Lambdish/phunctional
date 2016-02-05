@@ -18,7 +18,7 @@ use Traversable;
  *
  * @return void
  */
-function apply(callable $fn, $coll)
+function each(callable $fn, $coll)
 {
     foreach ($coll as $key => $value) {
         $fn($value, $key);
