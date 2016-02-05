@@ -2,12 +2,12 @@
 
 require __DIR__ . '/all.php';
 require __DIR__ . '/any.php';
-require __DIR__ . '/apply.php';
 require __DIR__ . '/assoc.php';
 require __DIR__ . '/call.php';
 require __DIR__ . '/complement.php';
 require __DIR__ . '/compose.php';
 require __DIR__ . '/dissoc.php';
+require __DIR__ . '/each.php';
 require __DIR__ . '/filter.php';
 require __DIR__ . '/first.php';
 require __DIR__ . '/flatten.php';
