@@ -1,4 +1,4 @@
-# apply
+# each
 
 ## Description
 Apply a function over all the items of a collection
@@ -19,19 +19,19 @@ Save a bunch of entities:
 ```php
 <?php
 
-use function Akamon\Phunctional\apply;
+use function Akamon\Phunctional\each;
 
 
-return apply(
+return each(
     function (User $user) use (UserRepository $repository) {
         $repository->save($user);
-    }, 
+    },
     [
         User::register('Horus'),
         User::register('Osiris'),
         User::register('Isis'),
     ]
 );
-            
+
 // => null
 ```
