@@ -27,4 +27,5 @@
  * [rest](functions/rest.md): Returns the all the elements of a collection except the first preserving the keys
  * [reverse](functions/reverse.md): Returns a reversed collection preserving its keys
  * [search](functions/search.md): Search a value over a collection. Return the first occurrence if found, null if not
+ * [sort](functions/sort.md): Sorts a collection using a sorting function
  * [some](functions/some.md): Check if any value of the collection satisfies the function
