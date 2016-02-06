@@ -4,7 +4,7 @@ namespace Akamon\Phunctional\Tests;
 
 use ArrayIterator;
 use PHPUnit_Framework_TestCase;
-use function Akamon\Phunctional\call;
+use function Akamon\Phunctional\apply;
 use function Akamon\Phunctional\first;
 
 class FirstTest extends PHPUnit_Framework_TestCase
@@ -33,7 +33,7 @@ class FirstTest extends PHPUnit_Framework_TestCase
             'array'           => ['coll' => [1, 2]],
             'array_with_keys' => ['coll' => ['one' => 1, 'two' => 2]],
             'iterator'        => ['coll' => new ArrayIterator([1, 2])],
-            'generator'       => ['coll' => call(function () { yield 1; yield 2; })],
+            'generator'       => ['coll' => apply(function () { yield 1; yield 2; })],
         ];
     }
 

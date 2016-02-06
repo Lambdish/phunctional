@@ -3,7 +3,7 @@
 namespace Akamon\Phunctional\Tests;
 
 use PHPUnit_Framework_TestCase;
-use function Akamon\Phunctional\call;
+use function Akamon\Phunctional\apply;
 use function Akamon\Phunctional\pipe;
 
 final class PipeTest extends PHPUnit_Framework_TestCase
@@ -16,7 +16,7 @@ final class PipeTest extends PHPUnit_Framework_TestCase
     {
         $calculator = pipe($this->multiplier(), $this->byTwoDivider());
 
-        $this->assertSame($result, call($calculator, [$a, $b]));
+        $this->assertSame($result, apply($calculator, [$a, $b]));
     }
 
     public function calculatorProvider()

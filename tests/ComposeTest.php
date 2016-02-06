@@ -3,7 +3,7 @@
 namespace Akamon\Phunctional\Tests;
 
 use PHPUnit_Framework_TestCase;
-use function Akamon\Phunctional\call;
+use function Akamon\Phunctional\apply;
 use function Akamon\Phunctional\compose;
 
 final class ComposeTest extends PHPUnit_Framework_TestCase
@@ -16,7 +16,7 @@ final class ComposeTest extends PHPUnit_Framework_TestCase
     {
         $calculator = compose($this->byTwoDivider(), $this->multiplier());
 
-        $this->assertEquals($result, call($calculator, [$a, $b]));
+        $this->assertEquals($result, apply($calculator, [$a, $b]));
     }
 
     public function calculatorProvider()

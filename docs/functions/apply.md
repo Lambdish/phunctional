@@ -1,4 +1,4 @@
-# call
+# apply
 
 ## Description
 Calls $fn with $args and returns its results.
@@ -30,7 +30,7 @@ Call a closure stored in an attribute of a class:
 ```php
 <?php
 
-use function Akamon\Phunctional\call;
+use function Akamon\Phunctional\apply;
 
 class Operation
 {
@@ -43,7 +43,7 @@ class Operation
 
     public function calc($first, $second)
     {
-        return call($this->operator, [$first, $second]);
+        return apply($this->operator, [$first, $second]);
     }
 }
 

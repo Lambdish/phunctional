@@ -5,7 +5,7 @@ Takes a set of functions and returns another that is the composition of those `$
 The result of the first function is used as unique argument of the second one and the
 result of this for the third function and so on...
 
-It's usually used in combination with the [call](call.md) function.
+It's usually used in combination with [apply](apply.md) function.
 
 ## Parameters
 
@@ -21,8 +21,8 @@ Multiply 2 numbers and divide the previous result by two:
 ```php
 <?php
 
+use function Akamon\Phunctional\apply;
 use function Akamon\Phunctional\compose;
-use function Akamon\Phunctional\call;
 
 $multiplier = function ($a, $b) {
     return $a * $b;
@@ -34,6 +34,6 @@ $byTwoDivider = function ($num) {
 
 $calculator = compose($byTwoDivider, $multiplier);
 
-call($calculator, [20, 10]);
+apply($calculator, [20, 10]);
 // => 100
 ```
