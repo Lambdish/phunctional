@@ -3,14 +3,14 @@
 namespace Akamon\Phunctional\Tests;
 
 use PHPUnit_Framework_TestCase;
-use function Akamon\Phunctional\call;
+use function Akamon\Phunctional\apply;
 
-class CallTest extends PHPUnit_Framework_TestCase
+class ApplyTest extends PHPUnit_Framework_TestCase
 {
     /** @test */
     public function it_should_call_return_the_value_of_the_called_function()
     {
-        $this->assertSame('function without arguments', call($this->functionWithoutArguments()));
+        $this->assertSame('function without arguments', apply($this->functionWithoutArguments()));
     }
 
     /** @test */
@@ -18,7 +18,7 @@ class CallTest extends PHPUnit_Framework_TestCase
     {
         $this->assertSame(
             'Hello functional, welcome to PHP!!',
-            call($this->functionWithArguments(), ['PHP', 'functional'])
+            apply($this->functionWithArguments(), ['PHP', 'functional'])
         );
     }
 

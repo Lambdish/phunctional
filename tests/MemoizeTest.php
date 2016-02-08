@@ -3,7 +3,7 @@
 namespace Akamon\Phunctional\Tests;
 
 use PHPUnit_Framework_TestCase;
-use function Akamon\Phunctional\call;
+use function Akamon\Phunctional\apply;
 use function Akamon\Phunctional\memoize;
 
 final class MemoizeTest extends PHPUnit_Framework_TestCase
@@ -22,7 +22,7 @@ final class MemoizeTest extends PHPUnit_Framework_TestCase
      */
     public function it_should_call_fibonacci($number, $fibonacci)
     {
-        $this->assertSame($fibonacci, call($this->functionFibonacciMemoized(), [$number]));
+        $this->assertSame($fibonacci, apply($this->functionFibonacciMemoized(), [$number]));
     }
 
     private function functionWithRandReturn()

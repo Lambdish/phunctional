@@ -4,8 +4,8 @@
 
  * [all](functions/all.md): Check if all the values of the collection satisfies the function
  * [any](functions/any.md): Check if any value of the collection satisfies the function
+ * [apply](functions/apply.md): Call a function with the desired arguments (a clean way to call closures stored in class attributes)
  * [assoc](functions/assoc.md): Associate a value to an array
- * [call](functions/call.md): Call a function with the desired arguments (a clean way to call closures stored in class attributes)
  * [complement](functions/complement.md): Returns another function that takes the same arguments and has the opposite truth value.
  * [compose](functions/compose.md): Combine multiple function calls in one function
  * [dissoc](functions/dissoc.md): Dissociate a value of a key in a collection

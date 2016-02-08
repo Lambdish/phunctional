@@ -21,7 +21,7 @@ namespace Akamon\Phunctional;
  *
  * @return mixed
  */
-function call(callable $fn, array $args = [])
+function apply(callable $fn, array $args = [])
 {
     return $fn(...$args);
 }

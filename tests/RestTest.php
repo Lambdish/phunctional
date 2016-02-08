@@ -4,7 +4,7 @@ namespace Akamon\Phunctional\Tests;
 
 use ArrayIterator;
 use PHPUnit_Framework_TestCase;
-use function Akamon\Phunctional\call;
+use function Akamon\Phunctional\apply;
 use function Akamon\Phunctional\rest;
 
 class RestTest extends PHPUnit_Framework_TestCase
@@ -65,7 +65,7 @@ class RestTest extends PHPUnit_Framework_TestCase
 
     private function generator(...$items)
     {
-        return call(
+        return apply(
             function () use ($items) {
                 foreach ($items as $item) {
                     yield $item;
