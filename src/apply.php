@@ -21,7 +21,11 @@ namespace Akamon\Phunctional;
  *
  * @return mixed
  */
-function apply(callable $fn, array $args = [])
+function apply(callable $fn, ...$args)
 {
-    return $fn(...$args);
+    $lastArg = array_pop($args);
+
+    $normalizedArgs = is_array($lastArg) ? array_merge($args, $lastArg) : array_merge($args, [$lastArg]);
+
+    return $fn(...$normalizedArgs);
 }

@@ -18,7 +18,25 @@ class ApplyTest extends PHPUnit_Framework_TestCase
     {
         $this->assertSame(
             'Hello functional, welcome to PHP!!',
+            apply($this->functionWithArguments(), 'PHP', 'functional')
+        );
+    }
+
+    /** @test */
+    public function it_should_call_properly_a_function_with_some_array_arguments()
+    {
+        $this->assertSame(
+            'Hello functional, welcome to PHP!!',
             apply($this->functionWithArguments(), ['PHP', 'functional'])
+        );
+    }
+
+    /** @test */
+    public function it_should_call_properly_a_function_with_an_array_as_last_parameter()
+    {
+        $this->assertSame(
+            'Hello Sir. Rich Hickey, welcome to PHP!!',
+            apply($this->functionWithLastArgumentArray(), 'PHP', 'Sir.', ['Rich', 'Hickey'])
         );
     }
 
@@ -33,6 +51,13 @@ class ApplyTest extends PHPUnit_Framework_TestCase
     {
         return function ($context, $name) {
             return sprintf('Hello %s, welcome to %s!!', $name, $context);
+        };
+    }
+
+    private function functionWithLastArgumentArray()
+    {
+        return function ($context, $treatment, $name, $surname) {
+            return sprintf('Hello %s %s %s, welcome to %s!!', $treatment, $name, $surname, $context);
         };
     }
 }
