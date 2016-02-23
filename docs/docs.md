@@ -6,6 +6,7 @@
  * [any](functions/any.md): Check if any value of the collection satisfies the function
  * [apply](functions/apply.md): Call a function with the desired arguments (a clean way to call closures stored in class attributes)
  * [assoc](functions/assoc.md): Associate a value to an array
+ * [butlast](functions/butlast.md):  Returns the all the elements of a collection except the last preserving the keys
  * [complement](functions/complement.md): Returns another function that takes the same arguments and has the opposite truth value.
  * [compose](functions/compose.md): Combine multiple function calls in one function
  * [dissoc](functions/dissoc.md): Dissociate a value of a key in a collection
