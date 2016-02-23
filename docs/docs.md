@@ -16,6 +16,7 @@
  * [get](functions/get.md): Returns the value of an item in a collection or a default value in the case it does not exists
  * [get_in](functions/get_in.md): Returns the value in a nested associative structure or a default value in the case it does not exists
  * [instance_of](functions/instance_of.md): Returns a checker that validated if an element is an instance of a class
+ * [last](functions/last.md): Returns the last element of a collection
  * [map](functions/map.md): Apply a function over all the items of a collection and returns an array with the results
  * [memoize](functions/memoize.md): Returns a memoized version of a referentially transparent function
  * [not](functions/not.md): Return the opposite of the function call
