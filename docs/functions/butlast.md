@@ -1,7 +1,7 @@
 # butlast
 
 ## Description
-Returns the all the elements of a collection except the last preserving the keys
+Returns all the elements of a collection except the last preserving the keys
 
 ## Parameters
 

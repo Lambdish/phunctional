@@ -1,7 +1,7 @@
 # rest
 
 ## Description
-Returns the all the elements of a collection except the first preserving the keys
+Returns all the the elements of a collection except the first preserving the keys
 
 ## Parameters
 
