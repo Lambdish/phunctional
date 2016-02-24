@@ -6,6 +6,7 @@
  * [any](functions/any.md): Check if any value of the collection satisfies the function
  * [apply](functions/apply.md): Call a function with the desired arguments (a clean way to call closures stored in class attributes)
  * [assoc](functions/assoc.md): Associate a value to an array
+ * [butlast](functions/butlast.md):  Returns all the elements of a collection except the last preserving the keys
  * [complement](functions/complement.md): Returns another function that takes the same arguments and has the opposite truth value.
  * [compose](functions/compose.md): Combine multiple function calls in one function
  * [dissoc](functions/dissoc.md): Dissociate a value of a key in a collection
@@ -25,7 +26,7 @@
  * [reduce](functions/reduce.md): Returns an accumulated value of iteratively reduce the collection using a function
  * [reindex](functions/reindex.md): Returns a new collection with the keys reindexed by a function.
  * [repeat](functions/repeat.md): Returns an array with the values of a function executed a certain amount of times
- * [rest](functions/rest.md): Returns the all the elements of a collection except the first preserving the keys
+ * [rest](functions/rest.md): Returns all the the elements of a collection except the first preserving the keys
  * [reverse](functions/reverse.md): Returns a reversed collection preserving its keys
  * [search](functions/search.md): Search a value over a collection. Return the first occurrence if found, null if not
  * [sort](functions/sort.md): Sorts a collection using a sorting function

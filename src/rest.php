@@ -5,7 +5,7 @@ namespace Akamon\Phunctional;
 use Traversable;
 
 /**
- * Returns the all the elements of a collection except the first preserving the keys
+ * Returns all the the elements of a collection except the first preserving the keys
  *
  * If the collection is empty or only have one item, returns an empty collection
  *
