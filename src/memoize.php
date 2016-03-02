@@ -14,7 +14,7 @@ function memoize(callable $fn, ...$args)
 {
     static $cache = [];
 
-    $key = md5(get_class($fn) . serialize($args));
+    $key = md5(spl_object_hash($fn) . serialize($args));
 
     return $cache[$key] = array_key_exists($key, $cache) ? $cache[$key] : $fn(...$args);
 }
