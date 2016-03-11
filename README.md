@@ -1,5 +1,5 @@
 # Akamon Phunctional
-[![Build Status](https://magnum.travis-ci.com/Akamon/phunctional.svg?token=yPUWx5GE4x5sT2iLErqy)](https://magnum.travis-ci.com/Akamon/phunctional)
+[![Build Status](https://api.travis-ci.org/Akamon/phunctional.svg)](https://travis-ci.org/Akamon/phunctional)
 
 Akamon's Phunctional is a set of functions for manage php iterables. It's heavily inspired by Clojure.
 
