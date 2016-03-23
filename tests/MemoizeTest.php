@@ -16,6 +16,16 @@ final class MemoizeTest extends PHPUnit_Framework_TestCase
         $this->assertSame($previousValue, memoize($this->functionWithRandReturn(), 1, 1000000));
     }
 
+    /** @test */
+    public function it_should_reset_the_cache_if_function_to_be_executed_is_null()
+    {
+        $previousValue = memoize($this->functionWithRandReturn(), 1, 1000000);
+
+        memoize();
+
+        $this->assertNotSame($previousValue, memoize($this->functionWithRandReturn(), 1, 1000000));
+    }
+
     /**
      * @test
      * @dataProvider fibonacciValues
