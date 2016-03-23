@@ -7,7 +7,7 @@ Returns the result of function evaluation for a set of parameters, and then on f
 
 <dl>
   <dt>fn</dt>
-  <dd>Function to be executed.</dd>
+  <dd>Function to be executed. Pass null to reset cache</dd>
 
   <dt>args</dt>
   <dd>Arguments to be passed to the called function.</dd>
