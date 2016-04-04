@@ -3,7 +3,7 @@
 
 > Phunctional, because functional programming matters. 
 
-[![Akamon](https://img.shields.io/badge/akamon-phunctional-red.svg?style=flat-square)](http://www.akamon.com) [![MIT License](https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square)](http://opensource.org/licenses/MIT) [![Packagist](https://img.shields.io/packagist/v/akamon/phunctional.svg?style=flat-square)](https://github.com/Akamon/phunctional/releases) [![Travis Build Status](http://img.shields.io/travis/oh-my-fish/oh-my-fish.svg?style=flat-square)](https://travis-ci.org/oh-my-fish/oh-my-fish)
+[![Akamon](https://img.shields.io/badge/akamon-phunctional-red.svg?style=flat-square)](http://www.akamon.com) [![MIT License](https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square)](http://opensource.org/licenses/MIT) [![Version](https://img.shields.io/packagist/v/akamon/phunctional.svg?style=flat-square)](https://github.com/Akamon/phunctional/releases) [![Travis Build Status](http://img.shields.io/travis/Akamon/phunctional.svg?style=flat-square)](https://travis-ci.org/Akamon/phunctional)
 
 Akamon's Phunctional is a set of functions for manage php iterables. It's heavily inspired by Clojure.
 
