@@ -5,12 +5,14 @@
 
 [![Akamon](https://img.shields.io/badge/akamon-phunctional-red.svg?style=flat-square)](http://www.akamon.com) [![MIT License](https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square)](http://opensource.org/licenses/MIT) [![Version](https://img.shields.io/packagist/v/akamon/phunctional.svg?style=flat-square)](https://github.com/Akamon/phunctional/releases) [![Travis Build Status](http://img.shields.io/travis/Akamon/phunctional.svg?style=flat-square)](https://travis-ci.org/Akamon/phunctional)
 
-Akamon's Phunctional is a set of functions for manage php iterables. It's heavily inspired by Clojure.
+Akamon's Phunctional is a little library that tries bring to PHP some aspects of functional programing with __util high order functions__ and __functions for manage iterables__.
 
 <br>
 ## About
 
-Phunctional is build with some principles in mind:
+Phunctional is heavily inspired by [Clojure](https://clojure.org/) and some other PHP libraries like [iter](https://github.com/nikic/iter), [compose](https://github.com/igorw/compose) and [felpado](https://github.com/pablodip/felpado).
+
+The main principles that we have in mind developing this library are:
  * A collection can be any iterable PHP object, arrays or generators
  * Favor composition vs inheritance
  * Be lazy when you can
