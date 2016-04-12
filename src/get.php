@@ -2,18 +2,36 @@
 
 namespace Akamon\Phunctional;
 
+use Traversable;
+
 /**
  * Returns the value of an item in a $coll or a $default value in the case it does not exists
  *
  * @since 0.1
  *
- * @param string|int $key     key to search in the collection
- * @param array      $coll    collection where search the desired value
- * @param mixed|null $default default value to be returned if the key is not found in the collection
+ * @param string|int        $key     key to search in the collection
+ * @param Traversable|array $coll    collection where search the desired value
+ * @param mixed|null        $default default value to be returned if the key is not found in the collection
  *
  * @return mixed|null
  */
-function get($key, array $coll, $default = null)
+function get($key, $coll, $default = null)
+{
+    return is_array($coll) ? _get_array($key, $coll, $default) : _get_traversable($key, $coll, $default);
+}
+
+function _get_array($key, array $coll, $default)
 {
     return array_key_exists($key, $coll) ? $coll[$key] : $default;
+}
+
+function _get_traversable($key, Traversable $coll, $default)
+{
+    foreach ($coll as $k => $v) {
+        if ($key == $k) {
+            return $v;
+        }
+    }
+
+    return $default;
 }
