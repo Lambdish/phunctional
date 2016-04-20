@@ -2,6 +2,8 @@
 
 namespace Akamon\Phunctional;
 
+use Traversable;
+
 /**
  * Calls $fn with $args and returns its results.
  *
@@ -16,12 +18,14 @@ namespace Akamon\Phunctional;
  *
  * @since 0.1
  *
- * @param callable $fn   function to be executed
- * @param array    $args arguments to be passed to the called function
+ * @param callable          $fn   function to be executed
+ * @param array|Traversable $coll arguments to be passed to the called function
  *
  * @return mixed
  */
-function apply(callable $fn, array $args = [])
+function apply(callable $fn, $coll = [])
 {
+    $args = $coll instanceof Traversable ? iterator_to_array($coll) : $coll;
+
     return $fn(...$args);
 }
