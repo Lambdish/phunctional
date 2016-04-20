@@ -2,6 +2,7 @@
 
 namespace Akamon\Phunctional\Tests;
 
+use ArrayIterator;
 use PHPUnit_Framework_TestCase;
 use function Akamon\Phunctional\apply;
 
@@ -13,12 +14,15 @@ class ApplyTest extends PHPUnit_Framework_TestCase
         $this->assertSame('function without arguments', apply($this->functionWithoutArguments()));
     }
 
-    /** @test */
-    public function it_should_call_properly_a_function_with_some_arguments()
+    /**
+     * @test
+     * @dataProvider arguments
+     */
+    public function it_should_call_properly_a_function_with_some_arguments($arguments)
     {
         $this->assertSame(
             'Hello functional, welcome to PHP!!',
-            apply($this->functionWithArguments(), ['PHP', 'functional'])
+            apply($this->functionWithArguments(), $arguments)
         );
     }
 
@@ -34,5 +38,25 @@ class ApplyTest extends PHPUnit_Framework_TestCase
         return function ($context, $name) {
             return sprintf('Hello %s, welcome to %s!!', $name, $context);
         };
+    }
+
+    public function arguments()
+    {
+        return [
+            'array'     => ['arguments' => ['PHP', 'functional']],
+            'iterator'  => ['arguments' => new ArrayIterator(['PHP', 'functional'])],
+            'generator' => ['arguments' => $this->generator('PHP', 'functional')],
+        ];
+    }
+
+    private function generator(...$items)
+    {
+        return apply(
+            function () use ($items) {
+                foreach ($items as $item) {
+                    yield $item;
+                }
+            }
+        );
     }
 }
