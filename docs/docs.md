@@ -13,6 +13,7 @@
  * [do_if](functions/do_if.md): Returns a callable that will call the given function if the result of applying the callable arguments to the predicates is true for all of them
  * [each](functions/each.md): Apply a function over all the items of a collection
  * [filter](functions/filter.md): Discriminate the items of a collection for which function is false
+ * [filter_null](functions/filter_null.md): Discriminate the items of a collection for which value is null
  * [first](functions/first.md): Returns the first element of a collection
  * [flatten](functions/flatten.md): Returns a flat collection from a multidimensional collection
  * [get](functions/get.md): Returns the value of an item in a collection or a default value in the case it does not exists
