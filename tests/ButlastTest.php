@@ -1,11 +1,11 @@
 <?php
 
-namespace Akamon\Phunctional\Tests;
+namespace Lambdish\Phunctional\Tests;
 
 use ArrayIterator;
 use PHPUnit_Framework_TestCase;
-use function Akamon\Phunctional\apply;
-use function Akamon\Phunctional\butlast;
+use function Lambdish\Phunctional\apply;
+use function Lambdish\Phunctional\butlast;
 
 class ButlastTest extends PHPUnit_Framework_TestCase
 {

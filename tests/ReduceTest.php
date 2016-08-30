@@ -1,9 +1,9 @@
 <?php
 
-namespace Akamon\Phunctional\Tests;
+namespace Lambdish\Phunctional\Tests;
 
 use PHPUnit_Framework_TestCase;
-use function Akamon\Phunctional\reduce;
+use function Lambdish\Phunctional\reduce;
 
 class ReduceTest extends PHPUnit_Framework_TestCase
 {

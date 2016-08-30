@@ -15,7 +15,7 @@ Returns all the the elements of a collection except the first preserving the key
 ```php
 <?php
 
-use function Akamon\Phunctional\rest;
+use function Lambdish\Phunctional\rest;
 
 return rest([1, 2, 3, 4, 5]);
 

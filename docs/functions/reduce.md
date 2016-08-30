@@ -26,7 +26,7 @@ A total amount calculator of a shopping cart:
 ```php
 <?php
 
-use function Akamon\Phunctional\reduce;
+use function Lambdish\Phunctional\reduce;
 
 return reduce(
     function ($acc, array $item) {

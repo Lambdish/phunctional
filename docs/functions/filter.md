@@ -20,7 +20,7 @@ Filter numbers biggers than 10:
 ```php
 <?php
 
-use function Akamon\Phunctional\filter;
+use function Lambdish\Phunctional\filter;
 
 return filter(
     function ($number) {

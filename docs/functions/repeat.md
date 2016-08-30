@@ -22,7 +22,7 @@ Generate a random fixture:
 ```php
 <?php
 
-use function Akamon\Phunctional\repeat;
+use function Lambdish\Phunctional\repeat;
 
 $labels      = ['payer', 'vip', 'cheater'];
 $totalLabels = count($labels);

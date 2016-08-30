@@ -16,7 +16,7 @@ Flat a nested array of numbers:
 ```php
 <?php
 
-use function Akamon\Phunctional\flatten;
+use function Lambdish\Phunctional\flatten;
 
 return flatten([1, [2, 3], [4, [5, 6], [[[[[7, 8]]]]]]]);
             

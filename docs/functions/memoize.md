@@ -20,7 +20,7 @@ A fibonacci memoized:
 ```php
 <?php
 
-use function Akamon\Phunctional\memoize;
+use function Lambdish\Phunctional\memoize;
 
 $memoizedFibonacci = function ($number) use (&$memoizedFibonacci) {
     return $number < 2 ? $number : memoize($memoizedFibonacci, $number - 1) + memoize($memoizedFibonacci, $number - 2);

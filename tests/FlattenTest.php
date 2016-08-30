@@ -1,9 +1,9 @@
 <?php
 
-namespace Akamon\Phunctional\Tests;
+namespace Lambdish\Phunctional\Tests;
 
 use PHPUnit_Framework_TestCase;
-use function Akamon\Phunctional\flatten;
+use function Lambdish\Phunctional\flatten;
 
 class FlattenTest extends PHPUnit_Framework_TestCase
 {

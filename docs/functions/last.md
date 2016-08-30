@@ -15,7 +15,7 @@ Returns the last element of a collection
 ```php
 <?php
 
-use function Akamon\Phunctional\last;
+use function Lambdish\Phunctional\last;
 
 return last([1, 2, 3, 4, 5]);
 

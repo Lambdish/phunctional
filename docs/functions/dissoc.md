@@ -21,7 +21,7 @@ Remove the Pokémon 151 from the list:
 ```php
 <?php
 
-use function Akamon\Phunctional\dissoc;
+use function Lambdish\Phunctional\dissoc;
 
 $pokemons = [
     1   => 'Bulbasaur',

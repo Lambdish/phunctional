@@ -1,9 +1,9 @@
 <?php
 
-namespace Akamon\Phunctional\Tests;
+namespace Lambdish\Phunctional\Tests;
 
 use PHPUnit_Framework_TestCase;
-use function Akamon\Phunctional\search;
+use function Lambdish\Phunctional\search;
 
 final class SearchTest extends PHPUnit_Framework_TestCase
 {

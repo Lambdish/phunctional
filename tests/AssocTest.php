@@ -1,17 +1,17 @@
 <?php
 
-namespace Akamon\Phunctional\Tests;
+namespace Lambdish\Phunctional\Tests;
 
 use ArrayIterator;
 use PHPUnit_Framework_TestCase;
-use function Akamon\Phunctional\assoc;
+use function Lambdish\Phunctional\assoc;
 
 final class AssocTest extends PHPUnit_Framework_TestCase
 {
     /** @test */
     public function it_should_assoc_a_value_to_an_empty_array()
     {
-        $this->assertEquals(['akamon' => 'This is an easter egg'], assoc([], 'akamon', 'This is an easter egg'));
+        $this->assertEquals(['lambdish' => 'This is an easter egg'], assoc([], 'lambdish', 'This is an easter egg'));
     }
 
     /** @test */

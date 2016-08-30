@@ -18,7 +18,7 @@ Check if a value is not null:
 ```php
 <?php
 
-use function Akamon\Phunctional\complement;
+use function Lambdish\Phunctional\complement;
 
 $isNotNull = complement('is_null');
 

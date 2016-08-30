@@ -25,7 +25,7 @@ Add the Pokémon 151 to the list:
 ```php
 <?php
 
-use function Akamon\Phunctional\assoc;
+use function Lambdish\Phunctional\assoc;
 
 $pokemons = [
     1   => 'Bulbasaur',

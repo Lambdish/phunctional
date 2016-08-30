@@ -1,9 +1,9 @@
 <?php
 
-namespace Akamon\Phunctional\Tests;
+namespace Lambdish\Phunctional\Tests;
 
 use PHPUnit_Framework_TestCase;
-use function Akamon\Phunctional\filter;
+use function Lambdish\Phunctional\filter;
 
 class FilterTest extends PHPUnit_Framework_TestCase
 {

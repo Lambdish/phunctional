@@ -1,9 +1,9 @@
 <?php
 
-namespace Akamon\Phunctional\Tests;
+namespace Lambdish\Phunctional\Tests;
 
 use PHPUnit_Framework_TestCase;
-use function Akamon\Phunctional\complement;
+use function Lambdish\Phunctional\complement;
 
 final class ComplementTest extends PHPUnit_Framework_TestCase
 {

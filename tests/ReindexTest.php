@@ -1,7 +1,7 @@
 <?php
-namespace Akamon\Phunctional\Tests;
+namespace Lambdish\Phunctional\Tests;
 
-use function Akamon\Phunctional\reindex;
+use function Lambdish\Phunctional\reindex;
 use PHPUnit_Framework_TestCase;
 
 final class ReindexTest extends PHPUnit_Framework_TestCase

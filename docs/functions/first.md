@@ -15,7 +15,7 @@ Returns the first element of a collection
 ```php
 <?php
 
-use function Akamon\Phunctional\first;
+use function Lambdish\Phunctional\first;
 
 return first([1, 2, 3, 4, 5]);
 

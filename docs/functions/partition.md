@@ -19,7 +19,7 @@ Partition an array:
 ```php
 <?php
 
-use function Akamon\Phunctional\partition;
+use function Lambdish\Phunctional\partition;
 
 $coll = [1, 2, 3, 4, 5, 6, 7];
 

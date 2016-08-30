@@ -15,7 +15,7 @@ Returns all the elements of a collection except the last preserving the keys
 ```php
 <?php
 
-use function Akamon\Phunctional\butlast;
+use function Lambdish\Phunctional\butlast;
 
 return butlast([1, 2, 3, 4, 5]);
 

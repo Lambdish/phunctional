@@ -1,9 +1,9 @@
 <?php
 
-namespace Akamon\Phunctional\Tests;
+namespace Lambdish\Phunctional\Tests;
 
 use PHPUnit_Framework_TestCase;
-use function Akamon\Phunctional\get_in;
+use function Lambdish\Phunctional\get_in;
 
 class GetInTest extends PHPUnit_Framework_TestCase
 {

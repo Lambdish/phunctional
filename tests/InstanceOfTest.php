@@ -1,12 +1,11 @@
 <?php
 
-namespace Akamon\Phunctional\Tests;
+namespace Lambdish\Phunctional\Tests;
 
 use ArrayIterator;
 use Exception;
 use PHPUnit_Framework_TestCase;
-use function Akamon\Phunctional\apply;
-use function Akamon\Phunctional\instance_of;
+use function Lambdish\Phunctional\instance_of;
 
 class InstanceOfTest extends PHPUnit_Framework_TestCase
 {

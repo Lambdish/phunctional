@@ -19,7 +19,7 @@ A multiplier:
 ```php
 <?php
 
-use function Akamon\Phunctional\map;
+use function Lambdish\Phunctional\map;
 
 return map(
     function ($value) {

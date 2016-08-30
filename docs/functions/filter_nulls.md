@@ -17,7 +17,7 @@ Filter nulls from a collection:
 ```php
 <?php
 
-use function Akamon\Phunctional\filter_null;
+use function Lambdish\Phunctional\filter_null;
 
 return filter_null(
     [1, null, 20, 3, 40, null, 5]

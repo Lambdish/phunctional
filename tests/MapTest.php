@@ -1,9 +1,9 @@
 <?php
 
-namespace Akamon\Phunctional\Tests;
+namespace Lambdish\Phunctional\Tests;
 
 use PHPUnit_Framework_TestCase;
-use function Akamon\Phunctional\map;
+use function Lambdish\Phunctional\map;
 
 class MapTest extends PHPUnit_Framework_TestCase
 {

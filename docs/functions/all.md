@@ -19,7 +19,7 @@ Check if all the values are bigger than 10:
 ```php
 <?php
 
-use function Akamon\Phunctional\all;
+use function Lambdish\Phunctional\all;
 
 return all(
     function ($number) {
