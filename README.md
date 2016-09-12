@@ -1,4 +1,4 @@
-<img src="https://cloud.githubusercontent.com/assets/1331435/14235438/85de8162-f9fe-11e5-993d-1d32d5213b64.png" align="left" width="192px" height="192px"/>
+<img src="https://cloud.githubusercontent.com/assets/1331435/18451701/4888ff86-7938-11e6-8433-1fcaf668a625.jpg" align="left" width="192px" height="192px"/>
 <img align="left" width="0" height="192px" hspace="10"/>
 
 > Phunctional, because functional programming matters. 
