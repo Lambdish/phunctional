@@ -1,6 +1,6 @@
 <?php
 
-namespace Akamon\Phunctional;
+namespace Lambdish\Phunctional;
 
 /**
  * Returns the opposite of the `$fn` call

@@ -1,4 +1,4 @@
-# Akamon Phunctional Docs
+# Lambdish Phunctional Docs
 
 ## Basic functional methods
 

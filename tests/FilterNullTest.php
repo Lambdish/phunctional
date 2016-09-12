@@ -1,11 +1,10 @@
 <?php
 
-namespace Akamon\Phunctional\Tests;
+namespace Lambdish\Phunctional\Tests;
 
 use ArrayIterator;
 use PHPUnit_Framework_TestCase;
-use function Akamon\Phunctional\filter;
-use function Akamon\Phunctional\filter_null;
+use function Lambdish\Phunctional\filter_null;
 
 class FilterNullTest extends PHPUnit_Framework_TestCase
 {

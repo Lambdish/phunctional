@@ -22,7 +22,7 @@ Extract the email from a nested structure:
 ```php
 <?php
 
-use function Akamon\Phunctional\get_in;
+use function Lambdish\Phunctional\get_in;
 
 $user = [
     'username' => 'myfakeuser',

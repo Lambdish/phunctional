@@ -1,10 +1,10 @@
 <?php
 
-namespace Akamon\Phunctional\Tests;
+namespace Lambdish\Phunctional\Tests;
 
 use ArrayIterator;
 use PHPUnit_Framework_TestCase;
-use function Akamon\Phunctional\reverse;
+use function Lambdish\Phunctional\reverse;
 
 final class ReverseTest extends PHPUnit_Framework_TestCase
 {

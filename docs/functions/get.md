@@ -22,7 +22,7 @@ Extract the optional value of a collection:
 ```php
 <?php
 
-use function Akamon\Phunctional\get;
+use function Lambdish\Phunctional\get;
 
 $cart = [
     'price' => 100, 

@@ -19,7 +19,7 @@ Check if some value is bigger than 10:
 ```php
 <?php
 
-use function Akamon\Phunctional\some;
+use function Lambdish\Phunctional\some;
 
 return some(
     function ($number) {

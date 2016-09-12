@@ -21,7 +21,7 @@ Check if some value is bigger than 10:
 ```php
 <?php
 
-use function Akamon\Phunctional\any;
+use function Lambdish\Phunctional\any;
 
 return any(
     function ($number) {

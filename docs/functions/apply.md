@@ -30,7 +30,7 @@ Call a closure stored in an attribute of a class:
 ```php
 <?php
 
-use function Akamon\Phunctional\apply;
+use function Lambdish\Phunctional\apply;
 
 class Operation
 {

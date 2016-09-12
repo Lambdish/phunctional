@@ -1,10 +1,10 @@
 <?php
 
-namespace Akamon\Phunctional\Tests;
+namespace Lambdish\Phunctional\Tests;
 
 use PHPUnit_Framework_TestCase;
-use function Akamon\Phunctional\apply;
-use function Akamon\Phunctional\compose;
+use function Lambdish\Phunctional\apply;
+use function Lambdish\Phunctional\compose;
 
 final class ComposeTest extends PHPUnit_Framework_TestCase
 {

@@ -20,7 +20,7 @@ Extract the id of the collection and add this as the key:
 ```php
 <?php
 
-use function Akamon\Phunctional\reindex;
+use function Lambdish\Phunctional\reindex;
 
 $users = [
     [

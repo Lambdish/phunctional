@@ -19,7 +19,7 @@ Sort in ascending order a collection:
 ```php
 <?php
 
-use function Akamon\Phunctional\sort;
+use function Lambdish\Phunctional\sort;
 
 return sort(
     function ($one, $other) {

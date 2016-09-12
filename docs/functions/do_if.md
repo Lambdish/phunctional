@@ -19,8 +19,8 @@ If the result of applying the callable arguments to the predicates is false for 
 ```php
 <?php
 
-use function Akamon\Phunctional\do_if;
-use function Akamon\Phunctional\apply;
+use function Lambdish\Phunctional\do_if;
+use function Lambdish\Phunctional\apply;
 
 apply(do_if($this->sendBirthdayGift(), [$this->isBirthday(), $this->isAdult()]), [$user]);
 

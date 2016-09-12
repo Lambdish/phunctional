@@ -1,6 +1,6 @@
 <?php
 
-namespace Akamon\Phunctional;
+namespace Lambdish\Phunctional;
 
 /**
  * Returns an array with the values of `$fn` executed a certain amount of `$times`

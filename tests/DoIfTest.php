@@ -1,9 +1,9 @@
 <?php
 
-namespace Akamon\Phunctional\Tests;
+namespace Lambdish\Phunctional\Tests;
 
-use function Akamon\Phunctional\apply;
-use function Akamon\Phunctional\do_if;
+use function Lambdish\Phunctional\apply;
+use function Lambdish\Phunctional\do_if;
 use PHPUnit_Framework_TestCase;
 
 final class DoIfTest extends PHPUnit_Framework_TestCase

@@ -21,8 +21,8 @@ Multiply 2 numbers and divide the previous result by two:
 ```php
 <?php
 
-use function Akamon\Phunctional\apply;
-use function Akamon\Phunctional\compose;
+use function Lambdish\Phunctional\apply;
+use function Lambdish\Phunctional\compose;
 
 $multiplier = function ($a, $b) {
     return $a * $b;

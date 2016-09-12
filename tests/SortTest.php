@@ -1,10 +1,10 @@
 <?php
 
-namespace Akamon\Phunctional\Tests;
+namespace Lambdish\Phunctional\Tests;
 
 use ArrayIterator;
 use PHPUnit_Framework_TestCase;
-use function Akamon\Phunctional\sort;
+use function Lambdish\Phunctional\sort;
 
 final class SortTest extends PHPUnit_Framework_TestCase
 {

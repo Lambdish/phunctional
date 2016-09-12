@@ -1,9 +1,9 @@
 <?php
 
-namespace Akamon\Phunctional\Tests;
+namespace Lambdish\Phunctional\Tests;
 
 use PHPUnit_Framework_TestCase;
-use function Akamon\Phunctional\not;
+use function Lambdish\Phunctional\not;
 
 class NotTest extends PHPUnit_Framework_TestCase
 {

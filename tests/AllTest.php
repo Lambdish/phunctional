@@ -1,9 +1,9 @@
 <?php
 
-namespace Akamon\Phunctional\Tests;
+namespace Lambdish\Phunctional\Tests;
 
 use PHPUnit_Framework_TestCase;
-use function Akamon\Phunctional\all;
+use function Lambdish\Phunctional\all;
 
 final class AllTest extends PHPUnit_Framework_TestCase
 {

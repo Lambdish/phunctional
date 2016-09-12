@@ -1,8 +1,8 @@
 <?php
 
-namespace Akamon\Phunctional\Tests;
+namespace Lambdish\Phunctional\Tests;
 
-use function Akamon\Phunctional\partial;
+use function Lambdish\Phunctional\partial;
 use PHPUnit_Framework_TestCase;
 
 final class PartialTest extends PHPUnit_Framework_TestCase

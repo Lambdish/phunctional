@@ -20,7 +20,7 @@ Add 5 to another number:
 ```php
 <?php
 
-use function Akamon\Phunctional\partial;
+use function Lambdish\Phunctional\partial;
 
 $sum = function($a, $b) {
     return $a + $b;

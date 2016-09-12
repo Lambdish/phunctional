@@ -1,9 +1,9 @@
 <?php
 
-namespace Akamon\Phunctional\Tests;
+namespace Lambdish\Phunctional\Tests;
 
 use PHPUnit_Framework_TestCase;
-use function Akamon\Phunctional\repeat;
+use function Lambdish\Phunctional\repeat;
 
 class RepeatTest extends PHPUnit_Framework_TestCase
 {

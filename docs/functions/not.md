@@ -16,7 +16,7 @@ Return true if the value is not an array:
 ```php
 <?php
 
-use function Akamon\Phunctional\not;
+use function Lambdish\Phunctional\not;
 
 $notAnArray = not('is_array');
 

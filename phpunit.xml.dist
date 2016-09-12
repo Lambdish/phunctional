@@ -18,7 +18,7 @@
         bootstrap="./vendor/autoload.php">
 
     <testsuites>
-        <testsuite name="Akamon Phunctional">
+        <testsuite name="Lambdish Phunctional">
             <directory>./tests</directory>
         </testsuite>
     </testsuites>

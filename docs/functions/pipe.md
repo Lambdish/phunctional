@@ -20,8 +20,8 @@ Multiply 2 numbers and divide the result by two:
 ```php
 <?php
 
-use function Akamon\Phunctional\apply;
-use function Akamon\Phunctional\pipe;
+use function Lambdish\Phunctional\apply;
+use function Lambdish\Phunctional\pipe;
 
 $multiplier = function ($a, $b) {
     return $a * $b;

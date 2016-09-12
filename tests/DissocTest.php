@@ -1,10 +1,10 @@
 <?php
 
-namespace Akamon\Phunctional\Tests;
+namespace Lambdish\Phunctional\Tests;
 
 use ArrayIterator;
 use PHPUnit_Framework_TestCase;
-use function Akamon\Phunctional\dissoc;
+use function Lambdish\Phunctional\dissoc;
 
 final class DissocTest extends PHPUnit_Framework_TestCase
 {

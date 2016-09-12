@@ -1,6 +1,6 @@
 <?php
 
-namespace Akamon\Phunctional;
+namespace Lambdish\Phunctional;
 
 /**
  * Returns a callable that will call the given function if the result of applying

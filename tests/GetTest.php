@@ -1,10 +1,10 @@
 <?php
 
-namespace Akamon\Phunctional\Tests;
+namespace Lambdish\Phunctional\Tests;
 
 use ArrayIterator;
 use PHPUnit_Framework_TestCase;
-use function Akamon\Phunctional\get;
+use function Lambdish\Phunctional\get;
 
 class GetTest extends PHPUnit_Framework_TestCase
 {

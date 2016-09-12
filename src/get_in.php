@@ -1,6 +1,6 @@
 <?php
 
-namespace Akamon\Phunctional;
+namespace Lambdish\Phunctional;
 
 /**
  * Returns the value in a nested associative structure or a $default value in the case it does not exists

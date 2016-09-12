@@ -19,7 +19,7 @@ Save a bunch of entities:
 ```php
 <?php
 
-use function Akamon\Phunctional\each;
+use function Lambdish\Phunctional\each;
 
 
 return each(

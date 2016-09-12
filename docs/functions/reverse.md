@@ -20,7 +20,7 @@ because to reach the last one is necessary iterate among all the items
 ```php
 <?php
 
-use function Akamon\Phunctional\reverse;
+use function Lambdish\Phunctional\reverse;
 
 return reverse([1, 2, 3, 4, 5]);
             

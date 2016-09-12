@@ -22,7 +22,7 @@ Search for Jorge's table tennis bat:
 ```php
 <?php
 
-use function Akamon\Phunctional\search;
+use function Lambdish\Phunctional\search;
 
 $bats = [
     [
