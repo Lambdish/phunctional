@@ -17,8 +17,8 @@ use Traversable;
  */
 function some(callable $fn, $coll)
 {
-    foreach ($coll as $value) {
-        if ($fn($value)) {
+    foreach ($coll as $key => $value) {
+        if ($fn($value, $key)) {
             return true;
         }
     }
