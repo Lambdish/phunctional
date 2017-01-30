@@ -25,7 +25,7 @@
  * [not](functions/not.md): Return the opposite of the function call
  * [partial](functions/partial.md): Fix a number of arguments to a function producing another one with an smaller arity
  * [partition](functions/partition.md): Partition an array into arrays with size elements preserving its keys. The last portion may contain less than size elements.
- * [pipe](functions/reduce.md): Takes a set of functions and returns a new one that is the composition of all of them
+ * [pipe](functions/pipe.md): Takes a set of functions and returns a new one that is the composition of all of them
  * [reduce](functions/reduce.md): Returns an accumulated value of iteratively reduce the collection using a function
  * [reindex](functions/reindex.md): Returns a new collection with the keys reindexed by a function.
  * [repeat](functions/repeat.md): Returns an array with the values of a function executed a certain amount of times
