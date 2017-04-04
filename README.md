@@ -8,6 +8,7 @@
 Lambdish's Phunctional is a little library that tries bring to PHP some aspects of functional programing with __util high order functions__ and __functions for manage iterables__.
 
 <br>
+
 ## About
 
 Phunctional is heavily inspired by [Clojure](https://clojure.org/) and some other PHP libraries like [iter](https://github.com/nikic/iter), [compose](https://github.com/igorw/compose) and [felpado](https://github.com/pablodip/felpado).
