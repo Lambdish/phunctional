@@ -24,6 +24,6 @@ $notAnArray(123456);
 // => true
 
 
-$notAnArray(['this is' => 'an array]);            
+$notAnArray(['this is' => 'an array']);            
 // => false
 ```
