@@ -1,4 +1,4 @@
-# get_key
+# key
 
 ## Description
 Returns the key of an item value in a collection or a default value in the case it does not exists
@@ -22,7 +22,7 @@ Extract the optional value of a collection:
 ```php
 <?php
 
-use function Lambdish\Phunctional\get_key;
+use function Lambdish\Phunctional\key;
 
 $map = [
     'discount_1' => 10, 
@@ -31,7 +31,7 @@ $map = [
     'discount_4' => 75,
 ];
 
-return get_key(25, $map, 0); 
+return key(25, $map, 0); 
             
 // => discount_2
 ```

@@ -13,7 +13,7 @@ namespace Lambdish\Phunctional;
  *
  * @return mixed|null
  */
-function get_key($value, $coll, $default = null)
+function key($value, $coll, $default = null)
 {
     return array_search($value, $coll) ? : $default;
 }
