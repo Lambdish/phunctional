@@ -2,7 +2,6 @@
 
 namespace Lambdish\Phunctional\Tests;
 
-use ArrayIterator;
 use PHPUnit_Framework_TestCase;
 use function Lambdish\Phunctional\key;
 
@@ -30,5 +29,13 @@ class KeyTest extends PHPUnit_Framework_TestCase
         $actual = ['one' => 1, 'two' => 2];
 
         $this->assertSame('three', key(3, $actual, 'three'));
+    }
+
+    /** @test */
+    public function it_should_return_empty_string_if_the_key_does_is_empty()
+    {
+        $actual = ['one' => 1, 'two' => 2, '' => 3];
+
+        $this->assertSame('', key(3, $actual, 'default'));
     }
 }
