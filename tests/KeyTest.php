@@ -38,4 +38,20 @@ class KeyTest extends PHPUnit_Framework_TestCase
 
         $this->assertSame('', key(3, $actual, 'default'));
     }
+
+    /** @test */
+    public function it_should_return_the_value_of_the_item_of_an_existent_boolean_key()
+    {
+        $actual = ['one' => 1, 'two' => false];
+
+        $this->assertSame('two', key(false, $actual, 'default'));
+    }
+
+    /** @test */
+    public function it_should_return_first_occurrence_of_the_item_of_an_existent_key()
+    {
+        $actual = [false => 1];
+
+        $this->assertSame(0, key(1, $actual, 'default'));
+    }
 }
