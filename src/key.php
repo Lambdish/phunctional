@@ -15,5 +15,7 @@ namespace Lambdish\Phunctional;
  */
 function key($value, $coll, $default = null)
 {
-    return array_search($value, $coll) ? : $default;
+    $key = array_search($value, $coll);
+
+    return false !== $key ? $key : $default;
 }
