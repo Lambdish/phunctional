@@ -3,7 +3,7 @@
 
 > Phunctional, because functional programming matters. 
 
-[![Lambdish](https://img.shields.io/badge/lambdish-phunctional-red.svg?style=flat-square)](https://github.com/Lambdish) [![MIT License](https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square)](http://opensource.org/licenses/MIT) [![Version](https://img.shields.io/packagist/v/lambdish/phunctional.svg?style=flat-square)](https://github.com/Lambdish/phunctional/releases) [![Travis Build Status](http://img.shields.io/travis/Lambdish/phunctional.svg?style=flat-square)](https://travis-ci.org/Lambdish/phunctional)
+[![Lambdish](https://img.shields.io/badge/lambdish-phunctional-red.svg?style=flat-square)](https://github.com/Lambdish) [![MIT License](https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square)](http://opensource.org/licenses/MIT) [![Version](https://img.shields.io/packagist/v/lambdish/phunctional.svg?style=flat-square)](https://github.com/Lambdish/phunctional/releases) [![Monthly Downloads](https://poser.pugx.org/lambdish/phunctional/d/monthly)](https://packagist.org/packages/lambdish/phunctional) [![Travis Build Status](http://img.shields.io/travis/Lambdish/phunctional.svg?style=flat-square)](https://travis-ci.org/Lambdish/phunctional)
 
 Lambdish's Phunctional is a little library that tries bring to PHP some aspects of functional programing with __util high order functions__ and __functions for manage iterables__.
 
