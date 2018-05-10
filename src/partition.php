@@ -13,7 +13,7 @@ use Traversable;
  * @param int             $size
  * @param array|Generator $coll
  *
- * @return callable
+ * @return array
  */
 function partition($size, $coll)
 {
