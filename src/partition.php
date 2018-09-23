@@ -11,7 +11,7 @@ use Traversable;
  * @since 0.1
  *
  * @param int             $size
- * @param array|Generator $coll
+ * @param array|Traversable|Generator $coll
  *
  * @return array
  */
