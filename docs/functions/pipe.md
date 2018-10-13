@@ -34,5 +34,5 @@ $byTwoDivider = function ($num) {
 $calculator = pipe($multiplier, $byTwoDivider);
 
 apply($calculator, [20, 10]);
-// => 15
+// => 100
 ```
