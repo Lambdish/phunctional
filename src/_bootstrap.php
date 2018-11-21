@@ -15,6 +15,7 @@ require __DIR__ . '/dissoc.php';
 require __DIR__ . '/do_if.php';
 require __DIR__ . '/each.php';
 require __DIR__ . '/filter.php';
+require __DIR__ . '/filter_fresh.php';
 require __DIR__ . '/filter_indexed.php';
 require __DIR__ . '/filter_null.php';
 require __DIR__ . '/first.php';
