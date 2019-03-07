@@ -7,6 +7,7 @@ require __DIR__ . '/assoc.php';
 require __DIR__ . '/butlast.php';
 require __DIR__ . '/complement.php';
 require __DIR__ . '/compose.php';
+require __DIR__ . '/constant.php';
 require __DIR__ . '/dissoc.php';
 require __DIR__ . '/do_if.php';
 require __DIR__ . '/each.php';
