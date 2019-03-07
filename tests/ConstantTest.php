@@ -11,19 +11,19 @@ final class ConstantTest extends PHPUnit_Framework_TestCase
     public function it_should_return_a_value()
     {
         $value = 5;
-        $pureClosure  = constant($value);
+        $constantClosure  = constant($value);
 
-        $this->assertSame($value, $pureClosure());
+        $this->assertSame($value, $constantClosure());
     }
 
     /** @test */
     public function it_should_return_same_value_if_called_twice()
     {
         $value = 5;
-        $pureClosure  = constant($value);
+        $constantClosure  = constant($value);
 
-        $pureClosure();
+        $constantClosure();
 
-        $this->assertSame($value, $pureClosure());
+        $this->assertSame($value, $constantClosure());
     }
 }
