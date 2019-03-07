@@ -2,9 +2,7 @@
 
 ## Description
 
-Wraps a value into a Closure context.
-
-The result is Closure that returns the same value whenever is called.
+It wraps a value into a Closure, the result is Closure that returns the same value whenever is called.
 
 ## Parameters
 

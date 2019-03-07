@@ -9,7 +9,7 @@
  * [butlast](functions/butlast.md):  Returns all the elements of a collection except the last preserving the keys
  * [complement](functions/complement.md): Returns another function that takes the same arguments and has the opposite truth value.
  * [compose](functions/compose.md): Combine multiple function calls in one function
- * [constant](functions/constant.md): It wraps any type value into a Closure, which return that value whenever is called
+ * [constant](functions/constant.md): It wraps a value into a Closure, which return the same value whenever is called
  * [dissoc](functions/dissoc.md): Dissociate a value of a key in a collection
  * [do_if](functions/do_if.md): Returns a callable that will call the given function if the result of applying the callable arguments to the predicates is true for all of them
  * [each](functions/each.md): Apply a function over all the items of a collection

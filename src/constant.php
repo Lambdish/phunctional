@@ -3,7 +3,7 @@
 namespace Lambdish\Phunctional;
 
 /**
- * It wraps any type value into a Closure, which return that value whenever is called
+ * It wraps a value into a Closure, which return the same value whenever is called
  *
  * @since v1.0.7
  *
