@@ -9,7 +9,6 @@
  * [butlast](functions/butlast.md):  Returns all the elements of a collection except the last preserving the keys
  * [complement](functions/complement.md): Returns another function that takes the same arguments and has the opposite truth value.
  * [compose](functions/compose.md): Combine multiple function calls in one function
- * [constant](functions/constant.md): It wraps a value into a Closure, which return the same value whenever is called
  * [dissoc](functions/dissoc.md): Dissociate a value of a key in a collection
  * [do_if](functions/do_if.md): Returns a callable that will call the given function if the result of applying the callable arguments to the predicates is true for all of them
  * [each](functions/each.md): Apply a function over all the items of a collection
@@ -20,6 +19,7 @@
  * [get](functions/get.md): Returns the value of an item in a collection or a default value in the case it does not exists
  * [get_in](functions/get_in.md): Returns the value in a nested associative structure or a default value in the case it does not exists
  * [key](functions/key.md): Returns the key of an item value in a collection or a default value in the case it does not exists
+ * [identity](functions/identity.md): Returns a closure which always return the same value that is passed as argument
  * [instance_of](functions/instance_of.md): Returns a checker that validated if an element is an instance of a class
  * [last](functions/last.md): Returns the last element of a collection
  * [map](functions/map.md): Apply a function over all the items of a collection and returns an array with the results
