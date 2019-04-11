@@ -21,7 +21,7 @@ Fill an existing array with zeros:
 use function Lambdish\Phunctional\map;
 use function Lambdish\Phunctional\constant;
  
-$numbers = [1,2,3,4,5];
+$numbers = [1, 2, 3, 4, 5];
 
 map(constant(0), $numbers);
 
