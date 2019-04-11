@@ -3,7 +3,7 @@
 namespace Lambdish\Phunctional;
 
 /**
- * It wraps a value into a Closure, which return the same value that is passed as argument whenever is called
+ * It wraps a value into a Closure, which return the same value whenever is called
  *
  * @since v1.0.7
  *
@@ -11,7 +11,7 @@ namespace Lambdish\Phunctional;
  *
  * @return \Closure
  */
-function identity($value)
+function constant($value)
 {
     return function () use ($value) {
         return $value;
