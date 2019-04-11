@@ -3,17 +3,15 @@
 namespace Lambdish\Phunctional;
 
 /**
- * It wraps a value into a Closure, which return the same value that is passed as argument whenever is called
+ * Is a function that always returns the same value that was used as its argument
  *
  * @since v1.0.7
  *
- * @param mixed $value any type of value
+ * @param mixed $argument any type of value
  *
- * @return \Closure
+ * @return mixed
  */
-function identity($value)
+function identity($argument)
 {
-    return function () use ($value) {
-        return $value;
-    };
+    return $argument;
 }

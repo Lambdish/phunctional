@@ -2,7 +2,7 @@
 
 ## Description
 
-It wraps a value into a closure, which return the same value that is passed as argument whenever is called.
+Is a function which return the same value that is passed as argument.
 
 ## Parameters
 
@@ -13,17 +13,16 @@ It wraps a value into a closure, which return the same value that is passed as a
 
 ## Examples
 
-Fill an array with zeros:
+Do you want to check if an array of boolean has a false value value:
 
 ```php
 <?php
 
-use function Lambdish\Phunctional\map;
-use function Lambdish\Phunctional\identity;
+use function Lambdish\Phunctional\all;
 
-$numbers = [1,2,3,4,5];
+$values = [true, true, false, true];
 
-map(identity(0), $numbers);
+all('\Lambdish\Phunctional\identity', $values);
 
-// => [0,0,0,0,0]
+// => false
 ```
