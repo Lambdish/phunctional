@@ -2,18 +2,18 @@
 
 ## Description
 
-It wraps a value into a Closure, the result is Closure that returns the same value whenever is called.
+It wraps a value into a closure, which return the same value that is passed as argument whenever is called.
 
 ## Parameters
 
 <dl>
   <dt>value</dt>
-  <dd>Any type value that the Closure will return</dd>
+  <dd>Any type of value that will be returned</dd>
 </dl>
 
 ## Examples
 
-Given a number return all of its divisors:
+Fill an existing array with zeros:
 
 ```php
 <?php
