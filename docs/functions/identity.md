@@ -13,7 +13,7 @@ Is a function which return the same value that is passed as argument.
 
 ## Examples
 
-Do you want to check if an array of boolean has a false value value:
+Do you want to check if an array of boolean has a false value:
 
 ```php
 <?php
