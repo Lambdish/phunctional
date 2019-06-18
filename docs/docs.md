@@ -19,6 +19,7 @@
  * [flatten](functions/flatten.md): Returns a flat collection from a multidimensional collection
  * [get](functions/get.md): Returns the value of an item in a collection or a default value in the case it does not exists
  * [get_in](functions/get_in.md): Returns the value in a nested associative structure or a default value in the case it does not exists
+ * [group_by](functions/group_by.md): Returns an array with the items grouped by the results of applying a function to each item
  * [key](functions/key.md): Returns the key of an item value in a collection or a default value in the case it does not exists
  * [instance_of](functions/instance_of.md): Returns a checker that validated if an element is an instance of a class
  * [last](functions/last.md): Returns the last element of a collection
