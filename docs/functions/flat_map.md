@@ -6,7 +6,7 @@ Returns an array containing the results of applying a given function to the item
 ## Parameters
 
 <dl>
-   <dt>fn</dt>
+  <dt>fn</dt>
   <dd>Function to apply to every item in the collection. Must return a array|Traversable|Generator</dd>
   
   <dt>coll</dt>
