@@ -12,12 +12,12 @@ use Traversable;
  * Function $fn should accept the value of the item as the first argument
  * and optionally the key of the item as the second argument.
  *
- * @since 1.0.8 Added flat_map function
- *
- * @param callable                    $fn   function to apply to every item in the collection
- * @param array|Traversable|Generator $coll collection of values
+ * @param   callable                    $fn     function with signature Closure(mixed): array|Traversable|Generator
+ * @param   array|Traversable|Generator $coll   collection of values
  *
  * @return array
+ * @since       1.0.8 Added flat_map function
+ *
  */
 function flat_map(callable $fn, $coll)
 {

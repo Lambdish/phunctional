@@ -6,8 +6,11 @@ Returns an array containing the results of applying a given function to the item
 ## Parameters
 
 <dl>
+   <dt>fn</dt>
+  <dd>Function to apply to every item in the collection. Must return a array|Traversable|Generator</dd>
+  
   <dt>coll</dt>
-  <dd>Collection of multiples dimensions.</dd>
+  <dd>Collection of 1-n dimensions</dd>
 </dl>
 
 ## Examples
@@ -20,7 +23,7 @@ use function Lambdish\Phunctional\flat_map;
 
 $range   = [2, 3, 4];
 
-$naturalRange = function ($value) {
+$naturalRange = function ($value): array {
     return range(1, $value);
 };
 
