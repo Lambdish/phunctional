@@ -15,7 +15,7 @@ Returns an array containing the results of applying a given function to the item
 
 ## Examples
 
-Flat a nested array of numbers:
+Create a collection of ranges and flatten the results:
 ```php
 <?php
 
