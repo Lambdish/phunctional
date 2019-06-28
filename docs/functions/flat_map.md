@@ -18,13 +18,13 @@ Flat a nested array of numbers:
 
 use function Lambdish\Phunctional\flat_map;
 
-$actual   = [2, 3, 4];
+$range   = [2, 3, 4];
 
 $naturalRange = function ($value) {
     return range(1, $value);
 };
 
-return flat_map($naturalRange, $actual);
+return flat_map($naturalRange, $range);
             
 // => [1, 2, 1, 2, 3, 1, 2, 3, 4]
 ```
