@@ -9,39 +9,24 @@ class FlatMapTest extends PHPUnit_Framework_TestCase
 {
 
     /** @test */
-    public function it_should_allow_one_multidimensional_collection()
+    public function it_should_apply_and_then_flatten()
     {
-        $actual = [1, 2, 3, 4, 5];
-        $expected = [1, 4, 9, 16, 25];
+        $actual   = [2, 3, 4];
+        $expected = [1, 2, 1, 2, 3, 1, 2, 3, 4];
 
-        $this->assertSame($expected, flat_map($this->pow2(), $actual));
+        $naturalRange = function ($value) {
+            return range(1, $value);
+        };
+
+        $this->assertSame($expected, flat_map($naturalRange, $actual));
     }
 
     /** @test */
-    public function it_should_flat_nested_multidimensional_collection()
+    public function it_should_allow_receive_the_key_in_the_function_to_apply()
     {
-        $actual = [1, [2, 3], [4, [5, 6], [[[[[7, 8]]]]]]];
+        $actual   = [4 => 1, 9 => 5];
+        $expected = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-        $this->assertSame([1, 2, 3, 4, 5, 6, 7, 8], flat_map($this->pure(), $actual));
-    }
-
-    /**
-     * @return \Closure
-     */
-    private function pure()
-    {
-        return function($value) {
-            return $value;
-        };
-    }
-
-    /**
-     * @return \Closure
-     */
-    private function pow2()
-    {
-        return function($value) {
-            return $value ** 2;
-        };
+        $this->assertSame($expected, flat_map('range', $actual));
     }
 }
