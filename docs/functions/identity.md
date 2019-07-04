@@ -13,16 +13,16 @@ Identity function is a function which return the same value that is passed as ar
 
 ## Examples
 
-Do you want to check if an array of boolean has a false value:
+Do you want to check if an array of booleans has a at least a true value:
 
 ```php
 <?php
 
-use function Lambdish\Phunctional\all;
+use function Lambdish\Phunctional\any;
 
-$values = [true, true, false, true];
+$values = [false, false, true, false];
 
-all('Lambdish\Phunctional\identity', $values);
+any('Lambdish\Phunctional\identity', $values);
 
 // => false
 ```
