@@ -21,7 +21,7 @@
  * [get_in](functions/get_in.md): Returns the value in a nested associative structure or a default value in the case it does not exists
  * [group_by](functions/group_by.md): Returns an array with the items grouped by the results of applying a function to each item
  * [key](functions/key.md): Returns the key of an item value in a collection or a default value in the case it does not exists
- * [identity](functions/identity.md): Returns a closure which always return the same value that is passed as argument
+ * [identity](functions/identity.md): Returns the same value that is passed as argument
  * [instance_of](functions/instance_of.md): Returns a checker that validated if an element is an instance of a class
  * [last](functions/last.md): Returns the last element of a collection
  * [map](functions/map.md): Apply a function over all the items of a collection and returns an array with the results
