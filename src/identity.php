@@ -5,7 +5,7 @@ namespace Lambdish\Phunctional;
 /**
  * Is a function that always returns the same value that was used as its argument
  *
- * @since v1.0.7
+ * @since v1.0.9
  *
  * @param mixed $argument any type of value
  *

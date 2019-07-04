@@ -2,7 +2,7 @@
 
 ## Description
 
-Is a function which return the same value that is passed as argument.
+Identity function is a function which return the same value that is passed as argument.
 
 ## Parameters
 
@@ -22,7 +22,7 @@ use function Lambdish\Phunctional\all;
 
 $values = [true, true, false, true];
 
-all('\Lambdish\Phunctional\identity', $values);
+all('Lambdish\Phunctional\identity', $values);
 
 // => false
 ```
