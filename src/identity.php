@@ -3,7 +3,7 @@
 namespace Lambdish\Phunctional;
 
 /**
- * Is a function that always returns the same value that was used as its argument
+ * Identity function is a function which return the same value that is passed as argument
  *
  * @since v1.0.9
  *
