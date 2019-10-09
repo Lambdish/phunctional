@@ -14,9 +14,11 @@
  * [do_if](functions/do_if.md): Returns a callable that will call the given function if the result of applying the callable arguments to the predicates is true for all of them
  * [each](functions/each.md): Apply a function over all the items of a collection
  * [filter](functions/filter.md): Discriminate the items of a collection for which function is false
+ * [filter_indexed](functions/filter_indexed.md): Discriminate the items of a collection for which function is false using also the key
  * [filter_null](functions/filter_null.md): Discriminate the items of a collection for which value is null
  * [first](functions/first.md): Returns the first element of a collection
  * [flat_map](functions/flat_map.md): Returns an array containing the results of applying a given function to the items of a collection and flattening the results
+ * [flat_map_indexed](functions/flat_map_indexed.md): Returns an array containing the results of applying a given function to the items of a collection and flattening the results also using the key
  * [flatten](functions/flatten.md): Returns a flat collection from a multidimensional collection
  * [get](functions/get.md): Returns the value of an item in a collection or a default value in the case it does not exists
  * [get_in](functions/get_in.md): Returns the value in a nested associative structure or a default value in the case it does not exists
@@ -26,6 +28,7 @@
  * [instance_of](functions/instance_of.md): Returns a checker that validated if an element is an instance of a class
  * [last](functions/last.md): Returns the last element of a collection
  * [map](functions/map.md): Apply a function over all the items of a collection and returns an array with the results
+ * [map_indexed](functions/map_indexed.md): Apply a function over all the items of a collection and returns an array with the results also using the key
  * [memoize](functions/memoize.md): Returns a memoized version of a referentially transparent function
  * [not](functions/not.md): Return the opposite of the function call
  * [partial](functions/partial.md): Fix a number of arguments to a function producing another one with an smaller arity

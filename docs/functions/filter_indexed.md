@@ -2,7 +2,8 @@
 
 ## Description
 Iterates over each value in the collection passing them to the callback function. If the callback function returns true,
-the current value from collection is returned into the result collection. Keys are preserved.
+the current value from collection is returned into the result collection. Keys are preserved. You can use the `key` to
+ filter.
 
 ## Parameters
 
@@ -20,13 +21,13 @@ Filter numbers biggers than 10:
 ```php
 <?php
 
-use function Lambdish\Phunctional\filter;
+use function Lambdish\Phunctional\filter_indexed;
 
-return filter(
-    static function ($number) {
-        return $number > 10;
+return filter_indexed(
+    static function ($value, $key) {
+        return $key > 10;
     }, 
-    [1, 20, 3, 40, 5]
+    [1 => 'hey', 20 => 'yepa', 3 => 'hello', 40 => ':)', 5 => 'smile!']
 );
             
 // => [20, 40]
