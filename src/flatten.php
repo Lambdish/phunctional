@@ -10,13 +10,9 @@ use Traversable;
 /**
  * Returns a flat array of a multidimensional $coll
  *
- * @since 0.1
- *
  * @param array|Traversable|Generator $coll collection of multidimensional values to be flatten
- *
- * @return array
  */
-function flatten($coll)
+function flatten($coll): array
 {
     $result        = [];
     $isTraversable = static function ($item) {

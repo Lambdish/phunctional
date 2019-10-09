@@ -13,14 +13,10 @@ use Traversable;
  * Function $fn should accept the value of the item as the first argument
  * and optionally the key of the item as the second argument.
  *
- * @since 0.1
- *
  * @param callable          $fn   function to apply to every item in the collection
  * @param array|Traversable $coll collection of values to apply the function
- *
- * @return void
  */
-function each(callable $fn, $coll)
+function each(callable $fn, $coll): void
 {
     foreach ($coll as $key => $value) {
         $fn($value, $key);

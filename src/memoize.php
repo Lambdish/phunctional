@@ -7,8 +7,6 @@ namespace Lambdish\Phunctional;
 use Closure;
 
 /**
- * @since 0.1
- *
  * @param callable|null $fn   function to be executed. Pass null to reset cache
  * @param array         $args arguments to be passed to the called function
  *

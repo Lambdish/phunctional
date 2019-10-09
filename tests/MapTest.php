@@ -27,26 +27,10 @@ final class MapTest extends TestCase
         $this->assertSame(['one' => 2, 'two' => 4, 'three' => 6, 'four' => 8, 'five' => 10], map($function, $actual));
     }
 
-    /** @test */
-    public function it_should_allow_receive_the_key_in_the_function_to_apply_keeping_the_original_index(): void
-    {
-        $actual   = [1 => 1, 2 => 2, 3 => 3, 5 => 4, 7 => 5];
-        $function = $this->keyPerValueMultiplier();
-
-        $this->assertSame([1 => 1, 2 => 4, 3 => 9, 5 => 20, 7 => 35], map($function, $actual));
-    }
-
     private function multiplier($times): callable
     {
         return static function ($value) use ($times) {
             return $value * $times;
-        };
-    }
-
-    private function keyPerValueMultiplier(): callable
-    {
-        return static function ($value, $key) {
-            return $value * $key;
         };
     }
 }

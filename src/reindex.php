@@ -12,10 +12,8 @@ use Traversable;
  *
  * @param callable          $fn   function to generate the key
  * @param array|Traversable $coll collection to be reindexed
- *
- * @return array
  */
-function reindex(callable $fn, $coll)
+function reindex(callable $fn, $coll): array
 {
     $result = [];
 
