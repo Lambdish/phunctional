@@ -13,7 +13,7 @@ use Traversable;
  * @param int             $size
  * @param array|Traversable|Generator $coll
  */
-function partition($size, $coll): array
+function partition(int $size, $coll): array
 {
     $array = $coll instanceof Traversable ? iterator_to_array($coll) : $coll;
 
