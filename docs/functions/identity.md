@@ -2,7 +2,7 @@
 
 ## Description
 
-Identity function is a function which return the same value that is passed as argument.
+Identity function is a function which return the same value that is passed as argument. `f(x) = x`
 
 ## Parameters
 
@@ -24,5 +24,5 @@ $values = [false, false, true, false];
 
 any('Lambdish\Phunctional\identity', $values);
 
-// => false
+// => true
 ```
