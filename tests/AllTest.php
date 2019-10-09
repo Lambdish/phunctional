@@ -2,13 +2,13 @@
 
 namespace Lambdish\Phunctional\Tests;
 
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 use function Lambdish\Phunctional\all;
 
-final class AllTest extends PHPUnit_Framework_TestCase
+final class AllTest extends TestCase
 {
     /** @test */
-    public function it_should_return_true_if_the_predicate_is_satisfactory()
+    public function it_should_return_true_if_the_predicate_is_satisfactory(): void
     {
         $numbers = [7, 9, 14, 12, 6];
 
@@ -16,16 +16,16 @@ final class AllTest extends PHPUnit_Framework_TestCase
     }
 
     /** @test */
-    public function it_should_return_false_if_any_value_is_not_satisfactory()
+    public function it_should_return_false_if_any_value_is_not_satisfactory(): void
     {
         $numbers = [2, 3, 14, 12, 6];
 
         $this->assertFalse(all($this->isGreaterThanFive(), $numbers));
     }
 
-    private function isGreaterThanFive()
+    private function isGreaterThanFive(): callable
     {
-        return function ($number) {
+        return static function ($number) {
             return $number > 5;
         };
     }

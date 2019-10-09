@@ -2,13 +2,13 @@
 
 namespace Lambdish\Phunctional\Tests;
 
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 use function Lambdish\Phunctional\any;
 
-final class AnyTest extends PHPUnit_Framework_TestCase
+final class AnyTest extends TestCase
 {
     /** @test */
-    public function it_should_return_false_if_any_value_satisfies_the_predicate()
+    public function it_should_return_false_if_any_value_satisfies_the_predicate(): void
     {
         $coll = [1, 2, 3, 4, 5, 6, 7, 8, 9];
         $fn   = $this->isGreaterThanTen();
@@ -17,7 +17,7 @@ final class AnyTest extends PHPUnit_Framework_TestCase
     }
 
     /** @test */
-    public function it_should_return_true_if_any_value_satisfies_the_predicate()
+    public function it_should_return_true_if_any_value_satisfies_the_predicate(): void
     {
         $coll = [25, 2, 3, 4, 5, 6, 7, 8, 9];
         $fn   = $this->isGreaterThanTen();
@@ -25,9 +25,9 @@ final class AnyTest extends PHPUnit_Framework_TestCase
         $this->assertTrue(any($fn, $coll));
     }
 
-    private function isGreaterThanTen()
+    private function isGreaterThanTen(): callable
     {
-        return function ($number) {
+        return static function ($number) {
             return $number > 10;
         };
     }

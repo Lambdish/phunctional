@@ -2,13 +2,13 @@
 
 namespace Lambdish\Phunctional\Tests;
 
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 use function Lambdish\Phunctional\filter;
 
-class FilterTest extends PHPUnit_Framework_TestCase
+class FilterTest extends TestCase
 {
     /** @test */
-    public function it_should_filter_a_collection_keeping_the_indexes()
+    public function it_should_filter_a_collection_keeping_the_indexes(): void
     {
         $actual = ['one' => 1, 'two' => 2, 'three' => 3, 'four' => 4, 'five' => 5];
         $pred   = $this->evenByValueFilterer();
@@ -17,7 +17,7 @@ class FilterTest extends PHPUnit_Framework_TestCase
     }
 
     /** @test */
-    public function it_should_filter_a_collection_using_their_keys()
+    public function it_should_filter_a_collection_using_their_keys(): void
     {
         $actual = [1 => 'one', 2 => 'two', 3 => 'three', 4 => 'four', 5 => 'five'];
         $pred   = $this->evenByKeyFilterer();
@@ -25,16 +25,16 @@ class FilterTest extends PHPUnit_Framework_TestCase
         $this->assertSame([2 => 'two', 4 => 'four'], filter($pred, $actual));
     }
 
-    private function evenByValueFilterer()
+    private function evenByValueFilterer(): callable
     {
-        return function ($number) {
+        return static function ($number) {
             return 0 === $number % 2;
         };
     }
 
-    private function evenByKeyFilterer()
+    private function evenByKeyFilterer(): callable
     {
-        return function ($textNumber, $number) {
+        return static function ($textNumber, $number) {
             return 0 === $number % 2;
         };
     }

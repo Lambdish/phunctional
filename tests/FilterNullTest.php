@@ -3,21 +3,21 @@
 namespace Lambdish\Phunctional\Tests;
 
 use ArrayIterator;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 use function Lambdish\Phunctional\filter_null;
 
-class FilterNullTest extends PHPUnit_Framework_TestCase
+class FilterNullTest extends TestCase
 {
     /**
      * @test
      * @dataProvider collections
      */
-    public function it_should_filter_a_collection_discriminating_nulls($actual, $expected)
+    public function it_should_filter_a_collection_discriminating_nulls($actual, $expected): void
     {
         $this->assertSame($expected, filter_null($actual));
     }
 
-    public function collections()
+    public function collections(): array
     {
         return [
             'array'           => ['actual' => [1, 2, null], 'expected' => [1, 2]],

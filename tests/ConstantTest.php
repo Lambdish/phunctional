@@ -2,13 +2,13 @@
 
 namespace Lambdish\Phunctional\Tests;
 
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 use function Lambdish\Phunctional\constant;
 
-final class ConstantTest extends PHPUnit_Framework_TestCase
+final class ConstantTest extends TestCase
 {
     /** @test */
-    public function it_should_return_a_value()
+    public function it_should_return_a_value(): void
     {
         $value           = 5;
         $constantClosure = constant($value);
@@ -17,7 +17,7 @@ final class ConstantTest extends PHPUnit_Framework_TestCase
     }
 
     /** @test */
-    public function it_should_return_same_value_if_called_twice()
+    public function it_should_return_same_value_if_called_twice(): void
     {
         $value           = 5;
         $constantClosure = constant($value);

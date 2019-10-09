@@ -2,13 +2,13 @@
 
 namespace Lambdish\Phunctional\Tests;
 
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 use function Lambdish\Phunctional\key;
 
-class KeyTest extends PHPUnit_Framework_TestCase
+class KeyTest extends TestCase
 {
     /** @test */
-    public function it_should_return_the_value_of_the_item_of_an_existent_key()
+    public function it_should_return_the_value_of_the_item_of_an_existent_key(): void
     {
         $actual = ['one' => 1, 'two' => 2];
 
@@ -16,7 +16,7 @@ class KeyTest extends PHPUnit_Framework_TestCase
     }
 
     /** @test */
-    public function it_should_return_null_if_the_key_does_not_exists_and_not_default_value_is_provided()
+    public function it_should_return_null_if_the_key_does_not_exists_and_not_default_value_is_provided(): void
     {
         $actual = ['one' => 1, 'two' => 2];
 
@@ -24,7 +24,7 @@ class KeyTest extends PHPUnit_Framework_TestCase
     }
 
     /** @test */
-    public function it_should_return_the_default_value_provided_if_the_key_does_not_exists()
+    public function it_should_return_the_default_value_provided_if_the_key_does_not_exists(): void
     {
         $actual = ['one' => 1, 'two' => 2];
 
@@ -32,7 +32,7 @@ class KeyTest extends PHPUnit_Framework_TestCase
     }
 
     /** @test */
-    public function it_should_return_empty_string_if_the_key_does_is_empty()
+    public function it_should_return_empty_string_if_the_key_does_is_empty(): void
     {
         $actual = ['one' => 1, 'two' => 2, '' => 3];
 
@@ -40,7 +40,7 @@ class KeyTest extends PHPUnit_Framework_TestCase
     }
 
     /** @test */
-    public function it_should_return_the_value_of_the_item_of_an_existent_boolean_key()
+    public function it_should_return_the_value_of_the_item_of_an_existent_boolean_key(): void
     {
         $actual = ['one' => 1, 'two' => false];
 
@@ -48,7 +48,7 @@ class KeyTest extends PHPUnit_Framework_TestCase
     }
 
     /** @test */
-    public function it_should_return_first_occurrence_of_the_item_of_an_existent_key()
+    public function it_should_return_first_occurrence_of_the_item_of_an_existent_key(): void
     {
         $actual = [false => 1];
 

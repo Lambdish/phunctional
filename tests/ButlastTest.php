@@ -3,17 +3,17 @@
 namespace Lambdish\Phunctional\Tests;
 
 use ArrayIterator;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 use function Lambdish\Phunctional\apply;
 use function Lambdish\Phunctional\butlast;
 
-class ButlastTest extends PHPUnit_Framework_TestCase
+class ButlastTest extends TestCase
 {
     /**
      * @test
      * @dataProvider getNonEmptyCollections
      */
-    public function it_should_return_the_collection_without_the_last_element_preserving_the_keys($coll, $expected)
+    public function it_should_return_the_collection_without_the_last_element_preserving_the_keys($coll, $expected): void
     {
         $this->assertSame($expected, butlast($coll));
     }
@@ -22,7 +22,7 @@ class ButlastTest extends PHPUnit_Framework_TestCase
      * @test
      * @dataProvider getEmptyCollections
      */
-    public function it_should_return_an_empty_collection_with_empty_collections($coll)
+    public function it_should_return_an_empty_collection_with_empty_collections($coll): void
     {
         $this->assertSame([], butlast($coll));
     }
@@ -31,12 +31,12 @@ class ButlastTest extends PHPUnit_Framework_TestCase
      * @test
      * @dataProvider getOneElementCollections
      */
-    public function it_should_return_an_empty_collection_with_one_element_collections($coll)
+    public function it_should_return_an_empty_collection_with_one_element_collections($coll): void
     {
         $this->assertSame([], butlast($coll));
     }
 
-    public function getNonEmptyCollections()
+    public function getNonEmptyCollections(): array
     {
         return [
             'array'     => ['coll' => [1, 2, 3], 'expected' => [1, 2]],
@@ -45,7 +45,7 @@ class ButlastTest extends PHPUnit_Framework_TestCase
         ];
     }
 
-    public function getEmptyCollections()
+    public function getEmptyCollections(): array
     {
         return [
             'array'     => ['coll' => []],
@@ -54,7 +54,7 @@ class ButlastTest extends PHPUnit_Framework_TestCase
         ];
     }
 
-    public function getOneElementCollections()
+    public function getOneElementCollections(): array
     {
         return [
             'array'     => ['coll' => [1]],
@@ -66,7 +66,7 @@ class ButlastTest extends PHPUnit_Framework_TestCase
     private function generator(...$items)
     {
         return apply(
-            function () use ($items) {
+            static function () use ($items) {
                 foreach ($items as $item) {
                     yield $item;
                 }

@@ -2,28 +2,28 @@
 
 namespace Lambdish\Phunctional\Tests;
 
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 use function Lambdish\Phunctional\repeat;
 
-class RepeatTest extends PHPUnit_Framework_TestCase
+class RepeatTest extends TestCase
 {
     /** @test */
-    public function it_should_repeat_a_function_certain_amount_of_times()
+    public function it_should_repeat_a_function_certain_amount_of_times(): void
     {
         $fn    = $this->integerGenerator();
         $times = 5;
 
         $collectionOfIntegers = repeat($fn, $times);
 
-        $this->assertInternalType('array', $collectionOfIntegers);
+        $this->assertIsArray($collectionOfIntegers);
         $this->assertContainsOnly('int', $collectionOfIntegers);
         $this->assertCount($times, $collectionOfIntegers);
     }
 
-    private function integerGenerator()
+    private function integerGenerator(): callable
     {
-        return function () {
-            return rand();
+        return static function () {
+            return mt_rand();
         };
     }
 }

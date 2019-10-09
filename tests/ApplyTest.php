@@ -3,13 +3,13 @@
 namespace Lambdish\Phunctional\Tests;
 
 use ArrayIterator;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 use function Lambdish\Phunctional\apply;
 
-class ApplyTest extends PHPUnit_Framework_TestCase
+class ApplyTest extends TestCase
 {
     /** @test */
-    public function it_should_call_return_the_value_of_the_called_function()
+    public function it_should_call_return_the_value_of_the_called_function(): void
     {
         $this->assertSame('function without arguments', apply($this->functionWithoutArguments()));
     }
@@ -18,7 +18,7 @@ class ApplyTest extends PHPUnit_Framework_TestCase
      * @test
      * @dataProvider arguments
      */
-    public function it_should_call_properly_a_function_with_some_arguments($arguments)
+    public function it_should_call_properly_a_function_with_some_arguments($arguments): void
     {
         $this->assertSame(
             'Hello functional, welcome to PHP!!',
@@ -26,21 +26,21 @@ class ApplyTest extends PHPUnit_Framework_TestCase
         );
     }
 
-    private function functionWithoutArguments()
+    private function functionWithoutArguments(): callable
     {
-        return function () {
+        return static function (): string {
             return 'function without arguments';
         };
     }
 
-    private function functionWithArguments()
+    private function functionWithArguments(): callable
     {
-        return function ($context, $name) {
+        return static function ($context, $name): string {
             return sprintf('Hello %s, welcome to %s!!', $name, $context);
         };
     }
 
-    public function arguments()
+    public function arguments(): array
     {
         return [
             'array'     => ['arguments' => ['PHP', 'functional']],
@@ -52,7 +52,7 @@ class ApplyTest extends PHPUnit_Framework_TestCase
     private function generator(...$items)
     {
         return apply(
-            function () use ($items) {
+            static function () use ($items) {
                 foreach ($items as $item) {
                     yield $item;
                 }

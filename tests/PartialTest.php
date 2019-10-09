@@ -2,13 +2,13 @@
 
 namespace Lambdish\Phunctional\Tests;
 
+use PHPUnit\Framework\TestCase;
 use function Lambdish\Phunctional\partial;
-use PHPUnit_Framework_TestCase;
 
-final class PartialTest extends PHPUnit_Framework_TestCase
+final class PartialTest extends TestCase
 {
     /** @test */
-    public function it_should_be_able_to_fix_arguments_to_a_function()
+    public function it_should_be_able_to_fix_arguments_to_a_function(): void
     {
         $add5 = partial($this->sum(), 5);
 
@@ -17,16 +17,16 @@ final class PartialTest extends PHPUnit_Framework_TestCase
     }
 
     /** @test */
-    public function it_should_return_a_lazy_function_if_no_arguments_are_present()
+    public function it_should_return_a_lazy_function_if_no_arguments_are_present(): void
     {
         $sum = partial($this->sum());
 
         $this->assertEquals(7, $sum(2, 5));
     }
 
-    private function sum()
+    private function sum(): callable
     {
-        return function (...$numbers) {
+        return static function (...$numbers) {
             return array_sum($numbers);
         };
     }
