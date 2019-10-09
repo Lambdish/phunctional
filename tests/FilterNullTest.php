@@ -1,12 +1,14 @@
 <?php
 
+declare(strict_types = 1);
+
 namespace Lambdish\Phunctional\Tests;
 
 use ArrayIterator;
 use PHPUnit\Framework\TestCase;
 use function Lambdish\Phunctional\filter_null;
 
-class FilterNullTest extends TestCase
+final class FilterNullTest extends TestCase
 {
     /**
      * @test

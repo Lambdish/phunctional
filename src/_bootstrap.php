@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types = 1);
+
 require __DIR__ . '/all.php';
 require __DIR__ . '/any.php';
 require __DIR__ . '/apply.php';

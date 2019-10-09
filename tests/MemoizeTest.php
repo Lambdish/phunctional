@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types = 1);
+
 namespace Lambdish\Phunctional\Tests;
 
 use PHPUnit\Framework\TestCase;
@@ -35,6 +37,17 @@ final class MemoizeTest extends TestCase
         $this->assertSame($fibonacci, apply($this->functionFibonacciMemoized(), [$number]));
     }
 
+    public function fibonacciValues(): array
+    {
+        return [
+            [30, 832040],
+            [18, 2584],
+            [3, 2],
+            [2, 1],
+            [1, 1],
+        ];
+    }
+
     private function functionWithRandReturn(): callable
     {
         return static function ($min, $max) {
@@ -48,16 +61,5 @@ final class MemoizeTest extends TestCase
             return $number < 2 ? $number :
                 memoize($memoizedFibonacci, $number - 1) + memoize($memoizedFibonacci, $number - 2);
         };
-    }
-
-    public function fibonacciValues(): array
-    {
-        return [
-            [30, 832040],
-            [18, 2584],
-            [3, 2],
-            [2, 1],
-            [1, 1],
-        ];
     }
 }

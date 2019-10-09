@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types = 1);
+
 namespace Lambdish\Phunctional;
 
 /**
@@ -14,8 +16,8 @@ namespace Lambdish\Phunctional;
  */
 function pipe(...$fns)
 {
-    $compose = function ($composition, $fn) {
-        return function (...$args) use ($composition, $fn) {
+    $compose = static function ($composition, $fn) {
+        return static function (...$args) use ($composition, $fn) {
             return null === $composition ?
                 $fn(...$args) :
                 $fn($composition(...$args));

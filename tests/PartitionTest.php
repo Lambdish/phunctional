@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types = 1);
+
 namespace Lambdish\Phunctional\Tests;
 
 use ArrayIterator;
@@ -7,7 +9,7 @@ use PHPUnit\Framework\TestCase;
 use function Lambdish\Phunctional\apply;
 use function Lambdish\Phunctional\partition;
 
-class PartitionTest extends TestCase
+final class PartitionTest extends TestCase
 {
     /**
      * @test

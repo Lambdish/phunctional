@@ -1,11 +1,13 @@
 <?php
 
+declare(strict_types = 1);
+
 namespace Lambdish\Phunctional\Tests;
 
 use PHPUnit\Framework\TestCase;
 use function Lambdish\Phunctional\filter;
 
-class FilterTest extends TestCase
+final class FilterTest extends TestCase
 {
     /** @test */
     public function it_should_filter_a_collection_keeping_the_indexes(): void

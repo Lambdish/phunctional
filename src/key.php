@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types = 1);
+
 namespace Lambdish\Phunctional;
 
 /**
@@ -15,7 +17,7 @@ namespace Lambdish\Phunctional;
  */
 function key($value, $coll, $default = null)
 {
-    $key = array_search($value, $coll);
+    $key = array_search($value, $coll, true);
 
     return false !== $key ? $key : $default;
 }

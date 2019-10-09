@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types = 1);
+
 namespace Lambdish\Phunctional;
 
 use Generator;
@@ -18,8 +20,8 @@ function filter_null($coll)
 {
     return filter(
         not(
-            function ($value) {
-                return is_null($value);
+            static function ($value) {
+                return null === $value;
             }
         ),
         $coll

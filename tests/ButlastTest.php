@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types = 1);
+
 namespace Lambdish\Phunctional\Tests;
 
 use ArrayIterator;
@@ -7,7 +9,7 @@ use PHPUnit\Framework\TestCase;
 use function Lambdish\Phunctional\apply;
 use function Lambdish\Phunctional\butlast;
 
-class ButlastTest extends TestCase
+final class ButlastTest extends TestCase
 {
     /**
      * @test

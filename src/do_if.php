@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types = 1);
+
 namespace Lambdish\Phunctional;
 
 /**
@@ -15,8 +17,8 @@ namespace Lambdish\Phunctional;
  */
 function do_if(callable $fn, array $predicates)
 {
-    return function (...$args) use ($fn, $predicates) {
-        $isValid = function ($predicate) use ($args) {
+    return static function (...$args) use ($fn, $predicates) {
+        $isValid = static function ($predicate) use ($args) {
             return $predicate(...$args);
         };
 

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types = 1);
+
 namespace Lambdish\Phunctional;
 
 /**
@@ -14,7 +16,7 @@ namespace Lambdish\Phunctional;
  */
 function partial(callable $fn, ...$args)
 {
-    return function (...$biasedArgs) use ($fn, $args) {
+    return static function (...$biasedArgs) use ($fn, $args) {
         return $fn(...array_merge($args, $biasedArgs));
     };
 }

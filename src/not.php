@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types = 1);
+
 namespace Lambdish\Phunctional;
 
 /**
@@ -13,7 +15,7 @@ namespace Lambdish\Phunctional;
  */
 function not(callable $fn)
 {
-    return function (...$args) use ($fn) {
+    return static function (...$args) use ($fn) {
         return !$fn(...$args);
     };
 }

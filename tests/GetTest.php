@@ -1,12 +1,14 @@
 <?php
 
+declare(strict_types = 1);
+
 namespace Lambdish\Phunctional\Tests;
 
 use ArrayIterator;
 use PHPUnit\Framework\TestCase;
 use function Lambdish\Phunctional\get;
 
-class GetTest extends TestCase
+final class GetTest extends TestCase
 {
     /** @test */
     public function it_should_return_the_value_of_the_item_of_an_existent_key(): void

@@ -1,11 +1,13 @@
 <?php
 
+declare(strict_types = 1);
+
 namespace Lambdish\Phunctional\Tests;
 
 use PHPUnit\Framework\TestCase;
 use function Lambdish\Phunctional\map;
 
-class MapTest extends TestCase
+final class MapTest extends TestCase
 {
     /** @test */
     public function it_should_return_the_values_of_a_collection_after_apply_a_function(): void
