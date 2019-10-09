@@ -34,7 +34,7 @@ final class MemoizeTest extends TestCase
      */
     public function it_should_call_fibonacci($number, $fibonacci): void
     {
-        $this->assertSame($fibonacci, apply($this->functionFibonacciMemoized(), [$number]));
+        $this->assertSame($fibonacci, apply($this->functionFibonacciMemoized(), $number));
     }
 
     public function fibonacciValues(): array

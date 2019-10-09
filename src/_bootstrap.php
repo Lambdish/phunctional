@@ -5,6 +5,7 @@ declare(strict_types = 1);
 require __DIR__ . '/all.php';
 require __DIR__ . '/any.php';
 require __DIR__ . '/apply.php';
+require __DIR__ . '/apply_collection.php';
 require __DIR__ . '/assoc.php';
 require __DIR__ . '/butlast.php';
 require __DIR__ . '/complement.php';

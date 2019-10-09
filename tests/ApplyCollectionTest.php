@@ -7,13 +7,14 @@ namespace Lambdish\Phunctional\Tests;
 use ArrayIterator;
 use PHPUnit\Framework\TestCase;
 use function Lambdish\Phunctional\apply;
+use function Lambdish\Phunctional\apply_collection;
 
-final class ApplyTest extends TestCase
+final class ApplyCollectionTest extends TestCase
 {
     /** @test */
     public function it_should_call_return_the_value_of_the_called_function(): void
     {
-        $this->assertSame('function without arguments', apply($this->functionWithoutArguments()));
+        $this->assertSame('function without arguments', apply_collection($this->functionWithoutArguments()));
     }
 
     /**
@@ -24,7 +25,7 @@ final class ApplyTest extends TestCase
     {
         $this->assertSame(
             'Hello functional, welcome to PHP!!',
-            apply($this->functionWithArguments(), ...$arguments)
+            apply_collection($this->functionWithArguments(), $arguments)
         );
     }
 
