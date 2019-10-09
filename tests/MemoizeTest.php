@@ -23,7 +23,7 @@ final class MemoizeTest extends TestCase
     {
         $previousValue = memoize($this->functionWithRandReturn(), 1, 1000000);
 
-        memoize();
+        memoize(null);
 
         $this->assertNotSame($previousValue, memoize($this->functionWithRandReturn(), 1, 1000000));
     }

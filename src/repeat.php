@@ -10,7 +10,7 @@ namespace Lambdish\Phunctional;
  * @param callable $fn    function to be executed
  * @param int      $times times to call the function
  */
-function repeat(callable $fn, $times = INF): array
+function repeat(callable $fn, int $times): array
 {
     $result = [];
 
