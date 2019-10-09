@@ -21,13 +21,13 @@ Create a collection of ranges and flatten the results:
 
 use function Lambdish\Phunctional\flat_map;
 
-$range   = [2, 3, 4];
+$range = [2, 3, 4];
 
-$naturalRange = function ($value): array {
+$naturalRange = static function ($value): array {
     return range(1, $value);
 };
 
 return flat_map($naturalRange, $range);
-            
+
 // => [1, 2, 1, 2, 3, 1, 2, 3, 4]
 ```
