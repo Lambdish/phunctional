@@ -2,13 +2,13 @@
 
 namespace Lambdish\Phunctional\Tests;
 
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 use function Lambdish\Phunctional\map;
 
-class MapTest extends PHPUnit_Framework_TestCase
+class MapTest extends TestCase
 {
     /** @test */
-    public function it_should_return_the_values_of_a_collection_after_apply_a_function()
+    public function it_should_return_the_values_of_a_collection_after_apply_a_function(): void
     {
         $actual   = [1, 2, 3, 4, 5];
         $function = $this->multiplier(2);
@@ -17,7 +17,7 @@ class MapTest extends PHPUnit_Framework_TestCase
     }
 
     /** @test */
-    public function it_should_keep_the_keys()
+    public function it_should_keep_the_keys(): void
     {
         $actual   = ['one' => 1, 'two' => 2, 'three' => 3, 'four' => 4, 'five' => 5];
         $function = $this->multiplier(2);
@@ -26,7 +26,7 @@ class MapTest extends PHPUnit_Framework_TestCase
     }
 
     /** @test */
-    public function it_should_allow_receive_the_key_in_the_function_to_apply_keeping_the_original_index()
+    public function it_should_allow_receive_the_key_in_the_function_to_apply_keeping_the_original_index(): void
     {
         $actual   = [1 => 1, 2 => 2, 3 => 3, 5 => 4, 7 => 5];
         $function = $this->keyPerValueMultiplier();
@@ -34,16 +34,16 @@ class MapTest extends PHPUnit_Framework_TestCase
         $this->assertSame([1 => 1, 2 => 4, 3 => 9, 5 => 20, 7 => 35], map($function, $actual));
     }
 
-    private function multiplier($times)
+    private function multiplier($times): callable
     {
-        return function ($value) use ($times) {
+        return static function ($value) use ($times) {
             return $value * $times;
         };
     }
 
-    private function keyPerValueMultiplier()
+    private function keyPerValueMultiplier(): callable
     {
-        return function ($value, $key) {
+        return static function ($value, $key) {
             return $value * $key;
         };
     }

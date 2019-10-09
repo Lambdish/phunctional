@@ -2,13 +2,13 @@
 
 namespace Lambdish\Phunctional\Tests;
 
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 use function Lambdish\Phunctional\flatten;
 
-class FlattenTest extends PHPUnit_Framework_TestCase
+class FlattenTest extends TestCase
 {
     /** @test */
-    public function it_should_flat_a_two_multidimensional_collection()
+    public function it_should_flat_a_two_multidimensional_collection(): void
     {
         $actual = [[1], [2], [3], [4], [5]];
 
@@ -16,7 +16,7 @@ class FlattenTest extends PHPUnit_Framework_TestCase
     }
 
     /** @test */
-    public function it_should_allow_one_multidimensional_collection()
+    public function it_should_allow_one_multidimensional_collection(): void
     {
         $actual = [1, 2, 3, 4, 5];
 
@@ -24,7 +24,7 @@ class FlattenTest extends PHPUnit_Framework_TestCase
     }
 
     /** @test */
-    public function it_should_flat_nested_multidimensional_collection()
+    public function it_should_flat_nested_multidimensional_collection(): void
     {
         $actual = [1, [2, 3], [4, [5, 6], [[[[[7, 8]]]]]]];
 

@@ -2,13 +2,13 @@
 
 namespace Lambdish\Phunctional\Tests;
 
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 use function Lambdish\Phunctional\some;
 
-final class SomeTest extends PHPUnit_Framework_TestCase
+final class SomeTest extends TestCase
 {
     /** @test */
-    public function it_should_return_false_if_some_value_satisfies_the_predicate()
+    public function it_should_return_false_if_some_value_satisfies_the_predicate(): void
     {
         $coll = [1, 2, 3, 4, 5, 6, 7, 8, 9];
         $fn   = $this->isGreaterThanTen();
@@ -17,7 +17,7 @@ final class SomeTest extends PHPUnit_Framework_TestCase
     }
 
     /** @test */
-    public function it_should_return_true_if_some_value_satisfies_the_predicate()
+    public function it_should_return_true_if_some_value_satisfies_the_predicate(): void
     {
         $coll = [25, 2, 3, 4, 5, 6, 7, 8, 9];
         $fn   = $this->isGreaterThanTen();
@@ -26,7 +26,7 @@ final class SomeTest extends PHPUnit_Framework_TestCase
     }
 
     /** @test */
-    public function it_should_return_true_if_some_value_satisfies_the_predicate_using_the_key()
+    public function it_should_return_true_if_some_value_satisfies_the_predicate_using_the_key(): void
     {
         $coll = ['one' => 1, 'two' => 2];
         $fn   = $this->isOne();
@@ -34,16 +34,16 @@ final class SomeTest extends PHPUnit_Framework_TestCase
         $this->assertTrue(some($fn, $coll));
     }
 
-    private function isGreaterThanTen()
+    private function isGreaterThanTen(): callable
     {
-        return function ($number) {
+        return static function ($number) {
             return $number > 10;
         };
     }
 
-    private function isOne()
+    private function isOne(): callable
     {
-        return function ($value, $key) {
+        return static function ($value, $key) {
             return 'one' === $key;
         };
     }

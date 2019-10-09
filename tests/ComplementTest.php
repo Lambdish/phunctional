@@ -2,23 +2,23 @@
 
 namespace Lambdish\Phunctional\Tests;
 
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 use function Lambdish\Phunctional\complement;
 
-final class ComplementTest extends PHPUnit_Framework_TestCase
+final class ComplementTest extends TestCase
 {
     /**
      * @test
      * @dataProvider getNegatesValues()
      */
-    public function it_should_returns_the_opposite($expected, callable $originalFn, $value)
+    public function it_should_returns_the_opposite($expected, callable $originalFn, $value): void
     {
         $complemented = complement($originalFn);
 
         $this->assertEquals($expected, $complemented($value));
     }
 
-    public function getNegatesValues()
+    public function getNegatesValues(): array
     {
         return [
             'is_not_null'                   => [
@@ -39,9 +39,9 @@ final class ComplementTest extends PHPUnit_Framework_TestCase
         ];
     }
 
-    private function isBiggerThanTen()
+    private function isBiggerThanTen(): callable
     {
-        return function ($num) {
+        return static function ($num) {
             return $num > 10;
         };
     }

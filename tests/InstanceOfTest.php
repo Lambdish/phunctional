@@ -4,16 +4,16 @@ namespace Lambdish\Phunctional\Tests;
 
 use ArrayIterator;
 use Exception;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 use function Lambdish\Phunctional\instance_of;
 
-class InstanceOfTest extends PHPUnit_Framework_TestCase
+class InstanceOfTest extends TestCase
 {
     /**
      * @test
      * @dataProvider getValidInstances
      */
-    public function it_should_check_if_an_element_is_an_instance_of_a_class($className, $element)
+    public function it_should_check_if_an_element_is_an_instance_of_a_class($className, $element): void
     {
         $isInstanceOfClassName = instance_of($className);
 
@@ -24,14 +24,14 @@ class InstanceOfTest extends PHPUnit_Framework_TestCase
      * @test
      * @dataProvider getInvalidInstances
      */
-    public function it_should_check_if_an_element_is_not_an_instance_of_a_class($className, $element)
+    public function it_should_check_if_an_element_is_not_an_instance_of_a_class($className, $element): void
     {
         $isInstanceOfClassName = instance_of($className);
 
         $this->assertFalse($isInstanceOfClassName($element));
     }
 
-    public function getValidInstances()
+    public function getValidInstances(): array
     {
         return [
             'exception'      => [
@@ -45,7 +45,7 @@ class InstanceOfTest extends PHPUnit_Framework_TestCase
         ];
     }
 
-    public function getInvalidInstances()
+    public function getInvalidInstances(): array
     {
         return [
             'exception'      => [

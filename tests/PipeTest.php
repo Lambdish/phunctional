@@ -2,24 +2,24 @@
 
 namespace Lambdish\Phunctional\Tests;
 
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 use function Lambdish\Phunctional\apply;
 use function Lambdish\Phunctional\pipe;
 
-final class PipeTest extends PHPUnit_Framework_TestCase
+final class PipeTest extends TestCase
 {
     /**
      * @test
      * @dataProvider calculatorProvider
      */
-    public function is_should_compose_a_functions_combination($a, $b, $result)
+    public function is_should_compose_a_functions_combination($a, $b, $result): void
     {
         $calculator = pipe($this->multiplier(), $this->byTwoDivider());
 
         $this->assertSame($result, apply($calculator, [$a, $b]));
     }
 
-    public function calculatorProvider()
+    public function calculatorProvider(): array
     {
         return [
             ['a' => 5, 'b' => 10, 'result' => 25],
@@ -28,16 +28,16 @@ final class PipeTest extends PHPUnit_Framework_TestCase
         ];
     }
 
-    private function multiplier()
+    private function multiplier(): callable
     {
-        return function ($a, $b) {
+        return static function ($a, $b) {
             return $a * $b;
         };
     }
 
-    private function byTwoDivider()
+    private function byTwoDivider(): callable
     {
-        return function ($num) {
+        return static function ($num) {
             return $num / 2;
         };
     }

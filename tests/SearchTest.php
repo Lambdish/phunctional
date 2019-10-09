@@ -2,13 +2,13 @@
 
 namespace Lambdish\Phunctional\Tests;
 
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 use function Lambdish\Phunctional\search;
 
-final class SearchTest extends PHPUnit_Framework_TestCase
+final class SearchTest extends TestCase
 {
     /** @test */
-    public function is_should_search_an_existent_value()
+    public function is_should_search_an_existent_value(): void
     {
         $amsterdam  = [
             'name'     => 'Amsterdam',
@@ -35,23 +35,23 @@ final class SearchTest extends PHPUnit_Framework_TestCase
     }
 
     /** @test */
-    public function it_should_return_the_default_value_if_no_result_is_found()
+    public function it_should_return_the_default_value_if_no_result_is_found(): void
     {
         $numbers = [1, 2, 3, 4, 5];
 
         $this->assertEquals('No result found', search($this->aNumberBiggerTanTen(), $numbers, 'No result found'));
     }
 
-    private function originalSearcher()
+    private function originalSearcher(): callable
     {
-        return function (array $elephpant) {
+        return static function (array $elephpant) {
             return $elephpant['original'];
         };
     }
 
-    private function aNumberBiggerTanTen()
+    private function aNumberBiggerTanTen(): callable
     {
-        return function ($num) {
+        return static function ($num) {
             return $num > 10;
         };
     }

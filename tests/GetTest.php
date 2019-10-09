@@ -3,13 +3,13 @@
 namespace Lambdish\Phunctional\Tests;
 
 use ArrayIterator;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 use function Lambdish\Phunctional\get;
 
-class GetTest extends PHPUnit_Framework_TestCase
+class GetTest extends TestCase
 {
     /** @test */
-    public function it_should_return_the_value_of_the_item_of_an_existent_key()
+    public function it_should_return_the_value_of_the_item_of_an_existent_key(): void
     {
         $actual = ['one' => 1, 'two' => 2];
 
@@ -17,7 +17,7 @@ class GetTest extends PHPUnit_Framework_TestCase
     }
 
     /** @test */
-    public function it_should_return_the_value_of_the_item_of_an_existent_property_of_a_traversable()
+    public function it_should_return_the_value_of_the_item_of_an_existent_property_of_a_traversable(): void
     {
         $traversable = new ArrayIterator(['one' => 1, 'two' => 2]);
 
@@ -25,7 +25,7 @@ class GetTest extends PHPUnit_Framework_TestCase
     }
 
     /** @test */
-    public function it_should_return_null_if_the_key_does_not_exists_and_not_default_value_is_provided()
+    public function it_should_return_null_if_the_key_does_not_exists_and_not_default_value_is_provided(): void
     {
         $actual = ['one' => 1, 'two' => 2];
 
@@ -33,7 +33,7 @@ class GetTest extends PHPUnit_Framework_TestCase
     }
 
     /** @test */
-    public function it_should_return_null_if_the_property_does_not_exists_and_not_default_value_is_provided()
+    public function it_should_return_null_if_the_property_does_not_exists_and_not_default_value_is_provided(): void
     {
         $traversable = new ArrayIterator(['one' => 1, 'two' => 2]);
 
@@ -41,7 +41,7 @@ class GetTest extends PHPUnit_Framework_TestCase
     }
 
     /** @test */
-    public function it_should_return_the_default_value_provided_if_the_key_does_not_exists()
+    public function it_should_return_the_default_value_provided_if_the_key_does_not_exists(): void
     {
         $actual = ['one' => 1, 'two' => 2];
 
@@ -49,7 +49,7 @@ class GetTest extends PHPUnit_Framework_TestCase
     }
 
     /** @test */
-    public function it_should_return_the_default_value_provided_if_the_property_does_not_exists()
+    public function it_should_return_the_default_value_provided_if_the_property_does_not_exists(): void
     {
         $traversable = new ArrayIterator(['one' => 1, 'two' => 2]);
 
@@ -57,7 +57,7 @@ class GetTest extends PHPUnit_Framework_TestCase
     }
 
     /** @test */
-    public function it_should_return_the_value_of_the_item_of_an_existent_false_property_of_a_traversable()
+    public function it_should_return_the_value_of_the_item_of_an_existent_false_property_of_a_traversable(): void
     {
         $traversable = new ArrayIterator(['one' => null, 'two' => false]);
 

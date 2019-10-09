@@ -2,22 +2,22 @@
 
 namespace Lambdish\Phunctional\Tests;
 
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 use stdClass;
 use function Lambdish\Phunctional\identity;
 
-final class IdentityTest extends PHPUnit_Framework_TestCase
+final class IdentityTest extends TestCase
 {
     /**
      * @test
      * @dataProvider values()
      */
-    public function it_should_return_a_same_value_is_passed_as_argument($value)
+    public function it_should_return_a_same_value_is_passed_as_argument($value): void
     {
         $this->assertSame($value, identity($value));
     }
 
-    public function values()
+    public function values(): array
     {
         return [
             [1],

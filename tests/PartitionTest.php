@@ -3,22 +3,22 @@
 namespace Lambdish\Phunctional\Tests;
 
 use ArrayIterator;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 use function Lambdish\Phunctional\apply;
 use function Lambdish\Phunctional\partition;
 
-class PartitionTest extends PHPUnit_Framework_TestCase
+class PartitionTest extends TestCase
 {
     /**
      * @test
      * @dataProvider getValidCollections
      */
-    public function is_should_partition_a_collection($coll, $partitionSize, $expected)
+    public function is_should_partition_a_collection($coll, $partitionSize, $expected): void
     {
         $this->assertEquals($expected, partition($partitionSize, $coll));
     }
 
-    public function getValidCollections()
+    public function getValidCollections(): array
     {
         return [
             'array'           => [
@@ -37,7 +37,17 @@ class PartitionTest extends PHPUnit_Framework_TestCase
                 'expected'      => [[0 => 1, 1 => 2], [2 => 3, 3 => 4], [4 => 5, 5 => 6], [6 => 7]],
             ],
             'generator'       => [
-                'coll'          => apply(function () {yield 1; yield 2; yield 3; yield 4; yield 5; yield 6; yield 7; }),
+                'coll'          => apply(
+                    static function () {
+                        yield 1;
+                        yield 2;
+                        yield 3;
+                        yield 4;
+                        yield 5;
+                        yield 6;
+                        yield 7;
+                    }
+                ),
                 'partitionSize' => 2,
                 'expected'      => [[0 => 1, 1 => 2], [2 => 3, 3 => 4], [4 => 5, 5 => 6], [6 => 7]],
             ],

@@ -2,13 +2,13 @@
 
 namespace Lambdish\Phunctional\Tests;
 
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 use function Lambdish\Phunctional\reduce;
 
-class ReduceTest extends PHPUnit_Framework_TestCase
+class ReduceTest extends TestCase
 {
     /** @test */
-    public function it_should_reduce_the_values_of_a_collection_after_apply_a_function()
+    public function it_should_reduce_the_values_of_a_collection_after_apply_a_function(): void
     {
         $coll = [1, 2, 3, 4, 5];
         $fn   = $this->sum();
@@ -17,7 +17,7 @@ class ReduceTest extends PHPUnit_Framework_TestCase
     }
 
     /** @test */
-    public function it_should_reduce_the_values_of_a_collection_after_apply_a_function_using_an_initial_value()
+    public function it_should_reduce_the_values_of_a_collection_after_apply_a_function_using_an_initial_value(): void
     {
         $coll    = [1, 2, 3, 4, 5];
         $initial = 5;
@@ -27,7 +27,7 @@ class ReduceTest extends PHPUnit_Framework_TestCase
     }
 
     /** @test */
-    public function it_should_allow_reduce_the_values_of_a_collection_depending_on_the_key_of_each_value()
+    public function it_should_allow_reduce_the_values_of_a_collection_depending_on_the_key_of_each_value(): void
     {
         $coll    = [1 => 'one', 2 => 'two', 3 => 'three', 4 => 'four', 5 => 'five'];
         $initial = '';
@@ -36,16 +36,16 @@ class ReduceTest extends PHPUnit_Framework_TestCase
         $this->assertSame('one three five', reduce($fn, $coll, $initial));
     }
 
-    private function sum()
+    private function sum(): callable
     {
-        return function ($acc, $value) {
+        return static function ($acc, $value) {
             return $acc + $value;
         };
     }
 
-    private function concatValuesOfOddKeys()
+    private function concatValuesOfOddKeys(): callable
     {
-        return function ($acc, $value, $key) {
+        return static function ($acc, $value, $key) {
             return $key % 2 === 1 ?
                 trim($acc . ' ' . $value) :
                 $acc;
