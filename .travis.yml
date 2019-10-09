@@ -8,3 +8,5 @@ before_script:
 
 script:
   - ./vendor/bin/phpunit
+  - ./vendor/bin/phpstan analyse -l 7 src
+

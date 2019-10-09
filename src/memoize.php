@@ -7,12 +7,12 @@ namespace Lambdish\Phunctional;
 use Closure;
 
 /**
- * @param callable|null $fn   function to be executed. Pass null to reset cache
- * @param array         $args arguments to be passed to the called function
+ * @param callable|null $fn      function to be executed. Pass null to reset cache
+ * @param mixed         ...$args arguments to be passed to the called function
  *
  * @return mixed
  */
-function memoize(callable $fn = null, ...$args)
+function memoize(?callable $fn, ...$args)
 {
     static $cache = [];
 
