@@ -20,6 +20,7 @@ require __DIR__ . '/get.php';
 require __DIR__ . '/get_in.php';
 require __DIR__ . '/group_by.php';
 require __DIR__ . '/key.php';
+require __DIR__ . '/identity.php';
 require __DIR__ . '/instance_of.php';
 require __DIR__ . '/last.php';
 require __DIR__ . '/map.php';
