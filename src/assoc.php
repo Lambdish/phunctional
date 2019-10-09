@@ -15,10 +15,8 @@ use Traversable;
  * @param array|Traversable $coll  collection to assoc the value
  * @param string            $key   the key the value will have
  * @param string            $value the value to assoc
- *
- * @return array
  */
-function assoc($coll, $key, $value)
+function assoc($coll, $key, $value): array
 {
     $array = $coll instanceof Traversable ? iterator_to_array($coll) : $coll;
 

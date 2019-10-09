@@ -18,8 +18,6 @@ use Traversable;
  * wrong number of parameters or will not do as you expect a change of signature. To have a good test suite would be a
  * requirement for a widely use of this function in your code.
  *
- * @since 0.1
- *
  * @param callable          $fn   function to be executed
  * @param array|Traversable $coll arguments to be passed to the called function
  *

@@ -11,13 +11,9 @@ use Traversable;
  *
  * If the collection is empty or only have one item, returns an empty collection
  *
- * @since 0.1
- *
  * @param array|Traversable $coll collection of values
- *
- * @return array
  */
-function rest($coll)
+function rest($coll): array
 {
     $firstItem = true;
     $rest      = [];

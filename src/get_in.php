@@ -7,8 +7,6 @@ namespace Lambdish\Phunctional;
 /**
  * Returns the value in a nested associative structure or a $default value in the case it does not exists
  *
- * @since 0.1
- *
  * @param array      $keys     Keys of the value to be returned
  * @param array      $elements Elements to search in
  * @param mixed|null $default  Value to be returned if the key does not exists

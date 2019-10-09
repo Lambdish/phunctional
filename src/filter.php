@@ -13,22 +13,12 @@ use Traversable;
  * Similar to `array_filter` but with a consistent parameters order, requiring always a function and allowing access
  * to the keys of the collection.
  *
- * @since 0.1
- *
  * @param callable                    $fn   function to filter by
  * @param array|Traversable|Generator $coll collection of values to be filtered
- *
- * @return array
  */
-function filter(callable $fn, $coll)
+function filter(callable $fn, $coll): array
 {
-    $result = [];
+    $args = $coll instanceof Traversable ? iterator_to_array($coll) : $coll;
 
-    foreach ($coll as $key => $value) {
-        if ($fn($value, $key)) {
-            $result[$key] = $value;
-        }
-    }
-
-    return $result;
+    return array_filter($args, $fn);
 }

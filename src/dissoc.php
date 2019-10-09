@@ -13,10 +13,8 @@ use Traversable;
  *
  * @param array|Traversable $coll collection to dissoc the value
  * @param mixed             $key  the key the value have
- *
- * @return array
  */
-function dissoc($coll, $key)
+function dissoc($coll, $key): array
 {
     $array = $coll instanceof Traversable ? iterator_to_array($coll) : $coll;
 

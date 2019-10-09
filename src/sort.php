@@ -13,10 +13,8 @@ use Traversable;
  *                                integer less than, equal to, or greater than zero if the first argument is considered
  *                                to be respectively less than, equal to, or greater than the second
  * @param array|Traversable $coll collection to order
- *
- * @return mixed|null
  */
-function sort(callable $fn, $coll)
+function sort(callable $fn, $coll): array
 {
     $sorted = $coll instanceof Traversable ? iterator_to_array($coll) : $coll;
 

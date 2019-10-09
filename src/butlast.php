@@ -11,13 +11,9 @@ use Traversable;
  *
  * If the collection is empty or only have one item, returns an empty collection
  *
- * @since 0.1
- *
  * @param array|Traversable $coll collection of values
- *
- * @return array
  */
-function butlast($coll)
+function butlast($coll): array
 {
     return reverse(rest(reverse($coll)));
 }

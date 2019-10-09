@@ -14,10 +14,8 @@ use Traversable;
  *
  * @param callable                    $fn   function to apply to every item in the collection
  * @param array|Traversable|Generator $coll collection of values to apply the function
- *
- * @return array
  */
-function group_by(callable $fn, $coll)
+function group_by(callable $fn, $coll): array
 {
     $result = [];
 
