@@ -1,11 +1,13 @@
 <?php
 
+declare(strict_types = 1);
+
 namespace Lambdish\Phunctional\Tests;
 
 use PHPUnit\Framework\TestCase;
 use function Lambdish\Phunctional\flatten;
 
-class FlattenTest extends TestCase
+final class FlattenTest extends TestCase
 {
     /** @test */
     public function it_should_flat_a_two_multidimensional_collection(): void

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types = 1);
+
 namespace Lambdish\Phunctional;
 
 /**
@@ -13,7 +15,7 @@ namespace Lambdish\Phunctional;
  */
 function constant($value)
 {
-    return function () use ($value) {
+    return static function () use ($value) {
         return $value;
     };
 }

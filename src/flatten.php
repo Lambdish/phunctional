@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types = 1);
+
 namespace Lambdish\Phunctional;
 
 use Generator;
@@ -17,7 +19,7 @@ use Traversable;
 function flatten($coll)
 {
     $result        = [];
-    $isTraversable = function ($item) {
+    $isTraversable = static function ($item) {
         return is_array($item) || $item instanceof Traversable;
     };
 

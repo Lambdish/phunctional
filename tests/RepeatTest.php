@@ -1,11 +1,13 @@
 <?php
 
+declare(strict_types = 1);
+
 namespace Lambdish\Phunctional\Tests;
 
 use PHPUnit\Framework\TestCase;
 use function Lambdish\Phunctional\repeat;
 
-class RepeatTest extends TestCase
+final class RepeatTest extends TestCase
 {
     /** @test */
     public function it_should_repeat_a_function_certain_amount_of_times(): void

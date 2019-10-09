@@ -1,11 +1,13 @@
 <?php
 
+declare(strict_types = 1);
+
 namespace Lambdish\Phunctional\Tests;
 
 use PHPUnit\Framework\TestCase;
 use function Lambdish\Phunctional\flat_map;
 
-class FlatMapTest extends TestCase
+final class FlatMapTest extends TestCase
 {
     /** @test */
     public function it_should_apply_and_then_flatten(): void

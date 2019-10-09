@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types = 1);
+
 namespace Lambdish\Phunctional\Tests;
 
 use ArrayIterator;
@@ -7,7 +9,7 @@ use Exception;
 use PHPUnit\Framework\TestCase;
 use function Lambdish\Phunctional\instance_of;
 
-class InstanceOfTest extends TestCase
+final class InstanceOfTest extends TestCase
 {
     /**
      * @test

@@ -1,12 +1,14 @@
 <?php
 
+declare(strict_types = 1);
+
 namespace Lambdish\Phunctional\Tests;
 
 use ArrayIterator;
 use PHPUnit\Framework\TestCase;
 use function Lambdish\Phunctional\apply;
 
-class ApplyTest extends TestCase
+final class ApplyTest extends TestCase
 {
     /** @test */
     public function it_should_call_return_the_value_of_the_called_function(): void
@@ -26,6 +28,15 @@ class ApplyTest extends TestCase
         );
     }
 
+    public function arguments(): array
+    {
+        return [
+            'array'     => ['arguments' => ['PHP', 'functional']],
+            'iterator'  => ['arguments' => new ArrayIterator(['PHP', 'functional'])],
+            'generator' => ['arguments' => $this->generator('PHP', 'functional')],
+        ];
+    }
+
     private function functionWithoutArguments(): callable
     {
         return static function (): string {
@@ -38,15 +49,6 @@ class ApplyTest extends TestCase
         return static function ($context, $name): string {
             return sprintf('Hello %s, welcome to %s!!', $name, $context);
         };
-    }
-
-    public function arguments(): array
-    {
-        return [
-            'array'     => ['arguments' => ['PHP', 'functional']],
-            'iterator'  => ['arguments' => new ArrayIterator(['PHP', 'functional'])],
-            'generator' => ['arguments' => $this->generator('PHP', 'functional')],
-        ];
     }
 
     private function generator(...$items)

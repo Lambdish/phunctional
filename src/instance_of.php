@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types = 1);
+
 namespace Lambdish\Phunctional;
 
 use Closure;
@@ -13,7 +15,7 @@ use Closure;
  */
 function instance_of($className)
 {
-    return function ($element) use ($className) {
+    return static function ($element) use ($className) {
         return $element instanceof $className;
     };
 }
