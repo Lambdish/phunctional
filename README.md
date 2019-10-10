@@ -26,7 +26,7 @@ All of this can be resumed with a word: __Immutability__.
 ## Installation
 To install it with composer:
 ```
-composer require Lambdish/phunctional
+composer require lambdish/phunctional
 ```
 
 ## Simple usage
@@ -48,7 +48,21 @@ map(
 // => [11, 12, 13, 14, 15]
 ```
 
-## Functions documentation
+If you prefer, you can set an alias to the phunctional namespace as (preferred if you're going to use the provided constants):
+```php
+use Lambdish\Phunctional as _;
+
+_/map(
+    function ($number) {
+        return $number + 10;
+    },
+    [1, 2, 3, 4, 5]
+);
+
+// => [11, 12, 13, 14, 15]
+```
+
+## Documentation
 You can find the functions documentation [here](docs/docs.md).
 
 ## License

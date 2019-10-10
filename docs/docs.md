@@ -1,6 +1,21 @@
 # Lambdish Phunctional Docs
 
-## Basic functional methods
+## 💪 Functions paths as constants
+All phunctional functions contains a constant named as the function with the full namespace as the value. Since in PHP
+all functions and classes with an `__invoke` method are `callable` (referring with the full namespace),
+we can do something like:
+
+```php
+use Lambdish\Phunctional as _;
+
+$lastNonNullableValue = _\pipe(_\filter_null, _\reverse, _\first);
+
+$lastNonNullableValue(['first', null, 'other', 'last non nullable', null, null]);
+
+// => "last non nullable"
+```
+
+## ✨ Available functions
 
  * [all](functions/all.md): Check if all the values of the collection satisfies the function
  * [any](functions/any.md): Check if any value of the collection satisfies the function
