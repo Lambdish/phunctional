@@ -48,22 +48,19 @@ map(
 // => [11, 12, 13, 14, 15]
 ```
 
-If you prefer, you can set an alias to the phunctional namespace as (preferred if you're going to use the provided constants):
+And do something more complex like:
 ```php
-use Lambdish\Phunctional as _;
+use function Lambdish\Phunctional\pipe;
+use const Lambdish\Phunctional\{filter_null, reverse, first};
 
-_/map(
-    function ($number) {
-        return $number + 10;
-    },
-    [1, 2, 3, 4, 5]
-);
+$lastNonNullableValue = pipe(filter_null, reverse, first);
 
-// => [11, 12, 13, 14, 15]
+$lastNonNullableValue(['first', null, 'other', 'last non nullable', null, null]);
+
+// => "last non nullable"
 ```
+Here we're using the provided constants, that acts like an alias for the functions full qualified namespace
+(and therefore, are `callable`).
 
 ## Documentation
 You can find the functions documentation [here](docs/docs.md).
-
-## License
-The Phunctional library is licensed under the [MIT license](http://opensource.org/licenses/MIT).
