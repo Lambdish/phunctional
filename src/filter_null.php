@@ -4,15 +4,12 @@ declare(strict_types = 1);
 
 namespace Lambdish\Phunctional;
 
-use Generator;
-use Traversable;
-
 /**
  * Returns an array with the items in $coll which are not null.
  *
- * @param array|Traversable|Generator $coll collection of values to be filtered
+ * @param iterable $coll collection of values to be filtered
  */
-function filter_null($coll): array
+function filter_null(iterable $coll): array
 {
     return filter(
         not(

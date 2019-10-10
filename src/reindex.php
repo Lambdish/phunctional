@@ -4,16 +4,14 @@ declare(strict_types = 1);
 
 namespace Lambdish\Phunctional;
 
-use Traversable;
-
 /**
  * Returns a new collection with the keys reindexed by `$fn`.
  * Optionally `$fn` receive the key as the second argument.
  *
- * @param callable          $fn   function to generate the key
- * @param array|Traversable $coll collection to be reindexed
+ * @param callable $fn   function to generate the key
+ * @param iterable $coll collection to be reindexed
  */
-function reindex(callable $fn, $coll): array
+function reindex(callable $fn, iterable $coll): array
 {
     $result = [];
 

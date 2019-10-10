@@ -4,7 +4,6 @@ declare(strict_types = 1);
 
 namespace Lambdish\Phunctional;
 
-use Generator;
 use Traversable;
 
 /**
@@ -13,10 +12,10 @@ use Traversable;
  * Similar to `array_map` but accepting Traversable.
  * Function $fn should accept the value of the item as the first argument.
  *
- * @param callable                    $fn   function to apply to every item in the collection
- * @param array|Traversable|Generator $coll collection of values to apply the function
+ * @param callable $fn   function to apply to every item in the collection
+ * @param iterable $coll collection of values to apply the function
  */
-function map(callable $fn, $coll): array
+function map(callable $fn, iterable $coll): array
 {
     $args = $coll instanceof Traversable ? iterator_to_array($coll) : $coll;
 

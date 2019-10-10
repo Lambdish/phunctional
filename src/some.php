@@ -4,16 +4,13 @@ declare(strict_types = 1);
 
 namespace Lambdish\Phunctional;
 
-use Generator;
-use Traversable;
-
 /**
  * Check if some value of the collection satisfies the function
  *
- * @param callable                    $fn   function to check if the predicate is true
- * @param array|Traversable|Generator $coll collection of values to check some is true by the `$fn`
+ * @param callable $fn   function to check if the predicate is true
+ * @param iterable $coll collection of values to check some is true by the `$fn`
  */
-function some(callable $fn, $coll): bool
+function some(callable $fn, iterable $coll): bool
 {
     foreach ($coll as $key => $value) {
         if ($fn($value, $key)) {

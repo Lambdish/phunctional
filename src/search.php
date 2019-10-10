@@ -4,18 +4,16 @@ declare(strict_types = 1);
 
 namespace Lambdish\Phunctional;
 
-use Traversable;
-
 /**
  * Search a value in a collection. Return the first occurrence if found, null if not.
  *
- * @param callable          $fn      searcher
- * @param array|Traversable $coll    collection of values to be searched
- * @param mixed             $default value to return if no result is found
+ * @param callable $fn      searcher
+ * @param iterable $coll    collection of values to be searched
+ * @param mixed    $default value to return if no result is found
  *
  * @return mixed|null
  */
-function search(callable $fn, $coll, $default = null)
+function search(callable $fn, iterable $coll, $default = null)
 {
     foreach ($coll as $key => $value) {
         if ($fn($value, $key)) {
