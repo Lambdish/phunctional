@@ -15,3 +15,5 @@ function not(callable $fn): callable
         return !$fn(...$args);
     };
 }
+
+const not = '\Lambdish\Phunctional\not';

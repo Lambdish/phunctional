@@ -23,3 +23,5 @@ function some(callable $fn, $coll): bool
 
     return false;
 }
+
+const some = '\Lambdish\Phunctional\some';

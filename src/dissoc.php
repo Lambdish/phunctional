@@ -22,3 +22,5 @@ function dissoc($coll, $key): array
 
     return $array;
 }
+
+const dissoc = '\Lambdish\Phunctional\dissoc';

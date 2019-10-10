@@ -22,3 +22,5 @@ function each(callable $fn, $coll): void
         $fn($value, $key);
     }
 }
+
+const each = '\Lambdish\Phunctional\each';

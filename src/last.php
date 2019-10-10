@@ -19,3 +19,5 @@ function last($coll)
 {
     return first(reverse($coll));
 }
+
+const last = '\Lambdish\Phunctional\last';

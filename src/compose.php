@@ -16,3 +16,5 @@ function compose(callable ...$fns)
 {
     return pipe(...reverse($fns));
 }
+
+const compose = '\Lambdish\Phunctional\compose';

@@ -15,3 +15,5 @@ function identity($argument)
 {
     return $argument;
 }
+
+const identity = '\Lambdish\Phunctional\identity';

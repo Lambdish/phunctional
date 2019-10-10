@@ -27,3 +27,5 @@ function apply(callable $fn, ...$args)
 {
     return $fn(...$args);
 }
+
+const apply = '\Lambdish\Phunctional\apply';

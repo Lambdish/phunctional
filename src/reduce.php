@@ -32,3 +32,5 @@ function reduce(callable $fn, $coll, $initial = null)
 
     return $acc;
 }
+
+const reduce = '\Lambdish\Phunctional\reduce';

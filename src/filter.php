@@ -21,3 +21,5 @@ function filter(callable $fn, $coll): array
 
     return array_filter($args, $fn);
 }
+
+const filter = '\Lambdish\Phunctional\filter';

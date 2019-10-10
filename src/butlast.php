@@ -17,3 +17,5 @@ function butlast($coll): array
 {
     return reverse(rest(reverse($coll)));
 }
+
+const butlast = '\Lambdish\Phunctional\butlast';

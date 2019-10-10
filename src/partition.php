@@ -19,3 +19,5 @@ function partition(int $size, $coll): array
 
     return array_chunk($array, $size, true);
 }
+
+const partition = '\Lambdish\Phunctional\partition';

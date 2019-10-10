@@ -14,3 +14,5 @@ function complement(callable $fn): callable
 {
     return not($fn);
 }
+
+const complement = '\Lambdish\Phunctional\complement';

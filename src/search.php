@@ -25,3 +25,5 @@ function search(callable $fn, $coll, $default = null)
 
     return $default;
 }
+
+const search = '\Lambdish\Phunctional\search';

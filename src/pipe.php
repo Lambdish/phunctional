@@ -24,3 +24,5 @@ function pipe(callable ...$fns)
 
     return reduce($compose, $fns);
 }
+
+const pipe = '\Lambdish\Phunctional\pipe';

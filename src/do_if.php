@@ -21,3 +21,5 @@ function do_if(callable $fn, callable ...$predicates): ?callable
         return all($isValid, $predicates) ? $fn(...$args) : null;
     };
 }
+
+const do_if = '\Lambdish\Phunctional\do_if';

@@ -22,3 +22,5 @@ function flat_map_indexed(callable $fn, $coll): array
 {
     return flatten(map_indexed($fn, $coll));
 }
+
+const flat_map_indexed = '\Lambdish\Phunctional\flat_map_indexed';

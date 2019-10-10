@@ -22,3 +22,5 @@ function map(callable $fn, $coll): array
 
     return array_map($fn, $args);
 }
+
+const map = '\Lambdish\Phunctional\map';

@@ -26,3 +26,5 @@ function rest($coll): array
 
     return $rest;
 }
+
+const rest = '\Lambdish\Phunctional\rest';

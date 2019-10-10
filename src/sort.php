@@ -22,3 +22,5 @@ function sort(callable $fn, $coll): array
 
     return $sorted;
 }
+
+const sort = '\Lambdish\Phunctional\sort';

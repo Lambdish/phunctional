@@ -28,3 +28,5 @@ function get_in(array $keys, array $elements, $default = null)
 
     return $current;
 }
+
+const get_in = '\Lambdish\Phunctional\get_in';

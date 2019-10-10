@@ -28,3 +28,5 @@ function filter_indexed(callable $fn, $coll): array
 
     return $result;
 }
+
+const filter_indexed = '\Lambdish\Phunctional\filter_indexed';

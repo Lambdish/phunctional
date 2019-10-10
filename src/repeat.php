@@ -20,3 +20,5 @@ function repeat(callable $fn, int $times): array
 
     return $result;
 }
+
+const repeat = '\Lambdish\Phunctional\repeat';

@@ -20,3 +20,5 @@ function flat_map(callable $fn, $coll): array
 {
     return flatten(map($fn, $coll));
 }
+
+const flat_map = '\Lambdish\Phunctional\flat_map';

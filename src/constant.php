@@ -15,3 +15,5 @@ function constant($value): callable
         return $value;
     };
 }
+
+const constant = '\Lambdish\Phunctional\constant';
