@@ -4,15 +4,14 @@ declare(strict_types = 1);
 
 namespace Lambdish\Phunctional;
 
-use Generator;
 use Traversable;
 
 /**
  * Returns a flat array of a multidimensional $coll
  *
- * @param array|Traversable|Generator $coll collection of multidimensional values to be flatten
+ * @param iterable $coll collection of multidimensional values to be flatten
  */
-function flatten($coll): array
+function flatten(iterable $coll): array
 {
     $result        = [];
     $isTraversable = static function ($item) {

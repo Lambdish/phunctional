@@ -4,18 +4,16 @@ declare(strict_types = 1);
 
 namespace Lambdish\Phunctional;
 
-use Traversable;
-
 /**
  * Returns the first element of a collection
  *
  * If the collection is empty returns null
  *
- * @param array|Traversable $coll collection of values
+ * @param iterable $coll collection of values
  *
  * @return mixed|null
  */
-function first($coll)
+function first(iterable $coll)
 {
     foreach ($coll as $item) {
         return $item;

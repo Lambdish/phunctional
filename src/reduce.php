@@ -4,9 +4,6 @@ declare(strict_types = 1);
 
 namespace Lambdish\Phunctional;
 
-use Generator;
-use Traversable;
-
 /**
  * Returns the accumulated value of iteratively reduce the collection using a function that receives the accumulated
  * value and returns a new one in each iteration
@@ -15,14 +12,14 @@ use Traversable;
  * Function $fn should accept the accumulated value as first argument, the value of the item as the second argument
  * and optionally the key of the item as the third argument.
  *
- * @param callable                    $fn      function which reduce the collection calculating the accumulated value
- * @param array|Traversable|Generator $coll    collection of values to be reduced
- * @param mixed                       $initial initial value that will be used as accumulated value for the first item
+ * @param callable $fn                         function which reduce the collection calculating the accumulated value
+ * @param iterable $coll                       collection of values to be reduced
+ * @param mixed    $initial                    initial value that will be used as accumulated value for the first item
  *                                             in the collection
  *
  * @return mixed
  */
-function reduce(callable $fn, $coll, $initial = null)
+function reduce(callable $fn, iterable $coll, $initial = null)
 {
     $acc = $initial;
 

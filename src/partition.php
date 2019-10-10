@@ -4,16 +4,16 @@ declare(strict_types = 1);
 
 namespace Lambdish\Phunctional;
 
-use Generator;
 use Traversable;
 
 /**
- * Partition an array into arrays with size elements preserving its keys. The last portion may contain less than size elements.
+ * Partition an array into arrays with size elements preserving its keys. The last portion may contain less than size
+ * elements.
  *
- * @param int             $size
- * @param array|Traversable|Generator $coll
+ * @param int      $size
+ * @param iterable $coll
  */
-function partition(int $size, $coll): array
+function partition(int $size, iterable $coll): array
 {
     $array = $coll instanceof Traversable ? iterator_to_array($coll) : $coll;
 

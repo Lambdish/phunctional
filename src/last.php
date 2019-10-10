@@ -4,18 +4,16 @@ declare(strict_types = 1);
 
 namespace Lambdish\Phunctional;
 
-use Traversable;
-
 /**
  * Returns the last element of a collection
  *
  * If the collection is empty returns null. If a generator is passed this will be iterated.
  *
- * @param array|Traversable $coll collection of values
+ * @param iterable $coll collection of values
  *
  * @return mixed|null
  */
-function last($coll)
+function last(iterable $coll)
 {
     return first(reverse($coll));
 }

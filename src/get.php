@@ -9,13 +9,13 @@ use Traversable;
 /**
  * Returns the value of an item in a $coll or a $default value in the case it does not exists
  *
- * @param string|int        $key     key to search in the collection
- * @param Traversable|array $coll    collection where search the desired value
- * @param mixed|null        $default default value to be returned if the key is not found in the collection
+ * @param string|int $key     key to search in the collection
+ * @param iterable   $coll    collection where search the desired value
+ * @param mixed|null $default default value to be returned if the key is not found in the collection
  *
  * @return mixed|null
  */
-function get($key, $coll, $default = null)
+function get($key, iterable $coll, $default = null)
 {
     return is_array($coll) ? _get_array($key, $coll, $default) : _get_traversable($key, $coll, $default);
 }

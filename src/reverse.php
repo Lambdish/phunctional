@@ -12,9 +12,9 @@ use Traversable;
  * Passing a Generator to this function will work but it does not provide any improvement against a simple Traversable
  * because to reach the last one is necessary iterate among all the items
  *
- * @param array|Traversable $coll collection to be reversed
+ * @param iterable $coll collection to be reversed
  */
-function reverse($coll): array
+function reverse(iterable $coll): array
 {
     $array = $coll instanceof Traversable ? iterator_to_array($coll) : $coll;
 

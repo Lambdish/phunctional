@@ -4,8 +4,6 @@ declare(strict_types = 1);
 
 namespace Lambdish\Phunctional;
 
-use Traversable;
-
 /**
  * Calls $fn with $args and returns its results.
  *
@@ -18,7 +16,7 @@ use Traversable;
  * wrong number of parameters or will not do as you expect a change of signature. To have a good test suite would be a
  * requirement for a widely use of this function in your code.
  *
- * @param callable          $fn   function to be executed
+ * @param callable $fn      function to be executed
  * @param mixed    ...$args arguments to be passed to the called function
  *
  * @return mixed

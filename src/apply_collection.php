@@ -18,12 +18,12 @@ use Traversable;
  * wrong number of parameters or will not do as you expect a change of signature. To have a good test suite would be a
  * requirement for a widely use of this function in your code.
  *
- * @param callable          $fn   function to be executed
- * @param array|Traversable $coll arguments to be passed to the called function
+ * @param callable $fn   function to be executed
+ * @param iterable $coll arguments to be passed to the called function
  *
  * @return mixed
  */
-function apply_collection(callable $fn, $coll = [])
+function apply_collection(callable $fn, iterable $coll = [])
 {
     $args = $coll instanceof Traversable ? iterator_to_array($coll) : $coll;
 
