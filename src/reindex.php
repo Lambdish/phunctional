@@ -23,3 +23,5 @@ function reindex(callable $fn, $coll): array
 
     return $result;
 }
+
+const reindex = '\Lambdish\Phunctional\reindex';

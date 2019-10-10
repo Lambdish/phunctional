@@ -15,3 +15,5 @@ function instance_of($className): callable
         return $element instanceof $className;
     };
 }
+
+const instance_of = '\Lambdish\Phunctional\instance_of';

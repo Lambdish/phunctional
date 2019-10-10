@@ -28,3 +28,5 @@ function memoize(?callable $fn, ...$args)
 
     return $cache[$key] = array_key_exists($key, $cache) ? $cache[$key] : $fn(...$args);
 }
+
+const memoize = '\Lambdish\Phunctional\memoize';

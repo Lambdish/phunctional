@@ -24,3 +24,5 @@ function assoc($coll, $key, $value): array
 
     return $array;
 }
+
+const assoc = '\Lambdish\Phunctional\assoc';

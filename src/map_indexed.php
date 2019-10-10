@@ -27,3 +27,5 @@ function map_indexed(callable $fn, $coll): array
 
     return $result;
 }
+
+const map_indexed = '\Lambdish\Phunctional\map_indexed';

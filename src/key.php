@@ -19,3 +19,5 @@ function key($value, $coll, $default = null)
 
     return false !== $key ? $key : $default;
 }
+
+const key = '\Lambdish\Phunctional\key';

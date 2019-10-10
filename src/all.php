@@ -16,3 +16,5 @@ function all(callable $fn, $coll): bool
 {
     return !some(not($fn), $coll);
 }
+
+const all = '\Lambdish\Phunctional\all';

@@ -22,3 +22,5 @@ function filter_fresh(callable $fn, $coll)
 {
     return array_values(filter($fn, $coll));
 }
+
+const filter_fresh = '\Lambdish\Phunctional\filter_fresh';

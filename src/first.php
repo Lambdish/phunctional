@@ -23,3 +23,5 @@ function first($coll)
 
     return null;
 }
+
+const first = '\Lambdish\Phunctional\first';

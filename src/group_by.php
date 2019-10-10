@@ -25,3 +25,5 @@ function group_by(callable $fn, $coll): array
 
     return $result;
 }
+
+const group_by = '\Lambdish\Phunctional\group_by';

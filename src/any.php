@@ -18,3 +18,5 @@ function any(callable $fn, $coll): bool
 {
     return some($fn, $coll);
 }
+
+const any = '\Lambdish\Phunctional\any';

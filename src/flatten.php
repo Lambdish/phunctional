@@ -31,3 +31,5 @@ function flatten($coll): array
 
     return $result;
 }
+
+const flatten = '\Lambdish\Phunctional\flatten';

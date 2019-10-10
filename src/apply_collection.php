@@ -29,3 +29,5 @@ function apply_collection(callable $fn, $coll = [])
 
     return apply($fn, ...$args);
 }
+
+const apply_collection = '\Lambdish\Phunctional\apply_collection';

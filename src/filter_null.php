@@ -23,3 +23,5 @@ function filter_null($coll): array
         $coll
     );
 }
+
+const filter_null = '\Lambdish\Phunctional\filter_null';

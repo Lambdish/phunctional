@@ -35,3 +35,5 @@ function _get_traversable($key, Traversable $coll, $default)
 
     return $default;
 }
+
+const get = '\Lambdish\Phunctional\get';

@@ -20,3 +20,5 @@ function reverse($coll): array
 
     return array_reverse($array, true);
 }
+
+const reverse = '\Lambdish\Phunctional\reverse';

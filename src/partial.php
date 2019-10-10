@@ -16,3 +16,5 @@ function partial(callable $fn, ...$args): callable
         return $fn(...array_merge($args, $biasedArgs));
     };
 }
+
+const partial = '\Lambdish\Phunctional\partial';
