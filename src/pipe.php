@@ -16,9 +16,9 @@ function pipe(callable ...$fns)
 {
     $compose = static function ($composition, $fn) {
         return static function (...$args) use ($composition, $fn) {
-            return null === $composition ?
-                $fn(...$args) :
-                $fn($composition(...$args));
+            return null === $composition
+                ? $fn(...$args)
+                : $fn($composition(...$args));
         };
     };
 

@@ -58,8 +58,9 @@ final class MemoizeTest extends TestCase
     private function functionFibonacciMemoized(): callable
     {
         return $memoizedFibonacci = static function ($number) use (&$memoizedFibonacci) {
-            return $number < 2 ? $number :
-                memoize($memoizedFibonacci, $number - 1) + memoize($memoizedFibonacci, $number - 2);
+            return $number < 2
+                ? $number
+                : memoize($memoizedFibonacci, $number - 1) + memoize($memoizedFibonacci, $number - 2);
         };
     }
 }
