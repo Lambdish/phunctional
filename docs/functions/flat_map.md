@@ -1,7 +1,8 @@
 # flat_map
 
 ## Description
-Returns an array containing the results of applying a given function to the items of a collection and flattening the results.
+Returns an array containing the results of applying a given function to the items of a collection and flattening the
+results. You can use the `key` as a second argument.
 
 ## Parameters
 

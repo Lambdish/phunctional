@@ -20,7 +20,6 @@ require __DIR__ . '/filter_indexed.php';
 require __DIR__ . '/filter_null.php';
 require __DIR__ . '/first.php';
 require __DIR__ . '/flat_map.php';
-require __DIR__ . '/flat_map_indexed.php';
 require __DIR__ . '/flatten.php';
 require __DIR__ . '/get.php';
 require __DIR__ . '/get_in.php';
