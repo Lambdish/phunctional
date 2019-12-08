@@ -4,8 +4,6 @@ declare(strict_types = 1);
 
 namespace Lambdish\Phunctional;
 
-use Traversable;
-
 /**
  * Sorts a collection
  *
@@ -16,7 +14,7 @@ use Traversable;
  */
 function sort(callable $fn, iterable $coll): array
 {
-    $sorted = $coll instanceof Traversable ? iterator_to_array($coll) : $coll;
+    $sorted = to_array($coll);
 
     usort($sorted, $fn);
 

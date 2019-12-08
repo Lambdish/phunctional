@@ -5,7 +5,6 @@ declare(strict_types = 1);
 namespace Lambdish\Phunctional;
 
 use ArgumentCountError;
-use Traversable;
 
 /**
  * Returns an array containing the results of applying $fn to the items of the $coll
@@ -19,7 +18,7 @@ use Traversable;
  */
 function map(callable $fn, iterable $coll): array
 {
-    $args = $coll instanceof Traversable ? iterator_to_array($coll) : $coll;
+    $args = to_array($coll);
 
     try {
         return ___map_indexed($fn, $args);

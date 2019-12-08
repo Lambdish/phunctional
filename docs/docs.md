@@ -41,3 +41,4 @@
  * [search](functions/search.md): Search a value over a collection. Return the first occurrence if found, null if not
  * [sort](functions/sort.md): Sorts a collection using a sorting function
  * [some](functions/some.md): Check if any value of the collection satisfies the function
+ * [to_array](functions/to_array.md): Transform a possible iterator to an array

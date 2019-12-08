@@ -5,7 +5,6 @@ declare(strict_types = 1);
 namespace Lambdish\Phunctional;
 
 use ArgumentCountError;
-use Traversable;
 
 /**
  * Returns an array with the items in $coll for which $fn returns true.
@@ -18,7 +17,7 @@ use Traversable;
  */
 function filter(callable $fn, iterable $coll): array
 {
-    $args = $coll instanceof Traversable ? iterator_to_array($coll) : $coll;
+    $args = to_array($coll);
 
     try {
         return ___filter_indexed($fn, $args);

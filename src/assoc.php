@@ -4,8 +4,6 @@ declare(strict_types = 1);
 
 namespace Lambdish\Phunctional;
 
-use Traversable;
-
 /**
  * Associate a value to an array
  *
@@ -18,7 +16,7 @@ use Traversable;
  */
 function assoc(iterable $coll, $key, $value): array
 {
-    $array = $coll instanceof Traversable ? iterator_to_array($coll) : $coll;
+    $array = to_array($coll);
 
     $array[$key] = $value;
 
