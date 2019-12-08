@@ -30,7 +30,6 @@
  * [instance_of](functions/instance_of.md): Returns a checker that validated if an element is an instance of a class
  * [last](functions/last.md): Returns the last element of a collection
  * [map](functions/map.md): Apply a function over all the items of a collection and returns an array with the results
- * [map_indexed](functions/map_indexed.md): Apply a function over all the items of a collection and returns an array with the results also using the key
  * [memoize](functions/memoize.md): Returns a memoized version of a referentially transparent function
  * [not](functions/not.md): Return the opposite of the function call
  * [partial](functions/partial.md): Fix a number of arguments to a function producing another one with an smaller arity
