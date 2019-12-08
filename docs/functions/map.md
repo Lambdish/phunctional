@@ -1,7 +1,8 @@
 # map
 
 ## Description
-Apply a function over all the items of a collection and returns an array with the results keeping the original indexes
+Apply a function over all the items of a collection and returns an array with the results keeping the original indexes.
+You can use the `key` as the second argument.
 
 ## Parameters
 
