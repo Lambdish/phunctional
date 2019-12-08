@@ -10,9 +10,9 @@ namespace Lambdish\Phunctional;
  *
  * @param callable ...$fns functions to be piped
  *
- * @return mixed
+ * @since 0.1
  */
-function pipe(callable ...$fns)
+function pipe(callable ...$fns): callable
 {
     $compose = static function ($composition, $fn) {
         return static function (...$args) use ($composition, $fn) {

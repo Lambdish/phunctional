@@ -10,6 +10,8 @@ namespace Lambdish\Phunctional;
  * @param mixed $argument any type of value
  *
  * @return mixed
+ *
+ * @since 1.0.9
  */
 function identity($argument)
 {

@@ -9,6 +9,8 @@ namespace Lambdish\Phunctional;
  *
  * @param callable $fn    function to be executed
  * @param int      $times times to call the function
+ *
+ * @since 0.1
  */
 function repeat(callable $fn, int $times): array
 {

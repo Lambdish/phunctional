@@ -11,6 +11,8 @@ namespace Lambdish\Phunctional;
  *
  * @param iterable $coll collection to dissoc the value
  * @param mixed    $key  the key the value have
+ *
+ * @since 0.1
  */
 function dissoc(iterable $coll, $key): array
 {

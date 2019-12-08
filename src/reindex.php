@@ -10,6 +10,8 @@ namespace Lambdish\Phunctional;
  *
  * @param callable $fn   function to generate the key
  * @param iterable $coll collection to be reindexed
+ *
+ * @since 0.1
  */
 function reindex(callable $fn, iterable $coll): array
 {

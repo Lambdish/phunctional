@@ -9,6 +9,8 @@ namespace Lambdish\Phunctional;
  * This is an alias for the `not` function
  *
  * @param callable $fn
+ *
+ * @since 0.1
  */
 function complement(callable $fn): callable
 {

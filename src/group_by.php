@@ -11,6 +11,8 @@ namespace Lambdish\Phunctional;
  *
  * @param callable $fn   function to apply to every item in the collection
  * @param iterable $coll collection of values to apply the function
+ *
+ * @since 0.1
  */
 function group_by(callable $fn, iterable $coll): array
 {

@@ -10,6 +10,8 @@ namespace Lambdish\Phunctional;
  *
  * @param callable   $fn         Function to call if all predicates are valid.
  * @param callable[] $predicates Predicates to validate.
+ *
+ * @since 0.1
  */
 function do_if(callable $fn, array $predicates): ?callable
 {

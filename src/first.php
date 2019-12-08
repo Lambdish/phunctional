@@ -12,6 +12,8 @@ namespace Lambdish\Phunctional;
  * @param iterable $coll collection of values
  *
  * @return mixed|null
+ *
+ * @since 0.1
  */
 function first(iterable $coll)
 {

@@ -10,9 +10,9 @@ namespace Lambdish\Phunctional;
  *
  * @param callable ...$fns functions to be composed
  *
- * @return mixed
+ * @since 0.1
  */
-function compose(callable ...$fns)
+function compose(callable ...$fns): callable
 {
     return pipe(...reverse($fns));
 }

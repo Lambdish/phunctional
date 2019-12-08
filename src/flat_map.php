@@ -14,6 +14,7 @@ namespace Lambdish\Phunctional;
  * @param callable $fn   function with signature Closure(mixed): array|Traversable|Generator
  * @param iterable $coll collection of values
  *
+ * @since 1.0.8
  */
 function flat_map(callable $fn, iterable $coll): array
 {

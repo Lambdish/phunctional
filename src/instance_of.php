@@ -8,6 +8,8 @@ namespace Lambdish\Phunctional;
  * Returns a checker that validated if an `$element` is an instance of a `$className`
  *
  * @param string $className class name to compare with
+ *
+ * @since 0.1
  */
 function instance_of($className): callable
 {

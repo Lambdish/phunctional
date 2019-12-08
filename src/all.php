@@ -9,6 +9,8 @@ namespace Lambdish\Phunctional;
  *
  * @param callable $fn   function to check if the predicate is true
  * @param iterable $coll collection of values to check all are true by the `$fn`
+ *
+ * @since 0.1
  */
 function all(callable $fn, iterable $coll): bool
 {

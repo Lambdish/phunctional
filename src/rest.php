@@ -10,6 +10,8 @@ namespace Lambdish\Phunctional;
  * If the collection is empty or only have one item, returns an empty collection
  *
  * @param iterable $coll collection of values
+ *
+ * @since 0.1
  */
 function rest(iterable $coll): array
 {

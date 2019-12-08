@@ -20,6 +20,8 @@ namespace Lambdish\Phunctional;
  * @param mixed[]  $args arguments to be passed to the called function
  *
  * @return mixed
+ *
+ * @since 0.1
  */
 function apply(callable $fn, $args = [])
 {

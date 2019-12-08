@@ -10,6 +10,8 @@ namespace Lambdish\Phunctional;
  *
  * @param int      $size
  * @param iterable $coll
+ *
+ * @since 0.1
  */
 function partition(int $size, iterable $coll): array
 {

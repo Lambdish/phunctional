@@ -9,6 +9,8 @@ namespace Lambdish\Phunctional;
  *
  * @param callable $fn      function to be biased
  * @param mixed    ...$args arguments to fix in the function
+ *
+ * @since 0.1
  */
 function partial(callable $fn, ...$args): callable
 {
