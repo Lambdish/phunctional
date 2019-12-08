@@ -4,8 +4,6 @@ declare(strict_types = 1);
 
 namespace Lambdish\Phunctional;
 
-use Traversable;
-
 /**
  * Dissociate a value of a key in a collection
  *
@@ -16,7 +14,7 @@ use Traversable;
  */
 function dissoc(iterable $coll, $key): array
 {
-    $array = $coll instanceof Traversable ? iterator_to_array($coll) : $coll;
+    $array = to_array($coll);
 
     unset($array[$key]);
 

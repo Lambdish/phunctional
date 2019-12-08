@@ -4,8 +4,6 @@ declare(strict_types = 1);
 
 namespace Lambdish\Phunctional;
 
-use Traversable;
-
 /**
  * Returns the key of an item in a $coll or a $default value in the case it does not exists
  *
@@ -17,9 +15,7 @@ use Traversable;
  */
 function key($value, iterable $coll, $default = null)
 {
-    $args = $coll instanceof Traversable ? iterator_to_array($coll) : $coll;
-
-    $key = array_search($value, $args, true);
+    $key = array_search($value, to_array($coll), true);
 
     return false !== $key ? $key : $default;
 }

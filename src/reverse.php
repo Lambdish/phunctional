@@ -4,8 +4,6 @@ declare(strict_types = 1);
 
 namespace Lambdish\Phunctional;
 
-use Traversable;
-
 /**
  * Returns a reversed $coll preserving its keys.
  *
@@ -16,9 +14,7 @@ use Traversable;
  */
 function reverse(iterable $coll): array
 {
-    $array = $coll instanceof Traversable ? iterator_to_array($coll) : $coll;
-
-    return array_reverse($array, true);
+    return array_reverse(to_array($coll), true);
 }
 
 const reverse = '\Lambdish\Phunctional\reverse';

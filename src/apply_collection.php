@@ -4,8 +4,6 @@ declare(strict_types = 1);
 
 namespace Lambdish\Phunctional;
 
-use Traversable;
-
 /**
  * Calls $fn with $args and returns its results.
  *
@@ -25,9 +23,7 @@ use Traversable;
  */
 function apply_collection(callable $fn, iterable $coll = [])
 {
-    $args = $coll instanceof Traversable ? iterator_to_array($coll) : $coll;
-
-    return apply($fn, ...$args);
+    return apply($fn, ...to_array($coll));
 }
 
 const apply_collection = '\Lambdish\Phunctional\apply_collection';

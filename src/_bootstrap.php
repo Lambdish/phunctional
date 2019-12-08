@@ -41,3 +41,4 @@ require __DIR__ . '/reverse.php';
 require __DIR__ . '/search.php';
 require __DIR__ . '/some.php';
 require __DIR__ . '/sort.php';
+require __DIR__ . '/to_array.php';
