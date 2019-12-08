@@ -2,7 +2,7 @@
 
 ## Description
 Iterates over each value in the collection passing them to the callback function. If the callback function returns true,
-the current value from collection is returned into the result collection. Keys are preserved.
+the current value from collection is returned into the result collection. Keys are preserved. You can use the `key` to filter.
 
 ## Parameters
 

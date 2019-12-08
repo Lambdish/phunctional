@@ -18,9 +18,25 @@ final class FilterTest extends TestCase
         $this->assertSame(['two' => 2, 'four' => 4], filter($pred, $actual));
     }
 
+    /** @test */
+    public function it_should_filter_a_collection_using_their_keys(): void
+    {
+        $actual = [1 => 'one', 2 => 'two', 3 => 'three', 4 => 'four', 5 => 'five'];
+        $pred   = $this->evenByKeyFilterer();
+
+        $this->assertSame([2 => 'two', 4 => 'four'], filter($pred, $actual));
+    }
+
     private function evenByValueFilterer(): callable
     {
         return static function ($number) {
+            return 0 === $number % 2;
+        };
+    }
+
+    private function evenByKeyFilterer(): callable
+    {
+        return static function ($textNumber, $number) {
             return 0 === $number % 2;
         };
     }
