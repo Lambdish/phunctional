@@ -22,9 +22,9 @@ function map(callable $fn, iterable $coll): array
     $args = $coll instanceof Traversable ? iterator_to_array($coll) : $coll;
 
     try {
-        return array_map($fn, $args);
-    } catch (ArgumentCountError $error) {
         return ___map_indexed($fn, $args);
+    } catch (ArgumentCountError $error) {
+        return array_map($fn, $args);
     }
 }
 
