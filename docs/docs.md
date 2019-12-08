@@ -5,7 +5,6 @@
  * [all](functions/all.md): Check if all the values of the collection satisfies the function
  * [any](functions/any.md): Check if any value of the collection satisfies the function
  * [apply](functions/apply.md): Call a function with the desired arguments (a clean way to call closures stored in class attributes)
- * [apply_collection](functions/apply_collection.md): Call a function with the desired arguments as a collection
  * [assoc](functions/assoc.md): Associate a value to an array
  * [butlast](functions/butlast.md):  Returns all the elements of a collection except the last preserving the keys
  * [complement](functions/complement.md): Returns another function that takes the same arguments and has the opposite truth value.

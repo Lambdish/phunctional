@@ -18,7 +18,7 @@ final class PipeTest extends TestCase
     {
         $calculator = pipe($this->multiplier(), $this->byTwoDivider());
 
-        $this->assertSame($result, apply($calculator, $a, $b));
+        $this->assertSame($result, apply($calculator, [$a, $b]));
     }
 
     public function calculatorProvider(): array

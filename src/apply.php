@@ -16,14 +16,14 @@ namespace Lambdish\Phunctional;
  * wrong number of parameters or will not do as you expect a change of signature. To have a good test suite would be a
  * requirement for a widely use of this function in your code.
  *
- * @param callable $fn      function to be executed
- * @param mixed    ...$args arguments to be passed to the called function
+ * @param callable $fn   function to be executed
+ * @param mixed[]  $args arguments to be passed to the called function
  *
  * @return mixed
  */
-function apply(callable $fn, ...$args)
+function apply(callable $fn, $args = [])
 {
-    return $fn(...$args);
+    return $fn(...to_array($args));
 }
 
 const apply = '\Lambdish\Phunctional\apply';
