@@ -11,6 +11,8 @@ use Closure;
  * @param mixed         ...$args arguments to be passed to the called function
  *
  * @return mixed
+ *
+ * @since 0.1
  */
 function memoize(?callable $fn, ...$args)
 {

@@ -13,6 +13,8 @@ namespace Lambdish\Phunctional;
  * @param iterable $coll  collection to assoc the value
  * @param string   $key   the key the value will have
  * @param string   $value the value to assoc
+ *
+ * @since 0.1
  */
 function assoc(iterable $coll, $key, $value): array
 {

@@ -11,6 +11,8 @@ namespace Lambdish\Phunctional;
  *                       integer less than, equal to, or greater than zero if the first argument is considered
  *                       to be respectively less than, equal to, or greater than the second
  * @param iterable $coll collection to order
+ *
+ * @since 0.1
  */
 function sort(callable $fn, iterable $coll): array
 {

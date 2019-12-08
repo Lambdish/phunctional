@@ -8,6 +8,8 @@ namespace Lambdish\Phunctional;
  * Returns the opposite of the `$fn` call
  *
  * @param callable $fn
+ *
+ * @since 0.1
  */
 function not(callable $fn): callable
 {

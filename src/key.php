@@ -12,6 +12,8 @@ namespace Lambdish\Phunctional;
  * @param mixed|null $default default value to be returned if the value is not found in the collection
  *
  * @return mixed|null
+ *
+ * @since 0.1
  */
 function key($value, iterable $coll, $default = null)
 {

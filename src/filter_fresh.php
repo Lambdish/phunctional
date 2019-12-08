@@ -10,6 +10,8 @@ namespace Lambdish\Phunctional;
  *
  * @param callable $fn   function to filter by
  * @param iterable $coll collection of values to be filtered
+ *
+ * @since 0.1
  */
 function filter_fresh(callable $fn, iterable $coll): array
 {

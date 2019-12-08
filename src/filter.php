@@ -14,6 +14,8 @@ use ArgumentCountError;
  *
  * @param callable $fn   function to filter by
  * @param iterable $coll collection of values to be filtered
+ *
+ * @since 0.1
  */
 function filter(callable $fn, iterable $coll): array
 {

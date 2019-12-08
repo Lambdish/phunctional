@@ -10,6 +10,8 @@ use Traversable;
  * Returns a flat array of a multidimensional $coll
  *
  * @param iterable $coll collection of multidimensional values to be flatten
+ *
+ * @since 0.1
  */
 function flatten(iterable $coll): array
 {

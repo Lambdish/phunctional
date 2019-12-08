@@ -12,6 +12,8 @@ namespace Lambdish\Phunctional;
  * @param mixed    $default value to return if no result is found
  *
  * @return mixed|null
+ *
+ * @since 0.1
  */
 function search(callable $fn, iterable $coll, $default = null)
 {

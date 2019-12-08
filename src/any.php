@@ -10,6 +10,8 @@ namespace Lambdish\Phunctional;
  *
  * @param callable $fn   function to check if the predicate is true
  * @param iterable $coll collection of values to check any is true by the `$fn`
+ *
+ * @since 0.1
  */
 function any(callable $fn, iterable $coll): bool
 {

@@ -11,6 +11,8 @@ namespace Lambdish\Phunctional;
  * because to reach the last one is necessary iterate among all the items
  *
  * @param iterable $coll collection to be reversed
+ *
+ * @since 0.1
  */
 function reverse(iterable $coll): array
 {

@@ -18,6 +18,8 @@ namespace Lambdish\Phunctional;
  *                                             in the collection
  *
  * @return mixed
+ *
+ * @since 0.1
  */
 function reduce(callable $fn, iterable $coll, $initial = null)
 {

@@ -12,6 +12,8 @@ namespace Lambdish\Phunctional;
  * @param mixed|null $default  Value to be returned if the key does not exists
  *
  * @return mixed|null
+ *
+ * @since 0.1
  */
 
 function get_in(array $keys, array $elements, $default = null)
