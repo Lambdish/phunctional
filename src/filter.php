@@ -20,23 +20,10 @@ function filter(callable $fn, iterable $coll): array
     $args = to_array($coll);
 
     try {
-        return ___filter_indexed($fn, $args);
+        return array_filter($args, $fn, ARRAY_FILTER_USE_BOTH);
     } catch (ArgumentCountError $error) {
         return array_filter($args, $fn);
     }
 }
 
 const filter = '\Lambdish\Phunctional\filter';
-
-function ___filter_indexed(callable $fn, iterable $coll): array
-{
-    $result = [];
-
-    foreach ($coll as $key => $value) {
-        if ($fn($value, $key)) {
-            $result[$key] = $value;
-        }
-    }
-
-    return $result;
-}
