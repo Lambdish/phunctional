@@ -48,9 +48,9 @@ final class ReduceTest extends TestCase
     private function concatValuesOfOddKeys(): callable
     {
         return static function ($acc, $value, $key) {
-            return $key % 2 === 1 ?
-                trim($acc . ' ' . $value) :
-                $acc;
+            return $key % 2 === 1
+                ? trim($acc . ' ' . $value)
+                : $acc;
         };
     }
 }

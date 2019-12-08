@@ -17,9 +17,9 @@ function rest(iterable $coll): array
     $rest      = [];
 
     foreach ($coll as $key => $value) {
-        $firstItem ?
-            $firstItem = false :
-            $rest[$key] = $value;
+        $firstItem
+            ? $firstItem = false
+            : $rest[$key] = $value;
     }
 
     return $rest;
