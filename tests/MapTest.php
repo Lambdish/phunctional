@@ -4,6 +4,7 @@ declare(strict_types = 1);
 
 namespace Lambdish\Phunctional\Tests;
 
+use ArrayIterator;
 use PHPUnit\Framework\TestCase;
 use function Lambdish\Phunctional\map;
 
@@ -13,6 +14,15 @@ final class MapTest extends TestCase
     public function it_should_return_the_values_of_a_collection_after_apply_a_function(): void
     {
         $actual   = [1, 2, 3, 4, 5];
+        $function = $this->multiplier(2);
+
+        $this->assertSame([2, 4, 6, 8, 10], map($function, $actual));
+    }
+
+    /** @test */
+    public function it_should_return_the_values_of_a_collection_after_apply_a_function_using_an_iterator(): void
+    {
+        $actual   = new ArrayIterator([1, 2, 3, 4, 5]);
         $function = $this->multiplier(2);
 
         $this->assertSame([2, 4, 6, 8, 10], map($function, $actual));
