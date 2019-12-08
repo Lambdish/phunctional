@@ -18,7 +18,7 @@ final class ComposeTest extends TestCase
     {
         $calculator = compose($this->byTwoDivider(), $this->multiplier());
 
-        $this->assertEquals($result, apply($calculator, $a, $b));
+        $this->assertEquals($result, apply($calculator, [$a, $b]));
     }
 
     public function calculatorProvider(): array

@@ -22,10 +22,7 @@ final class ApplyTest extends TestCase
      */
     public function it_should_call_properly_a_function_with_some_arguments($arguments): void
     {
-        $this->assertSame(
-            'Hello functional, welcome to PHP!!',
-            apply($this->functionWithArguments(), ...$arguments)
-        );
+        $this->assertSame('Hello functional, welcome to PHP!!', apply($this->functionWithArguments(), $arguments));
     }
 
     public function arguments(): array
