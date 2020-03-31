@@ -12,16 +12,13 @@
   "license": "MIT",
   "authors": [
     {
-      "name": "Eloi Poch",
-      "email": "eloi.poch@gmail.com"
+      "name": "Eloi Poch"
     },
     {
-      "name": "Jorge Ávila",
-      "email": "avilacardenosa@gmail.com"
+      "name": "Jorge Ávila"
     },
     {
-      "name": "Rafa Gómez",
-      "email": "rgomezcasas@gmail.com"
+      "name": "Rafa Gómez"
     }
   ],
   "minimum-stability": "beta",
