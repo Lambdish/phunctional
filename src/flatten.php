@@ -15,13 +15,10 @@ use Traversable;
  */
 function flatten(iterable $coll): array
 {
-    $result        = [];
-    $isTraversable = static function ($item) {
-        return is_array($item) || $item instanceof Traversable;
-    };
+    $result = [];
 
     foreach ($coll as $value) {
-        if ($isTraversable($value)) {
+        if (is_iterable($value)) {
             foreach (flatten($value) as $v) {
                 $result[] = $v;
             }
