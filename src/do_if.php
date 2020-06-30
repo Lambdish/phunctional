@@ -13,7 +13,7 @@ namespace Lambdish\Phunctional;
  *
  * @since 0.1
  */
-function do_if(callable $fn, array $predicates): ?callable
+function do_if(callable $fn, iterable $predicates): ?callable
 {
     return static function (...$args) use ($fn, $predicates) {
         $isValid = static function ($predicate) use ($args) {
