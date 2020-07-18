@@ -24,9 +24,8 @@ function memoize(?callable $fn, ...$args)
         return null;
     }
 
-    $closureClass = Closure::class;
-    $keyFn        = $fn instanceof $closureClass ? spl_object_hash($fn) : get_class($fn);
-    $key          = md5($keyFn . serialize($args));
+    $keyFn = $fn instanceof Closure ? spl_object_hash($fn) : get_class($fn);
+    $key   = md5($keyFn . serialize($args));
 
     return $cache[$key] = array_key_exists($key, $cache) ? $cache[$key] : $fn(...$args);
 }
