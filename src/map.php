@@ -20,12 +20,10 @@ use ArgumentCountError;
  */
 function map(callable $fn, iterable $coll): array
 {
-    $args = to_array($coll);
-
     try {
-        return ___map_indexed($fn, $args);
+        return ___map_indexed($fn, $coll);
     } catch (ArgumentCountError $error) {
-        return array_map($fn, $args);
+        return array_map($fn, to_array($coll));
     }
 }
 
