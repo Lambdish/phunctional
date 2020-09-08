@@ -10,6 +10,22 @@ use function Lambdish\Phunctional\get_each;
 
 final class GetEachTest extends TestCase {
     /** @test */
+    public function it_should_return_an_array_with_values_of_each_item_of_an_existent_key_indexed_by_integers(): void {
+        $actual = [
+            [
+                'key'       => 1,
+                'other_key' => 3
+            ],
+            [
+                'key'       => 2,
+                'other_key' => 4
+            ]
+        ];
+
+        $this->assertSame([1, 2], get_each('key', $actual));
+    }
+
+    /** @test */
     public function it_should_return_an_array_with_values_of_each_item_of_an_existent_key(): void {
         $actual = [
             'one' => [

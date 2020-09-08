@@ -33,7 +33,7 @@ function _convert_traversable_to_array(): callable {
     };
 }
 
-function _get_values_from_key(string $key, $default): callable {
+function _get_values_from_key($key, $default): callable {
     return static function (array $coll) use ($key, $default) {
         return array_merge(...map(
             static function (array $item) use ($key, $default): array {
