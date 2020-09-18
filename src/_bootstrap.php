@@ -20,6 +20,7 @@ require __DIR__ . '/first.php';
 require __DIR__ . '/flat_map.php';
 require __DIR__ . '/flatten.php';
 require __DIR__ . '/get.php';
+require __DIR__ . '/get_each.php';
 require __DIR__ . '/get_in.php';
 require __DIR__ . '/group_by.php';
 require __DIR__ . '/key.php';

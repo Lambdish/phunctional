@@ -20,6 +20,7 @@
  * [flat_map](functions/flat_map.md): Returns an array containing the results of applying a given function to the items of a collection and flattening the results
  * [flatten](functions/flatten.md): Returns a flat collection from a multidimensional collection
  * [get](functions/get.md): Returns the value of an item in a collection or a default value in the case it does not exists
+ * [get_each](functions/get_each.md): Returns an array with the values or a default value in the case it does not exist of each item in a collection
  * [get_in](functions/get_in.md): Returns the value in a nested associative structure or a default value in the case it does not exists
  * [group_by](functions/group_by.md): Returns an array with the items grouped by the results of applying a function to each item
  * [key](functions/key.md): Returns the key of an item value in a collection or a default value in the case it does not exists
