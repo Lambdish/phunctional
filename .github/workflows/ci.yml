@@ -14,6 +14,10 @@ jobs:
     strategy:
       matrix:
         php-versions: ['7.2', '7.3', '7.4']
+        include:
+          - php-versions: "8.0"
+            dependencies: "highest"
+            composer-options: "--ignore-platform-reqs"
 
     name: PHP ${{ matrix.php-versions }}
 
@@ -24,10 +28,12 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: ${{ matrix.php-versions }}
-          tools: phpunit
+          tools: phpunit, composer:v2
 
       - name: Install dependencies
-        run: composer install --prefer-dist
+        uses: "ramsey/composer-install@v1"
+        with:
+          composer-options: "${{ matrix.composer-options }}"
 
       - name: Analysis
         run: vendor/bin/phpstan analyse -l 7 src
