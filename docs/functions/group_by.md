@@ -1,4 +1,4 @@
-# map
+# group_by
 
 ## Description
 Returns an array with the items grouped by the results of applying $fn to each item.
