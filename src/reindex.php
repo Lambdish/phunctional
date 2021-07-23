@@ -8,8 +8,14 @@ namespace Lambdish\Phunctional;
  * Returns a new collection with the keys reindexed by `$fn`.
  * Optionally `$fn` receive the key as the second argument.
  *
- * @param callable $fn   function to generate the key
- * @param iterable $coll collection to be reindexed
+ * @template T
+ * @template TKey of array-key
+ * @template RKey of array-key
+ *
+ * @param callable(T,TKey):RKey $fn   function to generate the key
+ * @param iterable<TKey,T>      $coll collection to be reindexed
+ *
+ * @return array<RKey,T>
  *
  * @since 0.1
  */

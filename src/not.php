@@ -7,7 +7,11 @@ namespace Lambdish\Phunctional;
 /**
  * Returns the opposite of the `$fn` call
  *
- * @param callable $fn
+ * @template T
+ *
+ * @param callable(T...):mixed $fn
+ *
+ * @return callable(T...):bool
  *
  * @since 0.1
  */

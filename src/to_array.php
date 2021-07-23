@@ -9,7 +9,12 @@ use Traversable;
 /**
  * Transform a possible iterator to an array
  *
- * @param iterable $coll collection to transform to array
+ * @template T
+ * @template TKey of array-key
+ *
+ * @param iterable<TKey,T> $coll collection to transform to array
+ *
+ * @return array<TKey,T>
  *
  * @since 2
  */

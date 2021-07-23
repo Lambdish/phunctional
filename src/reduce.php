@@ -12,12 +12,16 @@ namespace Lambdish\Phunctional;
  * Function $fn should accept the accumulated value as first argument, the value of the item as the second argument
  * and optionally the key of the item as the third argument.
  *
- * @param callable $fn                         function which reduce the collection calculating the accumulated value
- * @param iterable $coll                       collection of values to be reduced
- * @param mixed    $initial                    initial value that will be used as accumulated value for the first item
- *                                             in the collection
+ * @template T
+ * @template TKey of array-key
+ * @template A
  *
- * @return mixed
+ * @param callable(A,T,TKey):A $fn      function which reduce the collection calculating the accumulated value
+ * @param iterable<TKey,T>     $coll    collection of values to be reduced
+ * @param A                    $initial initial value that will be used as accumulated value for the first item
+ *                                      in the collection
+ *
+ * @return A
  *
  * @since 0.1
  */
