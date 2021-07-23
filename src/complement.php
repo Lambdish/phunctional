@@ -8,7 +8,11 @@ namespace Lambdish\Phunctional;
  * Returns the opposite of the `$fn` call
  * This is an alias for the `not` function
  *
- * @param callable $fn
+ * @template T
+ *
+ * @param callable(T...):mixed $fn
+ *
+ * @return callable(T...):bool
  *
  * @since 0.1
  */

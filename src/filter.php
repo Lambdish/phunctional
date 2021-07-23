@@ -12,8 +12,13 @@ use ArgumentCountError;
  * Similar to `array_filter` but with a consistent parameters order, requiring always a function and allowing access
  * to the keys of the collection.
  *
- * @param callable $fn   function to filter by
- * @param iterable $coll collection of values to be filtered
+ * @template T
+ * @template TKey of array-key
+ *
+ * @param callable(T,TKey):mixed $fn   function to filter by
+ * @param iterable<TKey,T>       $coll collection of values to be filtered
+ *
+ * @return array<TKey,T>
  *
  * @since 0.1
  */

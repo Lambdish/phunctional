@@ -7,11 +7,14 @@ namespace Lambdish\Phunctional;
 /**
  * Returns the key of an item in a $coll or a $default value in the case it does not exists
  *
- * @param string|int $value   value to search in the collection
- * @param iterable   $coll    collection where search the desired key
- * @param mixed|null $default default value to be returned if the value is not found in the collection
+ * @template TKey of array-key
+ * @template D
  *
- * @return mixed|null
+ * @param array-key            $value   value to search in the collection
+ * @param iterable<TKey,mixed> $coll    collection where search the desired key
+ * @param D                    $default default value to be returned if the value is not found in the collection
+ *
+ * @return TKey|D
  *
  * @since 0.1
  */

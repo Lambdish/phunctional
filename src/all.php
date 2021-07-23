@@ -7,8 +7,10 @@ namespace Lambdish\Phunctional;
 /**
  * Check if all the values of the collection satisfies the function
  *
- * @param callable $fn   function to check if the predicate is true
- * @param iterable $coll collection of values to check all are true by the `$fn`
+ * @template T
+ *
+ * @param callable(T):mixed     $fn   function to check if the predicate is true
+ * @param iterable<array-key,T> $coll collection of values to check all are true by the `$fn`
  *
  * @since 0.1
  */

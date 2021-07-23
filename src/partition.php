@@ -8,8 +8,13 @@ namespace Lambdish\Phunctional;
  * Partition an array into arrays with size elements preserving its keys. The last portion may contain less than size
  * elements.
  *
- * @param int      $size
- * @param iterable $coll
+ * @template T
+ * @template TKey of array-key
+ *
+ * @param int              $size
+ * @param iterable<TKey,T> $coll
+ *
+ * @return array<array<TKey,T>>
  *
  * @since 0.1
  */
