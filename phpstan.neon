@@ -1,4 +1,10 @@
 parameters:
+    level: max
+    paths:
+        - src
+    inferPrivatePropertyTypeFromConstructor: true
+    checkMissingIterableValueType: true
     bootstrap: %currentWorkingDirectory%/vendor/autoload.php
     ignoreErrors:
         - '#get_class expects object, callable given#'
+        - '#PHPDoc tag @template .+ with bound type .+ is not supported.#'
