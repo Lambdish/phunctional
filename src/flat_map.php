@@ -17,8 +17,8 @@ namespace Lambdish\Phunctional;
  * @template T2 of int|float|bool|string|callable|object|null
  * @template T3 of int|float|bool|string|callable|object|null
  *
- * @param callable(TKey,T):iterable<T1|iterable<T2|iterable<T3|mixed>>> $fn   function with signature
- *                                                                            Closure(mixed): iterable
+ * @param callable(TKey,T):iterable<T1|iterable<T2|iterable<T3|mixed>>> $fn   function like Closure(mixed): iterable.
+ *                                                                            detects types in the first 3 depth levels
  * @param iterable<T,TKey>                                              $coll collection of values
  *
  * @return array<int,T1|T2|T3>

@@ -12,7 +12,7 @@ namespace Lambdish\Phunctional;
  * @template T2 of int|float|bool|string|callable|object|null
  * @template T3 of int|float|bool|string|callable|object|null
  *
- * @param iterable<T1|iterable<T2|iterable<T3|mixed>>> $coll Detects types in the first 3 depth levels
+ * @param iterable<T1|iterable<T2|iterable<T3|mixed>>> $coll detects types in the first 3 depth levels
  *
  * @return array<int,T1|T2|T3>
  * @psalm-return list<T1|T2|T3>

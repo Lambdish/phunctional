@@ -11,8 +11,8 @@ namespace Lambdish\Phunctional;
  * @template T
  * @template R
  *
- * @param callable(T...):R            $fn         Function to call if all predicates are valid.
- * @param array<callable(T...):mixed> $predicates Predicates to validate.
+ * @param callable(T...):R               $fn         function to call if all predicates are valid.
+ * @param iterable<callable(T...):mixed> $predicates predicates to validate. response evaluated as truthy/falsy
  *
  * @return callable(T...):R|callable(T...):null
  *

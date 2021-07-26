@@ -15,7 +15,7 @@ use ArgumentCountError;
  * @template T
  * @template TKey of array-key
  *
- * @param callable(T,TKey):mixed $fn   function to filter by
+ * @param callable(T,TKey):mixed $fn   function to filter by. response evaluated as truthy/falsy
  * @param iterable<TKey,T>       $coll collection of values to be filtered
  *
  * @return array<TKey,T>

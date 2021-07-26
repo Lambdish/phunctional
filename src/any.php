@@ -11,8 +11,8 @@ namespace Lambdish\Phunctional;
  * @template T
  * @template TKey of array-key
  *
- * @param callable(T,TKey):bool $fn   function to check if the predicate is true
- * @param iterable<TKey,T>      $coll collection of values to check some is true by the `$fn`
+ * @param callable(T,TKey):mixed $fn   function to check if the predicate is true. response evaluated as truthy/falsy
+ * @param iterable<TKey,T>       $coll collection of values to check some is true by the `$fn`
  *
  * @since 0.1
  */

@@ -13,7 +13,7 @@ namespace Lambdish\Phunctional;
  * @template TKey of array-key
  *
  * @param iterable<TKey,T> $coll collection to dissoc the value
- * @param array-key        $key  the key the value have
+ * @param array-key        $key  the key the value has
  *
  * @return array<TKey,T>
  *

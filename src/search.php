@@ -11,9 +11,9 @@ namespace Lambdish\Phunctional;
  * @template TKey of array-key
  * @template D
  *
- * @param callable(T,TKey):bool $fn      searcher
- * @param iterable<TKey,T>      $coll    collection of values to be searched
- * @param D                     $default value to return if no result is found
+ * @param callable(T,TKey):mixed $fn      searcher. response evaluated as truthy/falsy
+ * @param iterable<TKey,T>       $coll    collection of values to be searched
+ * @param D                      $default value to return if no result is found
  *
  * @return D|T
  *

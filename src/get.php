@@ -10,13 +10,11 @@ use Traversable;
  * Returns the value of an item in a $coll or a $default value in the case it does not exists
  *
  * @template T
- * @template TKey of array-key
  * @template D
  *
- * @param TKey             $key     key to search in the collection
- * @param iterable<TKey,T> $coll    collection where search the desired value
- * @param D                $default default value to be returned if the key is not found
- *                                  in the collection
+ * @param array-key             $key     key to search in the collection
+ * @param iterable<array-key,T> $coll    collection where search the desired value
+ * @param D                     $default default value to be returned if the key is not found in the collection
  *
  * @return T|D
  *
@@ -29,12 +27,11 @@ function get($key, iterable $coll, $default = null)
 
 /**
  * @template T
- * @template TKey of array-key
  * @template D
  *
- * @param TKey          $key     key to search in the collection
- * @param array<TKey,T> $coll    collection where search the desired value
- * @param D             $default default value to be returned if the key is not found in the collection
+ * @param array-key          $key
+ * @param array<array-key,T> $coll
+ * @param D                  $default
  *
  * @return T|D
  */
@@ -45,12 +42,11 @@ function _get_array($key, array $coll, $default)
 
 /**
  * @template T
- * @template TKey of array-key
  * @template D
  *
- * @param TKey                $key     key to search in the collection
- * @param Traversable<TKey,T> $coll    collection where search the desired value
- * @param D                   $default default value to be returned if the key is not found in the collection
+ * @param array-key                $key
+ * @param Traversable<array-key,T> $coll
+ * @param D                        $default
  *
  * @return T|D
  */
