@@ -30,9 +30,6 @@
     "phpstan/phpstan": "^0.12",
     "vimeo/psalm": "^4.8"
   },
-  "conflict": {
-    "lambdish/phunctional": "*"
-  },
   "autoload": {
     "files": [
       "src/_bootstrap.php"
