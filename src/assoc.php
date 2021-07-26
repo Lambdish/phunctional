@@ -10,9 +10,17 @@ namespace Lambdish\Phunctional;
  * Passing a Generator to this function will work but it does not provide any improvement against a simple Traversable
  * because to reach the last one is necessary iterate among all the items
  *
- * @param iterable $coll  collection to assoc the value
- * @param string   $key   the key the value will have
- * @param string   $value the value to assoc
+ * @template T
+ * @template TKey of array-key
+ * @template V
+ * @template VKey of array-key
+ *
+ *
+ * @param iterable<TKey,T> $coll  collection to assoc the value
+ * @param VKey             $key   the key the value will have
+ * @param V                $value the value to assoc
+ *
+ * @return array<TKey|VKey,T|V>
  *
  * @since 0.1
  */

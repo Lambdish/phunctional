@@ -1,4 +1,12 @@
 parameters:
+    level: 7
+    paths:
+        - src
+    checkMissingIterableValueType: true
     bootstrap: %currentWorkingDirectory%/vendor/autoload.php
     ignoreErrors:
         - '#get_class expects object, callable given#'
+        - '#.+ should return array<.*TKey of \(int\|string\).*> but returns array<.+#'
+        - '#PHPDoc tag @template .+ with bound type .+ is not supported.#'
+        - '#.+expects.+TKey of \(int\|string\).+ given.+#'
+        - '#Unable to resolve the template type TKey in call to function Lambdish\\Phunctional\\map#'

@@ -7,7 +7,12 @@ namespace Lambdish\Phunctional;
 /**
  * Returns an array with the items in $coll which are not null.
  *
- * @param iterable $coll collection of values to be filtered
+ * @template T
+ * @template TKey of array-key
+ *
+ * @param iterable<TKey,T|null> $coll collection of values to be filtered
+ *
+ * @return array<TKey,T>
  *
  * @since 0.1
  */

@@ -10,7 +10,12 @@ namespace Lambdish\Phunctional;
  * Passing a Generator to this function will work but it does not provide any improvement against a simple Traversable
  * because to reach the last one is necessary iterate among all the items
  *
- * @param iterable $coll collection to be reversed
+ * @template T
+ * @template TKey of array-key
+ *
+ * @param iterable<TKey,T> $coll collection to be reversed
+ *
+ * @return array<TKey,T>
  *
  * @since 0.1
  */

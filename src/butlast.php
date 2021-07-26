@@ -9,7 +9,12 @@ namespace Lambdish\Phunctional;
  *
  * If the collection is empty or only have one item, returns an empty collection
  *
- * @param iterable $coll collection of values
+ * @template T
+ * @template TKey of array-key
+ *
+ * @param iterable<TKey,T> $coll collection of values
+ *
+ * @return array<TKey,T>
  *
  * @since 0.1
  */

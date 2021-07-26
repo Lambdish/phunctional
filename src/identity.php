@@ -7,9 +7,11 @@ namespace Lambdish\Phunctional;
 /**
  * Identity function is a function which return the same value that is passed as argument. `f(x) = x`
  *
- * @param mixed $argument any type of value
+ * @template T
  *
- * @return mixed
+ * @param T $argument any type of value
+ *
+ * @return T
  *
  * @since 1.0.9
  */

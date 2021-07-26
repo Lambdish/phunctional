@@ -7,11 +7,15 @@ namespace Lambdish\Phunctional;
 /**
  * Search a value in a collection. Return the first occurrence if found, null if not.
  *
- * @param callable $fn      searcher
- * @param iterable $coll    collection of values to be searched
- * @param mixed    $default value to return if no result is found
+ * @template T
+ * @template TKey of array-key
+ * @template D
  *
- * @return mixed|null
+ * @param callable(T,TKey):mixed $fn      searcher. response evaluated as truthy/falsy
+ * @param iterable<TKey,T>       $coll    collection of values to be searched
+ * @param D                      $default value to return if no result is found
+ *
+ * @return D|T
  *
  * @since 0.1
  */

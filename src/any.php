@@ -8,8 +8,11 @@ namespace Lambdish\Phunctional;
  * Check if some value of the collection satisfies the function
  * This is an alias for the `some` function
  *
- * @param callable $fn   function to check if the predicate is true
- * @param iterable $coll collection of values to check any is true by the `$fn`
+ * @template T
+ * @template TKey of array-key
+ *
+ * @param callable(T,TKey):mixed $fn   function to check if the predicate is true. response evaluated as truthy/falsy
+ * @param iterable<TKey,T>       $coll collection of values to check some is true by the `$fn`
  *
  * @since 0.1
  */

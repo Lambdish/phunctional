@@ -9,9 +9,11 @@ namespace Lambdish\Phunctional;
  *
  * If the collection is empty returns null. If a generator is passed this will be iterated.
  *
- * @param iterable $coll collection of values
+ * @template T
  *
- * @return mixed|null
+ * @param iterable<array-key,T> $coll collection of values
+ *
+ * @return T|null
  *
  * @since 0.1
  */
