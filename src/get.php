@@ -22,11 +22,13 @@ function get($key, iterable $coll, $default = null)
     return is_array($coll) ? _get_array($key, $coll, $default) : _get_traversable($key, $coll, $default);
 }
 
+/** @phpstan-ignore-next-line */
 function _get_array($key, array $coll, $default)
 {
     return array_key_exists($key, $coll) ? $coll[$key] : $default;
 }
 
+/** @phpstan-ignore-next-line */
 function _get_traversable($key, Traversable $coll, $default)
 {
     foreach ($coll as $k => $v) {

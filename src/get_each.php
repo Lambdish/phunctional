@@ -35,6 +35,7 @@ function _convert_traversable_to_array(): callable {
     };
 }
 
+/** @phpstan-ignore-next-line */
 function _get_values_from_key($key): callable {
     return static function (array $coll) use ($key): array {
         return array_merge(...map(
