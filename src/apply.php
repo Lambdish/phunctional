@@ -17,7 +17,6 @@ namespace Lambdish\Phunctional;
  * requirement for a widely use of this function in your code.
  *
  * @template T
- * @template TKey of array-key
  * @template R
  *
  * @param callable(T...):R      $fn   function to be executed

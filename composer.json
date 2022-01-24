@@ -27,8 +27,8 @@
   },
   "require-dev": {
     "phpunit/phpunit": "^8.4 || ^9.3",
-    "phpstan/phpstan": "^0.12",
-    "vimeo/psalm": "^4.8"
+    "phpstan/phpstan": "^1.4",
+    "vimeo/psalm": "^4.10"
   },
   "autoload": {
     "files": [
