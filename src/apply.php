@@ -16,10 +16,13 @@ namespace Lambdish\Phunctional;
  * wrong number of parameters or will not do as you expect a change of signature. To have a good test suite would be a
  * requirement for a widely use of this function in your code.
  *
- * @param callable $fn   function to be executed
- * @param iterable $args arguments to be passed to the called function
+ * @template T
+ * @template R
  *
- * @return mixed
+ * @param callable(T...):R      $fn   function to be executed
+ * @param iterable<array-key,T> $args arguments to be passed to the called function
+ *
+ * @return R
  *
  * @since 0.1
  */

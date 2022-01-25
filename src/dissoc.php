@@ -9,8 +9,13 @@ namespace Lambdish\Phunctional;
  *
  * Passing a Generator to this function will work but it does not provide any improvement against a simple Traversable
  *
- * @param iterable $coll collection to dissoc the value
- * @param mixed    $key  the key the value have
+ * @template T
+ * @template TKey of array-key
+ *
+ * @param iterable<TKey,T> $coll collection to dissoc the value
+ * @param array-key        $key  the key the value has
+ *
+ * @return array<TKey,T>
  *
  * @since 0.1
  */

@@ -11,8 +11,11 @@ namespace Lambdish\Phunctional;
  * Function $fn should accept the value of the item as the first argument
  * and optionally the key of the item as the second argument.
  *
- * @param callable $fn   function to apply to every item in the collection
- * @param iterable $coll collection of values to apply the function
+ * @template T
+ * @template TKey of array-key
+ *
+ * @param callable(T,TKey):mixed $fn   function to apply to every item in the collection
+ * @param iterable<TKey,T>       $coll collection of values to apply the function
  *
  * @since 0.1
  */

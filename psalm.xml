@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<psalm
+    errorLevel="2"
+    limitMethodComplexity="true"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="https://getpsalm.org/schema/config"
+    xsi:schemaLocation="https://getpsalm.org/schema/config vendor/vimeo/psalm/config.xsd"
+>
+    <projectFiles>
+        <directory name="src" />
+        <ignoreFiles>
+            <directory name="vendor" />
+        </ignoreFiles>
+    </projectFiles>
+    <issueHandlers>
+        <!-- Level >=3 Error ignores. Can be minimized with type hinting in the code, but omitted for now -->
+        <InvalidReturnType>
+            <errorLevel type="suppress">
+                <file name="src/filter_null.php"/>
+                <file name="src/flat_map.php"/>
+                <file name="src/flatten.php"/>
+            </errorLevel>
+        </InvalidReturnType>
+        <InvalidReturnStatement>
+            <errorLevel type="suppress">
+                <file name="src/filter_null.php"/>
+                <file name="src/flat_map.php"/>
+                <file name="src/flatten.php"/>
+            </errorLevel>
+        </InvalidReturnStatement>
+        <InvalidArgument>
+            <errorLevel type="suppress">
+                <file name="src/memoize.php"/>
+            </errorLevel>
+        </InvalidArgument>
+        <InvalidNullableReturnType>
+            <errorLevel type="suppress">
+                <file name="src/pipe.php"/>
+            </errorLevel>
+        </InvalidNullableReturnType>
+        <NullableReturnStatement>
+            <errorLevel type="suppress">
+                <file name="src/pipe.php"/>
+            </errorLevel>
+        </NullableReturnStatement>
+
+        <!-- Level 2 error ignores -->
+        <MissingClosureParamType>
+            <errorLevel type="suppress">
+                <file name="src/do_if.php"/>
+                <file name="src/pipe.php"/>
+                <file name="src/filter_null.php"/>
+            </errorLevel>
+        </MissingClosureParamType>
+        <MissingClosureReturnType>
+            <errorLevel type="suppress">
+                <file name="src/do_if.php"/>
+                <file name="src/pipe.php"/>
+            </errorLevel>
+        </MissingClosureReturnType>
+    </issueHandlers>
+</psalm>

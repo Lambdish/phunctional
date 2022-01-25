@@ -7,8 +7,12 @@ namespace Lambdish\Phunctional;
 /**
  * Fix a number of arguments to a function producing another one with an smaller arity
  *
- * @param callable $fn      function to be biased
- * @param mixed    ...$args arguments to fix in the function
+ * @template R
+ *
+ * @param callable(mixed...):R $fn      function to be biased
+ * @param mixed                ...$args arguments to fix in the function
+ *
+ * @return callable(mixed...):R
  *
  * @since 0.1
  */

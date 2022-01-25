@@ -7,7 +7,9 @@ namespace Lambdish\Phunctional;
 /**
  * Returns a checker that validated if an `$element` is an instance of a `$className`
  *
- * @param string $className class name to compare with
+ * @param class-string $className class name to compare with
+ *
+ * @return callable(mixed):bool
  *
  * @since 0.1
  */

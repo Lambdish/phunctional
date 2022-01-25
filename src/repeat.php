@@ -7,8 +7,13 @@ namespace Lambdish\Phunctional;
 /**
  * Returns an array with the values of `$fn` executed a certain amount of `$times`
  *
- * @param callable $fn    function to be executed
- * @param int      $times times to call the function
+ * @template T
+ *
+ * @param callable():T $fn    function to be executed
+ * @param int          $times times to call the function
+ *
+ * @return array<int,T>
+ * @psalm-return list<T>
  *
  * @since 0.1
  */

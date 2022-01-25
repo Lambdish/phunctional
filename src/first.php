@@ -9,9 +9,11 @@ namespace Lambdish\Phunctional;
  *
  * If the collection is empty returns null
  *
- * @param iterable $coll collection of values
+ * @template T
  *
- * @return mixed|null
+ * @param iterable<T> $coll collection of values
+ *
+ * @return T|null
  *
  * @since 0.1
  */

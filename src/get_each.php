@@ -10,10 +10,12 @@ use Traversable;
  * Returns an array with the values of the key of each item in a collection.
  * An empty array is returned if no item contains the key.
  *
- * @param string|int $key key to search in the collection
- * @param iterable $coll collection where search the expected key
+ * @template T
  *
- * @return array
+ * @param array-key                       $key  key to search in the collection
+ * @param iterable<iterable<array-key,T>> $coll collection where search the expected key
+ *
+ * @return array<T>
  *
  * @since 0.1
  */
@@ -35,7 +37,9 @@ function _convert_traversable_to_array(): callable {
     };
 }
 
-/** @phpstan-ignore-next-line */
+/**
+ * @param array-key $key
+ */
 function _get_values_from_key($key): callable {
     return static function (array $coll) use ($key): array {
         return array_merge(...map(
