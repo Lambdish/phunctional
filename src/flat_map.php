@@ -28,6 +28,7 @@ namespace Lambdish\Phunctional;
  */
 function flat_map(callable $fn, iterable $coll): array
 {
+    /** @phpstan-ignore-next-line */
     return flatten(map($fn, $coll));
 }
 

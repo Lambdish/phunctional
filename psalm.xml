@@ -16,12 +16,14 @@
         <!-- Level >=3 Error ignores. Can be minimized with type hinting in the code, but omitted for now -->
         <InvalidReturnType>
             <errorLevel type="suppress">
+                <file name="src/filter_null.php"/>
                 <file name="src/flat_map.php"/>
                 <file name="src/flatten.php"/>
             </errorLevel>
         </InvalidReturnType>
         <InvalidReturnStatement>
             <errorLevel type="suppress">
+                <file name="src/filter_null.php"/>
                 <file name="src/flat_map.php"/>
                 <file name="src/flatten.php"/>
             </errorLevel>
@@ -50,12 +52,6 @@
                 <file name="src/filter_null.php"/>
             </errorLevel>
         </MissingClosureParamType>
-        <MissingClosureReturnType>
-            <errorLevel type="suppress">
-                <file name="src/do_if.php"/>
-                <file name="src/pipe.php"/>
-            </errorLevel>
-        </MissingClosureReturnType>
         <MissingClosureReturnType>
             <errorLevel type="suppress">
                 <file name="src/do_if.php"/>
