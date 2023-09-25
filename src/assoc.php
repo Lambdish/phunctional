@@ -12,7 +12,7 @@ namespace Lambdish\Phunctional;
  *
  * @param iterable $coll  collection to assoc the value
  * @param string   $key   the key the value will have
- * @param string   $value the value to assoc
+ * @param mixed    $value the value to set
  *
  * @since 0.1
  */
